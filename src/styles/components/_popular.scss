@@ -1,0 +1,31 @@
+.popular {
+  padding-top: 150px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    color: #7a7a7a;
+    text-decoration: underline;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    overflow: hidden;
+  }
+}

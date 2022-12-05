@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+
+<head>
+  @include('partials/head.html')
+  <title>Бренды | Kafel Time - онлайн-гипермаркет</title>
+  <meta name="description" content="Бренды">
+</head>
+
+<body class="body">
+  @include('partials/header.html')
+  <main class="main">
+    <h1 class="visually-hidden">Бренды Kafel Time</h1>
+    <section class="brands-page">
+      <div class="brands-page__container container">
+        <ul class="brands-page__breadcrumbs breadcrumbs list-reset">
+          <li><a href="/">Главная</a></li>
+          <li><a href="products-page.html">Каталог</a></li>
+          <li>Бренды</li>
+        </ul>
+        <h2 class="brands-page__title">Бренды</h2>
+        <div class="brands-page__filters filters">
+          <ul class="brands-page__menu list-reset">
+            <li class="brands-page__item brands-page__item--active"><button class="btn-reset">Все
+                бренды</button></li>
+            <li class="brands-page__item"><button class="btn-reset">Плитка</button></li>
+            <li class="brands-page__item"><button class="btn-reset">Сантехника</button></li>
+          </ul>
+          <select class="brands-page__region" name="brands-page-region">
+            <option value="all">Все страны</option>
+            <option value="russia">Россия</option>
+            <option value="italy">Италия</option>
+          </select>
+          <label class="brands-page__search search">
+            <input type="search" placeholder="Поиск по брендам">
+          </label>
+        </div>
+        <div class="brands-page__alphabet alphabet">
+          <div class="alphabet__language">
+            <button class="alphabet__btn btn-reset">A</button>
+            <button class="alphabet__btn btn-reset">B</button>
+            <button class="alphabet__btn btn-reset">C</button>
+            <button class="alphabet__btn btn-reset">D</button>
+            <button class="alphabet__btn btn-reset">E</button>
+            <button class="alphabet__btn btn-reset">F</button>
+            <button class="alphabet__btn btn-reset">G</button>
+            <button class="alphabet__btn btn-reset">H</button>
+            <button class="alphabet__btn btn-reset">I</button>
+            <button class="alphabet__btn btn-reset">J</button>
+            <button class="alphabet__btn btn-reset">K</button>
+            <button class="alphabet__btn btn-reset">L</button>
+            <button class="alphabet__btn btn-reset">M</button>
+            <button class="alphabet__btn btn-reset">N</button>
+            <button class="alphabet__btn btn-reset">O</button>
+            <button class="alphabet__btn btn-reset">P</button>
+            <button class="alphabet__btn btn-reset">Q</button>
+            <button class="alphabet__btn btn-reset">R</button>
+            <button class="alphabet__btn btn-reset">S</button>
+            <button class="alphabet__btn btn-reset">T</button>
+            <button class="alphabet__btn btn-reset">U</button>
+            <button class="alphabet__btn btn-reset">V</button>
+            <button class="alphabet__btn btn-reset">W</button>
+            <button class="alphabet__btn btn-reset">X</button>
+            <button class="alphabet__btn btn-reset">Y</button>
+            <button class="alphabet__btn btn-reset">Z</button>
+            <button class="alphabet__btn btn-reset">0-9</button>
+          </div>
+          <div class="alphabet__language">
+            <button class="alphabet__btn btn-reset">А</button>
+            <button class="alphabet__btn btn-reset">Б</button>
+            <button class="alphabet__btn btn-reset">В</button>
+            <button class="alphabet__btn btn-reset">Г</button>
+            <button class="alphabet__btn btn-reset">Д</button>
+            <button class="alphabet__btn btn-reset">Е</button>
+            <button class="alphabet__btn btn-reset">Ж</button>
+            <button class="alphabet__btn btn-reset">З</button>
+            <button class="alphabet__btn btn-reset">И</button>
+            <button class="alphabet__btn btn-reset">К</button>
+            <button class="alphabet__btn btn-reset">Л</button>
+            <button class="alphabet__btn btn-reset">М</button>
+            <button class="alphabet__btn btn-reset">Н</button>
+            <button class="alphabet__btn btn-reset">О</button>
+            <button class="alphabet__btn btn-reset">П</button>
+            <button class="alphabet__btn btn-reset">Р</button>
+            <button class="alphabet__btn btn-reset">С</button>
+            <button class="alphabet__btn btn-reset">Т</button>
+            <button class="alphabet__btn btn-reset">У</button>
+            <button class="alphabet__btn btn-reset">Ф</button>
+            <button class="alphabet__btn btn-reset">Х</button>
+            <button class="alphabet__btn btn-reset">Ц</button>
+            <button class="alphabet__btn btn-reset">Ч</button>
+            <button class="alphabet__btn btn-reset">Ш</button>
+            <button class="alphabet__btn btn-reset">Щ</button>
+            <button class="alphabet__btn btn-reset">Э</button>
+            <button class="alphabet__btn btn-reset">Ю</button>
+            <button class="alphabet__btn btn-reset">Я</button>
+          </div>
+        </div>
+        <div class="brands-page__swiper brands-swiper swiper">
+          <div class="brands-swiper__wrapper swiper-wrapper">
+            <div class="brands-swiper__slide swiper-slide">
+              <div class="brands-swiper__list">
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/am-pm.png" alt="Логотип am-pm"></a>
+                  <span>AM.PM</span>
+                  <small>Страна • Германия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/azori.png" alt="Логотип am-pm"></a>
+                  <span>Azori</span>
+                  <small>Страна • Россия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/gemy.png" alt="Логотип am-pm"></a>
+                  <span>Gemy</span>
+                  <small>Страна • Китай</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/vitra.png" alt="Логотип am-pm"></a>
+                  <span>Vitra</span>
+                  <small>Страна • Турция</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/laparet.png" alt="Логотип am-pm"></a>
+                  <span>Laparet</span>
+                  <small>Страна • Индия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/am-pm.png" alt="Логотип am-pm"></a>
+                  <span>AM.PM</span>
+                  <small>Страна • Германия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/azori.png" alt="Логотип am-pm"></a>
+                  <span>Azori</span>
+                  <small>Страна • Россия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/gemy.png" alt="Логотип am-pm"></a>
+                  <span>Gemy</span>
+                  <small>Страна • Китай</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/vitra.png" alt="Логотип am-pm"></a>
+                  <span>Vitra</span>
+                  <small>Страна • Турция</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/laparet.png" alt="Логотип am-pm"></a>
+                  <span>Laparet</span>
+                  <small>Страна • Индия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/am-pm.png" alt="Логотип am-pm"></a>
+                  <span>AM.PM</span>
+                  <small>Страна • Германия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/azori.png" alt="Логотип am-pm"></a>
+                  <span>Azori</span>
+                  <small>Страна • Россия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/gemy.png" alt="Логотип am-pm"></a>
+                  <span>Gemy</span>
+                  <small>Страна • Китай</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/vitra.png" alt="Логотип am-pm"></a>
+                  <span>Vitra</span>
+                  <small>Страна • Турция</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/laparet.png" alt="Логотип am-pm"></a>
+                  <span>Laparet</span>
+                  <small>Страна • Индия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/am-pm.png" alt="Логотип am-pm"></a>
+                  <span>AM.PM</span>
+                  <small>Страна • Германия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/azori.png" alt="Логотип am-pm"></a>
+                  <span>Azori</span>
+                  <small>Страна • Россия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/gemy.png" alt="Логотип am-pm"></a>
+                  <span>Gemy</span>
+                  <small>Страна • Китай</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/vitra.png" alt="Логотип am-pm"></a>
+                  <span>Vitra</span>
+                  <small>Страна • Турция</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/laparet.png" alt="Логотип am-pm"></a>
+                  <span>Laparet</span>
+                  <small>Страна • Индия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/am-pm.png" alt="Логотип am-pm"></a>
+                  <span>AM.PM</span>
+                  <small>Страна • Германия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/azori.png" alt="Логотип am-pm"></a>
+                  <span>Azori</span>
+                  <small>Страна • Россия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/gemy.png" alt="Логотип am-pm"></a>
+                  <span>Gemy</span>
+                  <small>Страна • Китай</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/vitra.png" alt="Логотип am-pm"></a>
+                  <span>Vitra</span>
+                  <small>Страна • Турция</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/laparet.png" alt="Логотип am-pm"></a>
+                  <span>Laparet</span>
+                  <small>Страна • Индия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/am-pm.png" alt="Логотип am-pm"></a>
+                  <span>AM.PM</span>
+                  <small>Страна • Германия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/azori.png" alt="Логотип am-pm"></a>
+                  <span>Azori</span>
+                  <small>Страна • Россия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/gemy.png" alt="Логотип am-pm"></a>
+                  <span>Gemy</span>
+                  <small>Страна • Китай</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/vitra.png" alt="Логотип am-pm"></a>
+                  <span>Vitra</span>
+                  <small>Страна • Турция</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/laparet.png" alt="Логотип am-pm"></a>
+                  <span>Laparet</span>
+                  <small>Страна • Индия</small>
+                </div>
+              </div>
+            </div>
+            <div class="brands-swiper__slide swiper-slide">
+              <div class="brands-swiper__list">
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/am-pm.png" alt="Логотип am-pm"></a>
+                  <span>AM.PM</span>
+                  <small>Страна • Германия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/azori.png" alt="Логотип am-pm"></a>
+                  <span>Azori</span>
+                  <small>Страна • Россия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/gemy.png" alt="Логотип am-pm"></a>
+                  <span>Gemy</span>
+                  <small>Страна • Китай</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/vitra.png" alt="Логотип am-pm"></a>
+                  <span>Vitra</span>
+                  <small>Страна • Турция</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/laparet.png" alt="Логотип am-pm"></a>
+                  <span>Laparet</span>
+                  <small>Страна • Индия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/am-pm.png" alt="Логотип am-pm"></a>
+                  <span>AM.PM</span>
+                  <small>Страна • Германия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/azori.png" alt="Логотип am-pm"></a>
+                  <span>Azori</span>
+                  <small>Страна • Россия</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/gemy.png" alt="Логотип am-pm"></a>
+                  <span>Gemy</span>
+                  <small>Страна • Китай</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/vitra.png" alt="Логотип am-pm"></a>
+                  <span>Vitra</span>
+                  <small>Страна • Турция</small>
+                </div>
+                <div class="brands-swiper__card">
+                  <a href="#"><img src="images/laparet.png" alt="Логотип am-pm"></a>
+                  <span>Laparet</span>
+                  <small>Страна • Индия</small>
+                </div>
+              </div>
+            </div>
+            <div class="brands-swiper__slide swiper-slide">Slide 3</div>
+            <div class="brands-swiper__slide swiper-slide">Slide 2</div>
+            <div class="brands-swiper__slide swiper-slide">Slide 3</div>
+          </div>
+          <button class="brands-swiper__btn-more btn-reset">Показать еще</button>
+          <div class="brands-swiper__footer">
+            <div class="brands-swiper__button brands-swiper__button--prev swiper-button-prev"></div>
+            <div class="brands-swiper__swiper-pagination swiper-pagination"></div>
+            <div class="brands-swiper__button brands-swiper__button--next swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</body>
+
+</html>

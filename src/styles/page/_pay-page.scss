@@ -1,0 +1,56 @@
+.pay {
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    &-title {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+    }
+
+    &-way {
+      padding-left: 17px;
+      margin-bottom: 100px;
+
+      li {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+
+      div {
+        padding-top: 15px;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+      }
+
+      span {
+        display: block;
+      }
+
+      &--unordered {
+        padding: 0;
+        margin-bottom: 60px;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+        }
+
+        div {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.brands-swiper {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    a {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
+
+    span {
+      display: block;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 500;
+    }
+
+    small {
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 400;
+      color: #828282;
+    }
+  }
+
+  &__btn-more {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: $color-black;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    background-color: #bebebe;
+  }
+
+  &__footer {
+    position: relative;
+    height: 30px;
+    max-height: max-content;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    color: $color-black;
+
+    &::after {
+      font-size: 20px;
+    }
+  }
+
+  &__swiper-pagination {
+    // top: 0;
+    height: 30px;
+  }
+
+  & .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    &-active-main {
+      background-color: $color-yellow;
+    }
+  }
+}

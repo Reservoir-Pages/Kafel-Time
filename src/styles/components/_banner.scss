@@ -1,0 +1,41 @@
+.banner {
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  &__container {
+    position: relative;
+  }
+
+  &-swiper {
+    border-radius: 10px;
+
+    &__slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 400px;
+      background-color: #e5e5e5;
+      overflow: hidden;
+    }
+
+    &__pagination {
+      z-index: 1;
+
+      &.swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: -20px;
+      }
+
+      .swiper-pagination-bullet {
+        height: 6px;
+        width: 85px;
+        border-radius: 0;
+        background-color: #d9d9d9;
+        opacity: 1;
+
+        &-active {
+          background-color: $color-yellow;
+        }
+      }
+    }
+  }
+}

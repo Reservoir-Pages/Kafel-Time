@@ -1,0 +1,144 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: #bebebe;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__feedback {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+    a {
+      font-weight: 500;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      &:last-child {
+        font-size: 10px;
+        line-height: 12px;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__list {
+    padding-top: 10px;
+    margin-right: 10px;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  &__subscribe {
+    padding-top: 10px;
+
+    &-social {
+      margin-bottom: 25px;
+
+      h3 {
+        margin: 0;
+        margin-bottom: 8px;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 400;
+      }
+    }
+
+    &-description {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 14px;
+      font-size: 10px;
+      line-height: 12px;
+
+      input {
+        min-height: 24px;
+        max-width: 200px;
+        padding: 0 5px;
+        margin-top: 8px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        font-size: 7px;
+        line-height: 8px;
+        color: #404040;
+
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+
+    &-checkbox {
+      & label {
+        position: relative;
+        font-size: 7px;
+        line-height: 8px;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 0;
+          display: inline-block;
+          height: 7px;
+          width: 7px;
+          border: 1px solid #404040;
+          cursor: pointer;
+        }
+
+        &::after {
+          content: none;
+          position: absolute;
+          display: inline-block;
+          height: 3px;
+          width: 4px;
+          border-left: 1px solid #404040;
+          border-bottom: 1px solid #404040;
+          transform: rotate(-45deg);
+        }
+
+        span {
+          display: block;
+          max-width: 190px;
+          padding-left: 17px;
+          font-size: 7px;
+          line-height: 8px;
+        }
+      }
+
+      & input {
+        position: absolute;
+        opacity: 0;
+
+        &:checked + label::after {
+          content: "";
+          top: 4px;
+          left: 1px;
+        }
+
+        &:focus-visible + label::before {
+          border: 1px solid $color-yellow;
+        }
+      }
+    }
+  }
+}

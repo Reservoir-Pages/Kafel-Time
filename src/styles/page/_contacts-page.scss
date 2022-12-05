@@ -1,0 +1,216 @@
+.contacts {
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    max-width: 45%;
+    margin-right: 7%;
+
+    a {
+      display: flex;
+      margin-bottom: 30px;
+
+      svg {
+        margin-right: 30px;
+      }
+    }
+
+    span {
+      font-size: 12px;
+      line-height: 22px;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+
+  &__requisites {
+    max-width: 35%;
+
+    b {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 600;
+    }
+
+    span {
+      display: block;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+
+  // &__feedback {
+  //   width: 45%;
+  //   margin-bottom: 70px;
+
+  //   .contacts-feedback {
+  //     &__btn {
+  //       display: flex;
+  //       justify-content: space-between;
+  //       align-items: center;
+  //       width: 100%;
+  //       max-width: 460px;
+  //       padding: 20px 30px;
+  //       border-radius: 20px;
+  //       font-size: 12px;
+  //       line-height: 12px;
+  //       font-weight: 500;
+  //       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  //     }
+
+  //     &__form {
+  //       display: flex;
+  //       flex-direction: column;
+  //       max-width: 460px;
+  //       transform-origin: top;
+  //       transform: scaleY(0);
+  //       transition: transform 1s ease-in-out;
+
+  //       label {
+  //       }
+
+  //       input {
+  //         width: 100%;
+  //       }
+  //     }
+  //   }
+
+  //   &--active {
+  //     .contacts-feedback {
+  //       &__form {
+  //         transform: scaleY(1);
+  //       }
+  //     }
+  //   }
+  // }
+
+  &__feedback {
+    width: 45%;
+    max-width: 460px;
+    margin-bottom: 70px;
+
+    .ac {
+      margin: 0;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+      &-trigger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 460px;
+        padding: 20px 30px;
+        border-radius: 20px;
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 500;
+
+        &::after {
+          content: url(../images/right-icon.svg);
+          right: 55px;
+        }
+      }
+
+      &-panel {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+
+        label {
+          font-size: 10px;
+          line-height: 12px;
+          font-weight: 500;
+
+          &:not(:last-child) {
+            margin-bottom: 15px;
+
+            input {
+              height: 28px;
+              width: 100%;
+              padding: 0 15px;
+              border: 1px solid #828282;
+              border-radius: 45px;
+              color: #828282;
+            }
+          }
+
+          &:last-child {
+            text-align: center;
+            input {
+              padding: 10px 35px;
+              border: 1px solid transparent;
+              border-radius: 5px;
+              background-color: $color-yellow;
+            }
+          }
+        }
+
+        p {
+          margin: 0;
+          margin-bottom: 10px;
+          font-size: 10px;
+          line-height: 12px;
+          font-weight: 500;
+          color: #828282;
+        }
+      }
+
+      &.is-active {
+        .ac {
+          &-trigger {
+            &::after {
+              content: url(../images/close-icon.svg);
+              right: 40px;
+            }
+          }
+
+          &-panel {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &__map {
+    height: 430px;
+    margin-bottom: 40px;
+  }
+
+  &__offices {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  &__office {
+    max-width: 25%;
+
+    &-title {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 600;
+    }
+
+    &-info {
+      max-width: 63%;
+      margin: 0;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+}

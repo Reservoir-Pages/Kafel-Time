@@ -1,0 +1,44 @@
+.kits {
+  padding-top: 150px;
+
+  &__btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    line-height: 14px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 90px;
+    }
+
+    &--active {
+      background-color: $color-yellow;
+    }
+  }
+
+  &-swiper {
+    &__slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+
+      &-image {
+        img {
+          min-height: 170px;
+          border-radius: 10px;
+        }
+      }
+
+      &-description {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 19px;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.alphabet {
+  margin-bottom: 50px;
+
+  &__language {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__btn {
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    &--active {
+      background-color: $color-yellow;
+    }
+  }
+}

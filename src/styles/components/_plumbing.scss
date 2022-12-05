@@ -1,0 +1,36 @@
+.plumbing {
+  padding-top: 130px;
+
+  &-swiper {
+    &__slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      background-color: #e5e5e5;
+      overflow: hidden;
+
+      &-image {
+        min-height: 170px;
+        margin-bottom: 10px;
+
+        img {
+          min-height: 170px;
+        }
+      }
+
+      &-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 0 30px;
+        line-height: 19px;
+        word-break: break-all;
+        text-align: center;
+      }
+    }
+  }
+}

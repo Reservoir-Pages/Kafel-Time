@@ -1,0 +1,41 @@
+.stocks {
+  padding-top: 26px;
+
+  &__btn {
+    display: block;
+    max-width: max-content;
+    margin-bottom: 30px;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #7a7a7a;
+    text-decoration: underline;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__card {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__bage {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: $color-yellow;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

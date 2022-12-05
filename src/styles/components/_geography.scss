@@ -1,0 +1,27 @@
+.geography {
+  padding-top: 150px;
+
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    max-width: 395px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__map {
+    height: 600px;
+    margin-bottom: 40px;
+  }
+
+  [class*="ground-pane"] {
+    filter: grayscale(1);
+    // filter: saturate(5);
+  }
+}

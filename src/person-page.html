@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+
+<head>
+  @include('partials/head.html')
+  <title>Личный кабинет | Kafel Time - онлайн-гипермаркет</title>
+  <meta name="description" content="Личный кабинет
+  мои заказы
+  избранное
+  просмотренное
+  сравнение
+  ">
+</head>
+
+<body class="body">
+  @include('partials/header.html')
+  <main class="main">
+    <h1 class="visually-hidden">Личный кабинет Kafel Time</h1>
+    <section class="person">
+      <div class="person__container container">
+        <ul class="person__breadcrumbs breadcrumbs list-reset">
+          <li><a href="/">Главная</a></li>
+          <li>Личный кабинет</li>
+        </ul>
+        <h2 class="person__title title">Личный кабинет</h2>
+        <div class="person__content">
+          <div class="person__tabs">
+            <button class="person__tabs-btn person__tabs-btn--active btn-reset" data-tabs-path="profile">Профиль</button>
+            <button class="person__tabs-btn btn-reset" data-tabs-path="order">Заказы</button>
+            <button class="person__tabs-btn btn-reset" data-tabs-path="favorite">Избранное</button>
+            <button class="person__tabs-btn btn-reset" data-tabs-path="viewed">Вы смотрели</button>
+            <button class="person__tabs-btn btn-reset" data-tabs-path="compare">Сравнение</button>
+          </div>
+          <div class="person__info">
+            <div class="person__data person__data--active data-card" data-tabs-target="profile">
+              <div class="data-card__info">
+                <div class="data-card__title">Личные данные</div>
+                <div class="data-card__content">
+                  <div class="data-card__data">
+                    <span>Фамилия</span>
+                    <span>Иванов</span>
+                  </div>
+                  <div class="data-card__data">
+                    <span>Имя</span>
+                    <span>Иван</span>
+                  </div>
+                  <div class="data-card__data">
+                    <span>Отчество</span>
+                    <span>Иванович</span>
+                  </div>
+                  <div class="data-card__data">
+                    <span>Телефон</span>
+                    <span>+7 (000) 000-00-00</span>
+                    <button class="btn-reset">Изменить</button>
+                  </div>
+                  <div class="data-card__data">
+                    <span>Почта</span>
+                    <span>kafeltime@mail.ru</span>
+                    <button class="btn-reset">Изменить</button>
+                  </div>
+                  <a class="data-card__btn" href="account-page.html">Выйти из аккаунта</a>
+                </div>
+              </div>
+            </div>
+            <div class="person__data data-card" data-tabs-target="order">
+              <div class="data-card__title">Заказы</div>
+              <div class="data-card__content">
+                <div class="person__card person-card">
+                  <div class="person-card__info">
+                    <img src="images/test-img.png" alt="Изображение товара">
+                    <div class="person-card__description">
+                      <b class="person-card__title">Заказ от 16 октября</b>
+                      <span class="person-card__delivery">Доставка в пункт выдачи: 18 октября в 16:00</span>
+                      <span class="person-card__delivery">• Получено</span>
+                    </div>
+                  </div>
+                  <div class="person-card__setup card-setup">
+                    <div class="card-setup__order">№01020322-001</div>
+                    <div class="card-setup__total">оплачено <span> 15 760</span> ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="person__data person__data data-card" data-tabs-target="favorite">
+              <div class="data-card__title">Избранное</div>
+              <div class="data-card__content data-card__content--favorite">
+                <div class="data-card__card card">
+                  <div class="card__bage">
+                    <button class="btn-reset" aria-label="Поделиться">
+                      <svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.6168 10.0717C11.3113 10.0729 11.0092 10.1358 10.7286 10.2566C10.448 10.3774 10.1947 10.5537 9.98391 10.7748L4.45462 8.00788C4.59064 7.59545 4.59064 7.15024 4.45462 6.73782L9.99298 3.92101C10.3897 4.33905 10.9276 4.59466 11.5023 4.63816C12.077 4.68166 12.6473 4.50994 13.1024 4.15637C13.5575 3.80281 13.8649 3.29266 13.9648 2.72508C14.0647 2.1575 13.9501 1.57304 13.6431 1.0853C13.3361 0.597561 12.8587 0.241387 12.3038 0.0860051C11.7488 -0.0693764 11.1559 -0.0128642 10.6403 0.244558C10.1246 0.501979 9.72314 0.94192 9.51381 1.47887C9.30449 2.01582 9.30229 2.61142 9.50764 3.1499L4.02371 5.93949C3.72753 5.57728 3.32658 5.31553 2.87581 5.19013C2.42504 5.06472 1.94651 5.08181 1.50583 5.23904C1.06515 5.39627 0.683886 5.68595 0.414299 6.06837C0.144712 6.45079 0 6.90722 0 7.37511C0 7.843 0.144712 8.29944 0.414299 8.68186C0.683886 9.06428 1.06515 9.35396 1.50583 9.51119C1.94651 9.66842 2.42504 9.6855 2.87581 9.5601C3.32658 9.4347 3.72753 9.17295 4.02371 8.81073L9.49403 11.564C9.4016 11.8122 9.35399 12.0748 9.35342 12.3397C9.35342 12.7882 9.48643 13.2267 9.73564 13.5997C9.98484 13.9727 10.3391 14.2633 10.7535 14.435C11.1679 14.6067 11.6239 14.6516 12.0638 14.5641C12.5038 14.4766 12.9079 14.2606 13.2251 13.9434C13.5422 13.6262 13.7583 13.2221 13.8458 12.7821C13.9333 12.3422 13.8884 11.8862 13.7167 11.4718C13.545 11.0574 13.2544 10.7031 12.8814 10.4539C12.5084 10.2047 12.0699 10.0717 11.6214 10.0717H11.6168Z"
+                          fill="#3D3C3C" />
+                      </svg>
+                    </button>
+                    <button class="btn-reset" aria-label="Сравнить">
+                      <svg width="18" height="14" viewbox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="12" width="2" height="14" fill="#3D3C3C" />
+                        <rect x="8" y="3" width="2" height="11" fill="#3D3C3C" />
+                        <rect x="4" y="2" width="2" height="12" fill="#3D3C3C" />
+                        <rect y="7" width="2" height="7" fill="#3D3C3C" />
+                        <rect x="16" y="7" width="2" height="7" fill="#3D3C3C" />
+                      </svg>
+                    </button>
+                    <button class="favorite-icon btn-reset" aria-label="Добавить в избранное">
+                      <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.99991 2.40454L6.37253 1.75967C4.89991 0.245917 2.19966 0.768293 1.22491 2.67142C0.767283 3.56654 0.664033 4.85892 1.49966 6.50829C2.30466 8.09642 3.97941 9.99867 6.99991 12.0707C10.0204 9.99867 11.6943 8.09642 12.5002 6.50829C13.3358 4.85804 13.2334 3.56654 12.7749 2.67142C11.8002 0.768293 9.09991 0.245043 7.62728 1.75879L6.99991 2.40454ZM6.99991 13.125C-6.41647 4.25954 2.86903 -2.65996 6.84591 1.00017C6.89841 1.04829 6.95003 1.09817 6.99991 1.14979C7.04928 1.09821 7.10065 1.04859 7.15391 1.00104C11.1299 -2.66171 20.4163 4.25867 6.99991 13.125Z"
+                          fill="#3D3C3C" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card__image">
+                    <img src="images/test-img-card.png" alt="Картинка товара">
+                  </div>
+                  <div class="card__description">
+                    <div class="card__description-brand">Bonaparte</div>
+                    <div class="card__description-article">Код • 1620400</div>
+                  </div>
+                  <div class="card__model">Bonaparte Мозайка из натурального камня</div>
+                  <div class="card__available">• В наличии</div>
+                  <div class="card__price">
+                    <div class="card__price-current">22220 ₽/шт</div>
+                    <del class="card__price-old">23390 ₽/шт</del>
+                  </div>
+                  <div class="card__summary">
+                    <div class="card__summary-counter counter">
+                      <input class="counter__decrement" type="submit" value="-">
+                      <input class="counter__value" type="text" value="1">
+                      <input class="counter__increment" type="submit" value="+">
+                    </div>
+                    <div class="card__summary-result">22220 ₽</div>
+                  </div>
+                  <div class="card__color"></div>
+                  <button class="card__btn btn-reset">Добавить в корзину</button>
+                </div>
+                <div class="data-card__card card">
+                  <div class="card__bage">
+                    <button class="btn-reset" aria-label="Поделиться">
+                      <svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.6168 10.0717C11.3113 10.0729 11.0092 10.1358 10.7286 10.2566C10.448 10.3774 10.1947 10.5537 9.98391 10.7748L4.45462 8.00788C4.59064 7.59545 4.59064 7.15024 4.45462 6.73782L9.99298 3.92101C10.3897 4.33905 10.9276 4.59466 11.5023 4.63816C12.077 4.68166 12.6473 4.50994 13.1024 4.15637C13.5575 3.80281 13.8649 3.29266 13.9648 2.72508C14.0647 2.1575 13.9501 1.57304 13.6431 1.0853C13.3361 0.597561 12.8587 0.241387 12.3038 0.0860051C11.7488 -0.0693764 11.1559 -0.0128642 10.6403 0.244558C10.1246 0.501979 9.72314 0.94192 9.51381 1.47887C9.30449 2.01582 9.30229 2.61142 9.50764 3.1499L4.02371 5.93949C3.72753 5.57728 3.32658 5.31553 2.87581 5.19013C2.42504 5.06472 1.94651 5.08181 1.50583 5.23904C1.06515 5.39627 0.683886 5.68595 0.414299 6.06837C0.144712 6.45079 0 6.90722 0 7.37511C0 7.843 0.144712 8.29944 0.414299 8.68186C0.683886 9.06428 1.06515 9.35396 1.50583 9.51119C1.94651 9.66842 2.42504 9.6855 2.87581 9.5601C3.32658 9.4347 3.72753 9.17295 4.02371 8.81073L9.49403 11.564C9.4016 11.8122 9.35399 12.0748 9.35342 12.3397C9.35342 12.7882 9.48643 13.2267 9.73564 13.5997C9.98484 13.9727 10.3391 14.2633 10.7535 14.435C11.1679 14.6067 11.6239 14.6516 12.0638 14.5641C12.5038 14.4766 12.9079 14.2606 13.2251 13.9434C13.5422 13.6262 13.7583 13.2221 13.8458 12.7821C13.9333 12.3422 13.8884 11.8862 13.7167 11.4718C13.545 11.0574 13.2544 10.7031 12.8814 10.4539C12.5084 10.2047 12.0699 10.0717 11.6214 10.0717H11.6168Z"
+                          fill="#3D3C3C" />
+                      </svg>
+                    </button>
+                    <button class="btn-reset" aria-label="Сравнить">
+                      <svg width="18" height="14" viewbox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="12" width="2" height="14" fill="#3D3C3C" />
+                        <rect x="8" y="3" width="2" height="11" fill="#3D3C3C" />
+                        <rect x="4" y="2" width="2" height="12" fill="#3D3C3C" />
+                        <rect y="7" width="2" height="7" fill="#3D3C3C" />
+                        <rect x="16" y="7" width="2" height="7" fill="#3D3C3C" />
+                      </svg>
+                    </button>
+                    <button class="favorite-icon btn-reset" aria-label="Добавить в избранное">
+                      <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.99991 2.40454L6.37253 1.75967C4.89991 0.245917 2.19966 0.768293 1.22491 2.67142C0.767283 3.56654 0.664033 4.85892 1.49966 6.50829C2.30466 8.09642 3.97941 9.99867 6.99991 12.0707C10.0204 9.99867 11.6943 8.09642 12.5002 6.50829C13.3358 4.85804 13.2334 3.56654 12.7749 2.67142C11.8002 0.768293 9.09991 0.245043 7.62728 1.75879L6.99991 2.40454ZM6.99991 13.125C-6.41647 4.25954 2.86903 -2.65996 6.84591 1.00017C6.89841 1.04829 6.95003 1.09817 6.99991 1.14979C7.04928 1.09821 7.10065 1.04859 7.15391 1.00104C11.1299 -2.66171 20.4163 4.25867 6.99991 13.125Z"
+                          fill="#3D3C3C" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card__image">
+                    <img src="images/test-img-card.png" alt="Картинка товара">
+                  </div>
+                  <div class="card__description">
+                    <div class="card__description-brand">Bonaparte</div>
+                    <div class="card__description-article">Код • 1620400</div>
+                  </div>
+                  <div class="card__model">Bonaparte Мозайка из натурального камня</div>
+                  <div class="card__available">• В наличии</div>
+                  <div class="card__price">
+                    <div class="card__price-current">22220 ₽/шт</div>
+                    <del class="card__price-old">23390 ₽/шт</del>
+                  </div>
+                  <div class="card__summary">
+                    <div class="card__summary-counter counter">
+                      <input class="counter__decrement" type="submit" value="-">
+                      <input class="counter__value" type="text" value="1">
+                      <input class="counter__increment" type="submit" value="+">
+                    </div>
+                    <div class="card__summary-result">22220 ₽</div>
+                  </div>
+                  <div class="card__color"></div>
+                  <button class="card__btn btn-reset">Добавить в корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="person__data data-card" data-tabs-target="viewed">
+              <div class="data-card__title">Вы смотрели</div>
+              <div class="data-card__content">
+                <div class="no-data">Нет данных</div>
+              </div>
+            </div>
+            <div class="person__data data-card" data-tabs-target="compare">
+              <div class="data-card__title">Сравнение</div>
+              <div class="data-card__content">
+                <div class="no-data">Нет данных</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</body>
+
+</html>

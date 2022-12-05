@@ -1,0 +1,12 @@
+.swiper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .swiper-buttons {
+    &-button-prev {
+      margin-right: 34px;
+    }
+  }
+}

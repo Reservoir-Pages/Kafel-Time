@@ -1,0 +1,89 @@
+.reviews {
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+
+    button {
+      padding: 9px 68px;
+      border-radius: 5px;
+      background-color: $color-yellow;
+    }
+  }
+
+  &__selects {
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+
+    & .choices {
+      height: 25px;
+      margin: 0;
+
+      &__inner {
+        min-height: 20px;
+        padding: 0;
+        padding-right: 15px;
+        border: 1px solid transparent;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+        background-color: $color-white;
+      }
+
+      &__list--dropdown {
+        z-index: 2;
+        width: max-content;
+        .choices__item--selectable {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+
+  &-card {
+    position: relative;
+    height: max-content;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+    &__item {
+      margin-bottom: 30px;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+
+      b {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+    }
+
+    small {
+      color: #828282;
+    }
+
+    button {
+      position: absolute;
+      bottom: 38px;
+      right: 38px;
+    }
+  }
+}

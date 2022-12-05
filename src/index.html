@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+
+@include('partials/head2.html', {
+"title": "Kafel Time - онлайн-гипермаркет, товары на люой вкус и цвет",
+"description": "Онлайн-гипермаркет Kafel Time - богатый выбор сантехники, кафельной плитки, керамогранита и других сопутствующих товаров"
+})
+
+<body class="body">
+  @include('partials/header.html', {})
+  <main class="main">
+    <h1 class="visually-hidden">Главная страница - онлайн-гипермаркет Kafel Time</h1>
+    <section class="banner">
+      <div class="banner__container container">
+        <div class="banner__swiper banner-swiper swiper">
+          <div class="banner-swiper__wrapper swiper-wrapper">
+            <div class="banner-swiper__slide swiper-slide">
+              <h2>Страница 1</h2>
+            </div>
+            <div class="banner-swiper__slide swiper-slide">
+              <h2>Страница 2</h2>
+            </div>
+            <div class="banner-swiper__slide swiper-slide">
+              <h2>Страница 3</h2>
+            </div>
+            <div class="banner-swiper__slide swiper-slide">
+              <h2>Страница 4</h2>
+            </div>
+          </div>
+        </div>
+        <div class="banner-swiper__pagination swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="stocks">
+      <h2 class="visually-hidden">Лучшие акции на наши товары</h2>
+      <div class="container">
+        <a class="stocks__btn" href="stocks-page.html">Все акции</a>
+        <div class="stocks__content">
+          <a href="stocks-page.html">
+            <div class="stocks__card">
+              <img src="images/test-img.png" alt="превью акции" width="490" height="170">
+              <div class="stocks__bage">до -32%</div>
+              <span class="stocks__description">Большой выбор душевых ограждений со скидками до 32%</span>
+            </div>
+          </a>
+          <a href="stocks-page.html">
+            <div class="stocks__card">
+              <img src="images/test-img.png" alt="превью акции" width="490" height="170">
+              <div class="stocks__bage">до -30%</div>
+              <span class="stocks__description">Товары бренда EWPIKA со скидками до 30%</span>
+            </div>
+          </a>
+          <a href="stocks-page.html">
+            <div class="stocks__card">
+              <img src="images/test-img.png" alt="превью акции" width="490" height="170">
+              <div class="stocks__bage">до -30%</div>
+              <span class="stocks__description">Ванны со скидками до 30%</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="plumbing">
+      <div class="plumbing__container container">
+        <div class="plumbing__header swiper-header">
+          <h2 class="plumbing__title title">Сантехника</h2>
+          <div class="plumbing__buttons swiper-buttons">
+            <button class="plumbing__button-prev swiper-buttons-button-prev btn-reset" aria-label="Листать назад">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43 11H3H2M2 11L12 1M2 11L12 20" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+            <button class="plumbing__button-next swiper-buttons-button-next btn-reset" aria-label="Листать вперед">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 10L40 10H41M41 10L31 20M41 10L31 1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="plumbing__swiper plumbing-swiper swiper">
+          <div class="plumbing-swiper__wrapper swiper-wrapper">
+            <a href="products-page.html" class="plumbing-swiper__slide swiper-slide">
+              <div class="plumbing-swiper__slide-image">
+                <!-- <img src="#" alt="картинка" width="190" height="170"> -->
+              </div>
+              <span class="plumbing-swiper__slide-description">Ванная</span>
+            </a>
+            <a href="products-page.html" class="plumbing-swiper__slide swiper-slide">
+              <div class="plumbing-swiper__slide-image">
+                <!-- <img src="#" alt="картинка" width="190" height="170"> -->
+              </div>
+              <span class="plumbing-swiper__slide-description">Душевая</span>
+            </a>
+            <a href="products-page.html" class="plumbing-swiper__slide swiper-slide">
+              <div class="plumbing-swiper__slide-image">
+                <!-- <img src="#" alt="картинка" width="190" height="170"> -->
+              </div>
+              <span class="plumbing-swiper__slide-description">Смесители</span>
+            </a>
+            <a href="products-page.html" class="plumbing-swiper__slide swiper-slide">
+              <div class="plumbing-swiper__slide-image">
+                <!-- <img src="#" alt="картинка" width="190" height="170"> -->
+              </div>
+              <span class="plumbing-swiper__slide-description">Раковины</span>
+            </a>
+            <a href="products-page.html" class="plumbing-swiper__slide swiper-slide">
+              <div class="plumbing-swiper__slide-image">
+                <!-- <img src="#" alt="картинка" width="190" height="170"> -->
+              </div>
+              <span class="plumbing-swiper__slide-description">Кухня</span>
+            </a>
+            <a href="products-page.html" class="plumbing-swiper__slide swiper-slide">
+              <div class="plumbing-swiper__slide-image">
+                <!-- <img src="#" alt="картинка" width="190" height="170"> -->
+              </div>
+              <span class="plumbing-swiper__slide-description">Унитазы, биде, писсуары</span>
+            </a>
+            <a href="products-page.html" class="plumbing-swiper__slide swiper-slide">
+              <div class="plumbing-swiper__slide-image">
+                <!-- <img src="#" alt="картинка" width="190" height="170"> -->
+              </div>
+              <span class="plumbing-swiper__slide-description">Test</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ceramics">
+      <div class="ceramics__container container">
+        <div class="ceramics__header swiper-header">
+          <h2 class="ceramics__title title">Керамическая плитка</h2>
+          <div class="ceramics__buttons swiper-buttons">
+            <button class="ceramics__button-prev swiper-buttons-button-prev btn-reset" aria-label="Листать назад">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43 11H3H2M2 11L12 1M2 11L12 20" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+            <button class="ceramics__button-next swiper-buttons-button-next btn-reset" aria-label="Листать вперед">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 10L40 10H41M41 10L31 20M41 10L31 1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="ceramics__swiper ceramics-swiper swiper">
+          <div class="ceramics-swiper__wrapper swiper-wrapper">
+            <a href="products-page.html" class="ceramics-swiper__slide swiper-slide">
+              <div class="ceramics-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="ceramics-swiper__slide-description">Плитка под мрамор</span>
+            </a>
+            <a href="products-page.html" class="ceramics-swiper__slide swiper-slide">
+              <div class="ceramics-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="ceramics-swiper__slide-description">Плитка под дерево</span>
+            </a>
+            <a href="products-page.html" class="ceramics-swiper__slide swiper-slide">
+              <div class="ceramics-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="ceramics-swiper__slide-description">Плитка под камень</span>
+            </a>
+            <a href="products-page.html" class="ceramics-swiper__slide swiper-slide">
+              <div class="ceramics-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="ceramics-swiper__slide-description">Плитка под бетон</span>
+            </a>
+            <a href="products-page.html" class="ceramics-swiper__slide swiper-slide">
+              <div class="ceramics-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="ceramics-swiper__slide-description">Test</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new">
+      <div class="new__container container">
+        <div class="new__header swiper-header">
+          <h2 class="new__title title">Новые коллекции</h2>
+          <div class="new__buttons swiper-buttons">
+            <button class="new__button-prev swiper-buttons-button-prev btn-reset" aria-label="Листать назад">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43 11H3H2M2 11L12 1M2 11L12 20" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+            <button class="new__button-next swiper-buttons-button-next btn-reset" aria-label="Листать вперед">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 10L40 10H41M41 10L31 20M41 10L31 1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="new__swiper new-swiper swiper">
+          <div class="new-swiper__wrapper swiper-wrapper">
+            <a href="products-page.html" class="new-swiper__slide swiper-slide">
+              <div class="new-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="new-swiper__slide-description">Название коллекции</span>
+            </a>
+            <a href="products-page.html" class="new-swiper__slide swiper-slide">
+              <div class="new-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="new-swiper__slide-description">Название коллекции</span>
+            </a>
+            <a href="products-page.html" class="new-swiper__slide swiper-slide">
+              <div class="new-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="new-swiper__slide-description">Название коллекции</span>
+            </a>
+            <a href="products-page.html" class="new-swiper__slide swiper-slide">
+              <div class="new-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="new-swiper__slide-description">Название коллекции</span>
+            </a>
+            <a href="products-page.html" class="new-swiper__slide swiper-slide">
+              <div class="new-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="new-swiper__slide-description">Test</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kits">
+      <div class="kits__container container">
+        <div class="kits__header swiper-header">
+          <h2 class="kits__title title">Готовые наборы</h2>
+          <div class="kits__buttons">
+            <button class="kits__btn btn-reset">Плитка</button>
+            <button class="kits__btn kits__btn--active btn-reset">Сантехника</button>
+          </div>
+          <div class="kits__arrows swiper-buttons">
+            <button class="kits__button-prev swiper-buttons-button-prev btn-reset" aria-label="Листать назад">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43 11H3H2M2 11L12 1M2 11L12 20" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+            <button class="kits__button-next swiper-buttons-button-next btn-reset" aria-label="Листать вперед">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 10L40 10H41M41 10L31 20M41 10L31 1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="kits__swiper kits-swiper swiper">
+          <div class="kits-swiper__wrapper swiper-wrapper">
+            <a href="products-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Унитазы с инсталляцией</span>
+            </a>
+            <a href="products-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Душевые комплекты</span>
+            </a>
+            <a href="products-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Душевые ограждения</span>
+            </a>
+            <a href="products-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Комплекты мебели</span>
+            </a>
+            <a href="products-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Test</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="popular__container container">
+        <div class="popular__header">
+          <h2 class="popular__title title">Популярные бренды</h2>
+          <a href="brands-page.html" class="popular__btn">Все бренды</a>
+        </div>
+        <div class="popular__content">
+          <div class="popular__card">
+            <a href="brands-page.html"><img src="images/am-pm.png" alt="Логотип am-pm" width="170" height="100"></a>
+          </div>
+          <div class="popular__card">
+            <a href="brands-page.html"><img src="images/azori.png" alt="Логотип azori" width="170" height="100"></a>
+          </div>
+          <div class="popular__card">
+            <a href="brands-page.html"><img src="images/gemy.png" alt="Логотип gemy" width="170" height="100"></a>
+          </div>
+          <div class="popular__card">
+            <a href="brands-page.html"><img src="images/vitra.png" alt="Логотип vitra" width="170" height="100"></a>
+          </div>
+          <div class="popular__card">
+            <a href="brands-page.html"><img src="images/laparet.png" alt="Логотип laparet" width="170" height="100"></a>
+          </div>
+          <div class="popular__card">
+            <a href="brands-page.html"><img src="images/abber.png" alt="Логотип abber" width="170" height="100"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trends">
+      <div class="trends__container container">
+        <div class="trends__header swiper-header">
+          <h2 class="trends__title title">В тренде</h2>
+          <div class="trends__arrows swiper-buttons">
+            <button class="trends__button-prev swiper-buttons-button-prev btn-reset" aria-label="Листать назад">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M43 11H3H2M2 11L12 1M2 11L12 20" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+            <button class="trends__button-next swiper-buttons-button-next btn-reset" aria-label="Листать вперед">
+              <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 10L40 10H41M41 10L31 20M41 10L31 1" stroke="black" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="trends__swiper trends-swiper swiper">
+          <div class="trends-swiper__wrapper swiper-wrapper">
+            <a href="trends-page.html" class="trends-swiper__slide swiper-slide">
+              <div class="trends-swiper__slide-image">
+                <img src="images/test-img.png" alt="картинка" width="400" height="210">
+              </div>
+              <span class="trends-swiper__slide-description">Нейтральные оттенки керамической плитки</span>
+            </a>
+            <a href="trends-page.html" class="trends-swiper__slide swiper-slide">
+              <div class="trends-swiper__slide-image">
+                <img src="images/test-img.png" alt="картинка" width="400" height="210">
+              </div>
+              <span class="trends-swiper__slide-description">Шестиугольная плитка - это модно</span>
+            </a>
+            <a href="trends-page.html" class="trends-swiper__slide swiper-slide">
+              <div class="trends-swiper__slide-image">
+                <img src="images/test-img.png" alt="картинка" width="400" height="210">
+              </div>
+              <span class="trends-swiper__slide-description">Объём и геометрический рисунок</span>
+            </a>
+            <a href="trends-page.html" class="trends-swiper__slide swiper-slide">
+              <div class="trends-swiper__slide-image">
+                <img src="images/test-img.png" alt="картинка" width="400" height="210">
+              </div>
+              <span class="trends-swiper__slide-description">Test</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="clients__container container">
+        <div class="clients__header">
+          <h2 class="clients__title title">Наши клиенты</h2>
+          <p class="clients__description">
+            Мы гордимся тем, что сотрудничаем с нашими клиентами
+            и находим для них эффективные решения
+          </p>
+        </div>
+        <div class="clients__content">
+          <div class="clients__card">
+            <a href="https://ampm-store.ru" target="_blank"><img src="images/am-pm.png" alt="Логотип am-pm" width="170" height="100"></a>
+          </div>
+          <div class="clients__card">
+            <a href="https://azoriceramica.ru/" target="_blank"><img src="images/azori.png" alt="Логотип azori" width="170" height="100"></a>
+          </div>
+          <div class="clients__card">
+            <a href="https://gemy.org/" target="_blank"><img src="images/gemy.png" alt="Логотип gemy" width="170" height="100"></a>
+          </div>
+          <div class="clients__card">
+            <a href="https://vitra-russia.ru/" target="_blank"><img src="images/vitra.png" alt="Логотип vitra" width="170" height="100"></a>
+          </div>
+          <div class="clients__card">
+            <a href="https://laparet.ru/" target="_blank"><img src="images/laparet.png" alt="Логотип laparet" width="170" height="100"></a>
+          </div>
+          <div class="clients__card">
+            <a href="https://abber-shop.ru/" target="_blank"><img src="images/abber.png" alt="Логотип abber" width="170" height="100"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="geography">
+      <div class="geography__container container">
+        <div class="geography__header">
+          <h2 class="geography__title title">География поставок</h2>
+          <p class="geography__description">
+            Здесь будет небольшой текст о том, какие мы молодцы, уже столько лет доставляем товар по всей России!
+          </p>
+        </div>
+        <div class="geography__map" id="map"></div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html', {})
+</body>
+
+</html>

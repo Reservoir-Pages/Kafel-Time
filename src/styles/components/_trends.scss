@@ -1,0 +1,28 @@
+.trends {
+  padding-top: 150px;
+
+  &-swiper {
+    &__slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+
+      &-image {
+        img {
+          min-height: 170px;
+          border-radius: 10px;
+        }
+      }
+
+      &-description {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 19px;
+      }
+    }
+  }
+}

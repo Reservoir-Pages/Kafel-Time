@@ -1,0 +1,97 @@
+.compare {
+  &__container {
+    padding-bottom: 150px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__lists {
+    display: flex;
+    margin-bottom: 30px;
+
+    div {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+
+    &-btn {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+
+      &--active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__header {
+    justify-content: end;
+  }
+
+  &__products {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__conditions {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-top: 10px;
+
+    label {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__card-swiper {
+    width: 80%;
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  &__description {
+    display: flex;
+  }
+
+  &__parameters {
+    max-width: 150px;
+  }
+
+  &__descr-swiper {
+    width: 80%;
+    padding: 0 10px;
+    margin-right: 0;
+  }
+
+  .descr-swiper__card {
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+}
+
+.parameters {
+  &__item {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #828282;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &--black {
+      color: $color-black;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
