@@ -42,7 +42,7 @@ const fs              = require('fs');
 // Zip
 const zip                           = require('gulp-zip');
 // Path
-const ftpNameFolder = './Bytes-rights/public_html';
+// const ftpNameFolder = './Bytes-rights/public_html';
 // const ftpNameFolder = nodePath.basename(nodePath.resolve()); // ceramics-gulp
 const srcFolder = './src';
 const distFolder = './dist';
@@ -80,7 +80,7 @@ const cleanDev = () => {
 };
 const resourcesDev = () => {
   return src(paths.srcResourcesFolder)
-  // .pipe(dest(distFolder))
+  .pipe(dest(distFolder))
 };
 const fontsTtfToWoffDev = () => {
   src([`${paths.srcResourcesFolder}/**/*.ttf`])
@@ -502,8 +502,8 @@ const deploy = () => {
     title: "DEPLOY",
     message: "Error: <%= error.message %>"
   })))
-  .pipe(connect.newer(ftpNameFolder))
-  .pipe(connect.dest(ftpNameFolder));
+  .pipe(connect.newer(ftpData.folder))
+  .pipe(connect.dest(ftpData.folder));
 }
 exports.deploy = deploy;
 

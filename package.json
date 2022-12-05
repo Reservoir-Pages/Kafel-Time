@@ -54,6 +54,7 @@
   "dependencies": {
     "accordion-js": "^3.3.2",
     "choices.js": "^10.2.0",
+    "graph-tabs": "^1.0.2",
     "normalize.css": "^8.0.1",
     "swiper": "^8.4.5",
     "tippy.js": "^6.3.7"

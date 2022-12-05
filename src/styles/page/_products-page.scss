@@ -26,6 +26,20 @@
     }
   }
 
+  &__categories {
+    margin-bottom: 120px;
+  }
+
+  &__profitable {
+    margin-bottom: 120px;
+  }
+
+  &__category {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -234,6 +248,118 @@
     background-color: #fff;
 
     &-active-main {
+      background-color: $color-yellow;
+    }
+  }
+}
+
+.profitable {
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 600;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    display: inline-flex;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    text-align: left;
+    background-color: #f1f1f1;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &--active {
+      background-color: $color-yellow;
+    }
+  }
+
+  &__content {
+    display: none;
+    grid-column: span 3;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+
+    &--active {
+      display: block;
+    }
+
+    &-tabs {
+      display: flex;
+      margin-bottom: 35px;
+    }
+
+    &-btn {
+      padding: 7px 12px;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      background-color: #e5e5e5;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &--active {
+        color: $color-white;
+        background-color: #828282;
+      }
+    }
+
+    &-kit {
+      display: none;
+      align-items: center;
+
+      &--active {
+        display: flex;
+      }
+    }
+
+    &-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+      background-color: $color-white;
+      overflow: hidden;
+    }
+
+    &-logic {
+      padding: 15px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &-view {
+      padding: 10px 50px;
+      border-radius: 5px;
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 500;
       background-color: $color-yellow;
     }
   }
