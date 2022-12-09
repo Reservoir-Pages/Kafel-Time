@@ -28,6 +28,10 @@
 
 @import "./components/universal/card";
 @import "./components/universal/products-category";
+@import "./components/universal/tooltips";
+@import "./components/universal/profitable-kits";
+@import "./components/universal/specifications";
+@import "./components/universal/features";
 
 @import "./page/products-page";
 @import "./page/about-page";
@@ -45,6 +49,8 @@
 @import "./page/feedback-page";
 @import "./page/privacy-page";
 @import "./page/person-page";
+@import "./page/product-page";
+@import "./page/collection-page";
 
 html {
   scroll-behavior: smooth;

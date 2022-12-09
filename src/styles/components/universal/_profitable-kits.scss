@@ -1,0 +1,161 @@
+.profitable {
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 600;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    display: inline-flex;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    text-align: left;
+    background-color: #f1f1f1;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &--active {
+      background-color: $color-yellow;
+    }
+  }
+
+  &__content {
+    display: none;
+    grid-column: span 3;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+
+    &--active {
+      display: block;
+    }
+
+    &-tabs {
+      display: flex;
+      margin-bottom: 35px;
+    }
+
+    &-btn {
+      padding: 7px 12px;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      background-color: #e5e5e5;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &--active {
+        color: $color-white;
+        background-color: #828282;
+      }
+    }
+
+    &-kit {
+      display: none;
+
+      &--active {
+        display: flex;
+      }
+
+      &__card {
+        max-width: 210px;
+      }
+    }
+
+    .card {
+      min-width: 210px;
+      justify-content: flex-start;
+
+      &__image {
+        padding: 10px;
+        text-align: center;
+        background-color: $color-white;
+      }
+
+      &__btn-change {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        min-height: 12px;
+        margin-bottom: 15px;
+        font-size: 10px;
+        line-height: 12px;
+        color: #7a7a7a;
+        text-decoration: underline;
+      }
+
+      &__model {
+        margin-bottom: 12px;
+        font-weight: 400;
+      }
+
+      &__price {
+        margin-top: auto;
+        &-current {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+
+    &-logic {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    &-summary {
+      padding-left: 10px;
+      margin: auto 0;
+
+      &__result {
+        margin-bottom: 10px;
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 600;
+      }
+
+      &__gain {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        color: #828282;
+      }
+
+      &__view {
+        padding: 10px 30px;
+        border-radius: 5px;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 500;
+        background-color: $color-yellow;
+      }
+    }
+  }
+}

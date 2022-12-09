@@ -1,0 +1,165 @@
+.collection {
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+
+    &-preview {
+      width: calc((100% - 40px) / 5 * 3);
+
+      .product__swiper-preview {
+        height: 80%;
+
+        .swiper-slide {
+          display: flex;
+          background-color: #828282;
+
+          img {
+            margin: auto 0;
+          }
+        }
+      }
+      .product__swiper-add {
+        height: 20%;
+
+        .swiper-slide {
+          margin-top: auto;
+          box-sizing: border-box;
+          font-size: 0;
+          height: max-content;
+          border: 3px solid transparent;
+          border-radius: 5px;
+
+          &-thumb-active {
+            border: 3px solid $color-yellow;
+          }
+        }
+      }
+    }
+
+    &-description {
+      width: calc((100% - 40px) / 5 * 2);
+
+      .card {
+        padding: 25px 40px;
+        background-color: #e5e5e5;
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        &__bage {
+          right: 40px;
+        }
+
+        &__price {
+          margin-bottom: 25px;
+
+          &-current {
+            font-size: 20px;
+            line-height: 23px;
+            font-weight: 500;
+
+            span {
+              font-size: 30px;
+              line-height: 35px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    &-buy {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__products {
+    margin-bottom: 100px;
+
+    &-title {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 500;
+    }
+
+    &-header {
+      margin-bottom: 40px;
+
+      &__btn {
+        padding: 10px 20px;
+        border-radius: 45px;
+        font-size: 12px;
+        line-height: 14px;
+
+        &--active {
+          background-color: $color-yellow;
+        }
+
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      &__image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__description {
+    margin-bottom: 60px;
+
+    &-title {
+      margin: 0;
+      margin-bottom: 30px;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 500;
+    }
+
+    &-list {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__features {
+    margin-bottom: 70px;
+  }
+
+  &__others {
+    margin-bottom: 100px;
+
+    &-title {
+      margin: 0;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+  }
+}

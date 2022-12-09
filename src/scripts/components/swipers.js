@@ -136,3 +136,17 @@ const compareSwiperDescr = new Swiper('.compare__descr-swiper', {
 });
 compareSwiper.controller.control = compareSwiperDescr;
 compareSwiperDescr.controller.control = compareSwiper;
+// Swiper product
+const swiper = new Swiper(".product__swiper-add", {
+  loop:true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+const swiper2 = new Swiper(".product__swiper-preview", {
+  loop:true,
+  thumbs: {
+    swiper: swiper,
+  },
+});

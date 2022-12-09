@@ -1,0 +1,33 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+
+  &__item {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+
+    span {
+      display: inline-block;
+      max-width: 170px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    a {
+      font-size: 10px;
+      line-height: 12px;
+      color: $color-blue;
+      text-decoration: underline;
+    }
+  }
+}
