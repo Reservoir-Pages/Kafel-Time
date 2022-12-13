@@ -1,7 +1,7 @@
 import Choices from "choices.js";
-
 // Custom select - Header
 const choices = new Choices(document.querySelector('.select-region'), {
+  allowHTML: true,
   searchEnabled: false,
   itemSelectText: '',
   position: 'bottom',
@@ -16,6 +16,16 @@ if (document.querySelector('.products-list__select')) {
   shouldSort: false,
 });
 }
+// Custom select - Product
+if (document.querySelector('.brand-list__select')) {
+  const choicesBrandSort = new Choices(document.querySelector('.brand-list__select'), {
+    allowHTML: true,
+    searchEnabled: false,
+    itemSelectText: '',
+    position: 'bottom',
+    shouldSort: false,
+  });
+};
 // Custom select - Brands
 if (document.querySelector('.brands-page__region')) {
   const choices2 = new Choices(document.querySelector('.brands-page__region'), {

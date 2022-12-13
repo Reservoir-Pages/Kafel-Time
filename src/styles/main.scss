@@ -51,9 +51,4 @@
 @import "./page/person-page";
 @import "./page/product-page";
 @import "./page/collection-page";
-
-html {
-  scroll-behavior: smooth;
-}
-
-@import "./components/universal/card-universal";
+@import "./page/brand-page";

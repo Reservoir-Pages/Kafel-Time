@@ -20,3 +20,4 @@ import './components/favorite-page';
 import './components/person-page';
 import './components/product-page';
 import './components/collection-page';
+import './components/brand-page';

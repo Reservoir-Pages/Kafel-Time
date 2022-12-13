@@ -103,6 +103,22 @@ const productsListSwiper = new Swiper('.products-list-swiper', {
     nextEl: '.products-list-swiper__button--next',
   },
 });
+// Swiper brand
+const brandListSwiper = new Swiper('.brand-list-swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.brand-list-swiper__pagination',
+    clickable: true,
+    dynamicBullets: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  navigation: {
+    prevEl: '.brand-list-swiper__button--prev',
+    nextEl: '.brand-list-swiper__button--next',
+  },
+});
 // Swiper Brands
 const brandsSwiper = new Swiper('.brands-page__swiper', {
   slidesPerView: 1,
