@@ -7,6 +7,7 @@ import './components/yandex-maps';
 import './components/counter';
 import './components/accordion';
 import './components/tooltips';
+import './components/color-more';
 
 
 // Page

@@ -67,6 +67,10 @@ img {
   display: none;
 }
 
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
 .no-data {
   width: max-content;
   margin: 200px auto;

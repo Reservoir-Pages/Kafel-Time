@@ -93,6 +93,10 @@
         padding: 10px;
         text-align: center;
         background-color: $color-white;
+
+        img {
+          width: auto;
+        }
       }
 
       &__btn-change {
