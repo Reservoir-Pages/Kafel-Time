@@ -58,23 +58,26 @@
                 </button>
               </li>
             </ul>
-            <div class="cart__card cart-card card">
-              <img src="images/test-img.png" alt="Изображение товара">
-              <div class="cart-card__info">
-                <strong class="cart-card__title">Am.Pm Like Унитаз подвесной FlashClean C801700SC</strong>
-                <small class="cart-card__article">Код • 2021001</small>
-                <small class="cart-card__brand">Am.Pm• Германия</small>
-                <div class="cart-card__price">
-                  <b class="cart-card__price-acctualy card__price-current">15760 ₽/шт</b>
-                  <del class="cart-card__price-old">16590 ₽/шт</del>
-                </div>
-                <select class="cart-card__options select-options">
-                  <option value="install">Добавить установку</option>
-                  <option value="install">Добавить доставку</option>
-                </select>
-              </div>
-              <div class="cart-card__setup card-setup">
-                <div class="card-setup__services">
+            <ul class="cart__list list-reset">
+              <div class="cart__list-card card">
+                <a class="card__link" href="product-page.html"></a>
+                <div class="card__bage">
+                  <!-- <button class="btn-reset" aria-label="Поделиться">
+                    <svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.6168 10.0717C11.3113 10.0729 11.0092 10.1358 10.7286 10.2566C10.448 10.3774 10.1947 10.5537 9.98391 10.7748L4.45462 8.00788C4.59064 7.59545 4.59064 7.15024 4.45462 6.73782L9.99298 3.92101C10.3897 4.33905 10.9276 4.59466 11.5023 4.63816C12.077 4.68166 12.6473 4.50994 13.1024 4.15637C13.5575 3.80281 13.8649 3.29266 13.9648 2.72508C14.0647 2.1575 13.9501 1.57304 13.6431 1.0853C13.3361 0.597561 12.8587 0.241387 12.3038 0.0860051C11.7488 -0.0693764 11.1559 -0.0128642 10.6403 0.244558C10.1246 0.501979 9.72314 0.94192 9.51381 1.47887C9.30449 2.01582 9.30229 2.61142 9.50764 3.1499L4.02371 5.93949C3.72753 5.57728 3.32658 5.31553 2.87581 5.19013C2.42504 5.06472 1.94651 5.08181 1.50583 5.23904C1.06515 5.39627 0.683886 5.68595 0.414299 6.06837C0.144712 6.45079 0 6.90722 0 7.37511C0 7.843 0.144712 8.29944 0.414299 8.68186C0.683886 9.06428 1.06515 9.35396 1.50583 9.51119C1.94651 9.66842 2.42504 9.6855 2.87581 9.5601C3.32658 9.4347 3.72753 9.17295 4.02371 8.81073L9.49403 11.564C9.4016 11.8122 9.35399 12.0748 9.35342 12.3397C9.35342 12.7882 9.48643 13.2267 9.73564 13.5997C9.98484 13.9727 10.3391 14.2633 10.7535 14.435C11.1679 14.6067 11.6239 14.6516 12.0638 14.5641C12.5038 14.4766 12.9079 14.2606 13.2251 13.9434C13.5422 13.6262 13.7583 13.2221 13.8458 12.7821C13.9333 12.3422 13.8884 11.8862 13.7167 11.4718C13.545 11.0574 13.2544 10.7031 12.8814 10.4539C12.5084 10.2047 12.0699 10.0717 11.6214 10.0717H11.6168Z"
+                        fill="#3D3C3C" />
+                    </svg>
+                  </button> -->
+                  <!-- <button class="btn-reset" aria-label="Сравнить">
+                    <svg width="18" height="14" viewbox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="12" width="2" height="14" fill="#3D3C3C" />
+                      <rect x="8" y="3" width="2" height="11" fill="#3D3C3C" />
+                      <rect x="4" y="2" width="2" height="12" fill="#3D3C3C" />
+                      <rect y="7" width="2" height="7" fill="#3D3C3C" />
+                      <rect x="16" y="7" width="2" height="7" fill="#3D3C3C" />
+                    </svg>
+                  </button> -->
                   <button class="favorite-icon btn-reset" aria-label="Добавить в избранное">
                     <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -90,31 +93,59 @@
                     </svg>
                   </button>
                 </div>
-                <div class="card-setup__total card__summary-result">15760 ₽</div>
-                <div class="card-setup__counter counter">
-                  <input class="counter__decrement" type="submit" value="-">
-                  <input class="counter__value" type="text" value="1">
-                  <input class="counter__increment" type="submit" value="+">
+                <div class="card__image">
+                  <img src="images/toilet-bide.png" alt="Картинка товара">
+                </div>
+                <div class="card__description">
+                  <div class="card__description-article">Код • 2020701</div>
+                  <div class="card__model">Am.Pm Унитаз подвесной C501738WH</div>
+                  <div class="card__country">Страна • <span>Китай</span></div>
+                  <div class="card__cost">
+                    <div class="card__price">
+                      <div>
+                        <!-- <span>От </span> -->
+                        <span class="card__price-current">22220</span>
+                        <span>₽/шт</span>
+                        <span class="card__price-old">23390</span>
+                        <span>₽/шт</span>
+                      </div>
+                      <select class="card__options select-options">
+                        <option value="install">Добавить установку</option>
+                        <option value="install">Добавить доставку</option>
+                      </select>
+                    </div>
+                    <div class="card__summary">
+                      <div class="card__summary-counter counter">
+                        <input class="counter__decrement" type="submit" value="-">
+                        <input class="counter__value" type="text" value="1">
+                        <input class="counter__increment" type="submit" value="+">
+                      </div>
+                      <div>
+                        <span class="card__summary-result">22220</span><span> ₽</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="cart__card cart-card card">
-              <img src="images/test-img.png" alt="Изображение товара">
-              <div class="cart-card__info">
-                <strong class="cart-card__title">Am.Pm Like Унитаз подвесной FlashClean C801700SC</strong>
-                <small class="cart-card__article">Код • 2021001</small>
-                <small class="cart-card__brand">Am.Pm• Германия</small>
-                <div class="cart-card__price">
-                  <b class="cart-card__price-acctualy card__price-current">15760 ₽/шт</b>
-                  <del class="cart-card__price-old">16590 ₽/шт</del>
-                </div>
-                <select class="cart-card__options select-options">
-                  <option value="install">Добавить установку</option>
-                  <option value="install">Добавить доставку</option>
-                </select>
-              </div>
-              <div class="cart-card__setup card-setup">
-                <div class="card-setup__services">
+              <div class="cart__list-card card">
+                <a class="card__link" href="product-page.html"></a>
+                <div class="card__bage">
+                  <!-- <button class="btn-reset" aria-label="Поделиться">
+                    <svg width="14" height="15" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.6168 10.0717C11.3113 10.0729 11.0092 10.1358 10.7286 10.2566C10.448 10.3774 10.1947 10.5537 9.98391 10.7748L4.45462 8.00788C4.59064 7.59545 4.59064 7.15024 4.45462 6.73782L9.99298 3.92101C10.3897 4.33905 10.9276 4.59466 11.5023 4.63816C12.077 4.68166 12.6473 4.50994 13.1024 4.15637C13.5575 3.80281 13.8649 3.29266 13.9648 2.72508C14.0647 2.1575 13.9501 1.57304 13.6431 1.0853C13.3361 0.597561 12.8587 0.241387 12.3038 0.0860051C11.7488 -0.0693764 11.1559 -0.0128642 10.6403 0.244558C10.1246 0.501979 9.72314 0.94192 9.51381 1.47887C9.30449 2.01582 9.30229 2.61142 9.50764 3.1499L4.02371 5.93949C3.72753 5.57728 3.32658 5.31553 2.87581 5.19013C2.42504 5.06472 1.94651 5.08181 1.50583 5.23904C1.06515 5.39627 0.683886 5.68595 0.414299 6.06837C0.144712 6.45079 0 6.90722 0 7.37511C0 7.843 0.144712 8.29944 0.414299 8.68186C0.683886 9.06428 1.06515 9.35396 1.50583 9.51119C1.94651 9.66842 2.42504 9.6855 2.87581 9.5601C3.32658 9.4347 3.72753 9.17295 4.02371 8.81073L9.49403 11.564C9.4016 11.8122 9.35399 12.0748 9.35342 12.3397C9.35342 12.7882 9.48643 13.2267 9.73564 13.5997C9.98484 13.9727 10.3391 14.2633 10.7535 14.435C11.1679 14.6067 11.6239 14.6516 12.0638 14.5641C12.5038 14.4766 12.9079 14.2606 13.2251 13.9434C13.5422 13.6262 13.7583 13.2221 13.8458 12.7821C13.9333 12.3422 13.8884 11.8862 13.7167 11.4718C13.545 11.0574 13.2544 10.7031 12.8814 10.4539C12.5084 10.2047 12.0699 10.0717 11.6214 10.0717H11.6168Z"
+                        fill="#3D3C3C" />
+                    </svg>
+                  </button> -->
+                  <!-- <button class="btn-reset" aria-label="Сравнить">
+                    <svg width="18" height="14" viewbox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="12" width="2" height="14" fill="#3D3C3C" />
+                      <rect x="8" y="3" width="2" height="11" fill="#3D3C3C" />
+                      <rect x="4" y="2" width="2" height="12" fill="#3D3C3C" />
+                      <rect y="7" width="2" height="7" fill="#3D3C3C" />
+                      <rect x="16" y="7" width="2" height="7" fill="#3D3C3C" />
+                    </svg>
+                  </button> -->
                   <button class="favorite-icon btn-reset" aria-label="Добавить в избранное">
                     <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -130,15 +161,43 @@
                     </svg>
                   </button>
                 </div>
-                <div class="card-setup__total card__summary-result">15760 ₽</div>
-                <div class="card-setup__counter counter">
-                  <input class="counter__decrement" type="submit" value="-">
-                  <input class="counter__value" type="text" value="1">
-                  <input class="counter__increment" type="submit" value="+">
+                <div class="card__image">
+                  <img src="images/toilet-bide.png" alt="Картинка товара">
+                </div>
+                <div class="card__description">
+                  <div class="card__description-article">Код • 2020701</div>
+                  <div class="card__model">Am.Pm Унитаз подвесной C501738WH</div>
+                  <div class="card__country">Страна • <span>Китай</span></div>
+                  <div class="card__cost">
+                    <div class="card__price">
+                      <div>
+                        <!-- <span>От </span> -->
+                        <span class="card__price-current">335</span>
+                        <span>₽/шт</span>
+                        <span class="card__price-old">376</span>
+                        <span>₽/шт</span>
+                      </div>
+                      <select class="card__options select-options">
+                        <option value="install">Добавить установку</option>
+                        <option value="install">Добавить доставку</option>
+                      </select>
+                    </div>
+                    <div class="card__summary">
+                      <div class="card__summary-square"><span>0,094</span><span> м²</span></div>
+                      <div class="card__summary-counter counter">
+                        <input class="counter__decrement" type="submit" value="-">
+                        <input class="counter__value" type="text" value="1">
+                        <input class="counter__increment" type="submit" value="+">
+                      </div>
+                      <div>
+                        <span class="card__summary-result">335</span><span> ₽</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <h3 class="">Дополнительные услуги</h3>
+            </ul>
+            <h3 class="cart__subtitle">Дополнительные услуги</h3>
             <div class="cart__additionaly">
             </div>
           </div>

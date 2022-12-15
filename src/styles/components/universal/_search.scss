@@ -22,7 +22,7 @@
   &::before {
     content: url(/images/search-icon.svg);
     position: absolute;
-    top: 50%;
+    top: calc(50% + 2px);
     right: 15px;
     transform: translateY(-50%);
   }
