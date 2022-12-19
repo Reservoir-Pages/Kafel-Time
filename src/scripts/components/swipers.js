@@ -103,11 +103,13 @@ const productsListSwiper = new Swiper('.products-list-swiper', {
     nextEl: '.products-list-swiper__button--next',
   },
 });
-// Swiper brand
-const brandListSwiper = new Swiper('.brand-list-swiper', {
+
+
+// Swiper - catalog-brand-page
+const brandListSwiper = new Swiper('.catalog-brand-list-swiper', {
   slidesPerView: 1,
   pagination: {
-    el: '.brand-list-swiper__pagination',
+    el: '.catalog-brand-list-swiper__pagination',
     clickable: true,
     dynamicBullets: true,
     renderBullet: function (index, className) {
@@ -115,10 +117,87 @@ const brandListSwiper = new Swiper('.brand-list-swiper', {
     },
   },
   navigation: {
-    prevEl: '.brand-list-swiper__button--prev',
-    nextEl: '.brand-list-swiper__button--next',
+    prevEl: '.catalog-brand-list-swiper__button--prev',
+    nextEl: '.catalog-brand-list-swiper__button--next',
   },
 });
+// Slider - catalog-collections-page
+const collectionsSwiper = new Swiper('.catalog-collections__swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.catalog-collections__button-next',
+    prevEl: '.catalog-collections__button-prev',
+  },
+});
+const collectionsListSwiper = new Swiper('.catalog-collections-list-swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.catalog-collections-list-swiper__pagination',
+    clickable: true,
+    dynamicBullets: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  navigation: {
+    prevEl: '.catalog-collections-list-swiper__button--prev',
+    nextEl: '.catalog-collections-list-swiper__button--next',
+  },
+});
+// Slider - catalog-tiles-page
+const tilesSwiper = new Swiper('.catalog-tiles__swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.catalog-tiles__button-next',
+    prevEl: '.catalog-tiles__button-prev',
+  },
+});
+const tilesListSwiper = new Swiper('.catalog-tiles-list-swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.catalog-tiles-list-swiper__pagination',
+    clickable: true,
+    dynamicBullets: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  navigation: {
+    prevEl: '.catalog-tiles-list-swiper__button--prev',
+    nextEl: '.catalog-tiles-list-swiper__button--next',
+  },
+});
+// Slider - catalog-plumbing-page
+const plumbingPageSwiper = new Swiper('.catalog-plumbing__swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.catalog-plumbing__button-next',
+    prevEl: '.catalog-plumbing__button-prev',
+  },
+});
+const plumbingListSwiper = new Swiper('.catalog-plumbing-list-swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.catalog-plumbing-list-swiper__pagination',
+    clickable: true,
+    dynamicBullets: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  navigation: {
+    prevEl: '.catalog-plumbing-list-swiper__button--prev',
+    nextEl: '.catalog-plumbing-list-swiper__button--next',
+  },
+});
+
+
 // Swiper Brands
 const brandsSwiper = new Swiper('.brands-page__swiper', {
   slidesPerView: 1,

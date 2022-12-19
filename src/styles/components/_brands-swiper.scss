@@ -60,8 +60,11 @@
     }
   }
 
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: auto;
+  }
+
   &__swiper-pagination {
-    // top: 0;
     height: 30px;
   }
 
@@ -72,6 +75,9 @@
     line-height: 30px;
     border-radius: 10px;
     background-color: #fff;
+
+    font-size: 25px;
+    opacity: 1;
 
     &-active-main {
       background-color: $color-yellow;

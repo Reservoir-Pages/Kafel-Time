@@ -1,4 +1,4 @@
-.products {
+.catalog-collections {
   &-swiper {
     margin-bottom: 80px;
 
@@ -28,16 +28,6 @@
 
   &__categories {
     margin-bottom: 120px;
-  }
-
-  &__profitable {
-    margin-bottom: 120px;
-  }
-
-  &__category {
-    &:not(:last-child) {
-      margin-bottom: 60px;
-    }
   }
 
   &__content {
@@ -118,7 +108,7 @@
   }
 }
 
-.products-list {
+.catalog-collections-list {
   &__header {
     display: flex;
     justify-content: space-between;
@@ -192,7 +182,7 @@
   }
 }
 
-.products-list-swiper {
+.catalog-collections-list-swiper {
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -246,6 +236,9 @@
     line-height: 30px;
     border-radius: 10px;
     background-color: #fff;
+
+    font-size: 25px;
+    opacity: 1;
 
     &-active-main {
       background-color: $color-yellow;

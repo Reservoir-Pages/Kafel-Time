@@ -11,15 +11,63 @@
   @include('partials/header.html')
   <main class="main">
     <h1 class="visually-hidden">Оформление заказа Kafel Time</h1>
-    <section class="order">
-      <div class="order__container container">
-        <ul class="order__breadcrumbs breadcrumbs list-reset">
+    <section class="order-page">
+      <div class="order-page__container container">
+        <ul class="order-page__breadcrumbs breadcrumbs list-reset">
           <li><a href="/">Главная</a></li>
           <li><a href="cart-page.html">Корзина</a></li>
           <li>Оформление заказа</li>
         </ul>
-        <h2 class="order__title title">Оформление заказа</h2>
-
+        <h2 class="order-page__title title">Оформление заказа</h2>
+        <div class="order-page__content">
+          <form class="order-page__form form">
+            <ul class="form__header list-reset">
+              <li class="form__header-item form__header-item--active">1. Получатель</li>
+              <li class="form__header-item">2. Способ получения заказа</li>
+              <li class="form__header-item">3. Подтверждение и оплата</li>
+            </ul>
+            <div class="form__content">
+              <div class="form__content-body">
+                <div class="form__content-header">
+                  <label class="form__content-btn"><input type="radio" name="person" checked>Физическое лицо</label>
+                  <label class="form__content-btn"><input type="radio" name="person">Юридическое лицо</label>
+                </div>
+                <label class="form__content-label">
+                  <input class="form__content-input" type="text" placeholder="ФИО">
+                </label>
+                <label class="form__content-label">
+                  <input class="form__content-input" type="tel" placeholder="Контактный телефон">
+                </label>
+                <label class="form__content-label">
+                  <input class="form__content-input" type="email" placeholder="E-mail">
+                </label>
+                <h3 class="form__content-title">Реквизиты организации</h3>
+                <div class="form__content-header">
+                  <label class="form__content-btn"><input type="radio" name="client">Я уже клиент</label>
+                  <label class="form__content-btn"><input type="radio" name="client" checked>Я новый клиент</label>
+                </div>
+                <label class="form__content-label">
+                  <input class="form__content-input" type="tel" placeholder="Название компании">
+                </label>
+                <label class="form__content-label">
+                  <input class="form__content-input" type="email" placeholder="ИНН">
+                </label>
+              </div>
+            </div>
+            <div class="form__footer">
+              <a class="form__footer-link" href="cart-page.html">
+                <svg width="41" height="19" viewBox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M43 11H3H2M2 11L12 1M2 11L12 20" stroke="#828282" stroke-width="2" />
+                </svg>
+                Назад в корзину
+              </a>
+              <button class="form__footer-btn btn-reset">Продолжить</button>
+            </div>
+          </form>
+          <div class="order-page__order order">
+            <h3 class="order__title">Ваш заказ</h3>
+          </div>
+        </div>
       </div>
     </section>
   </main>

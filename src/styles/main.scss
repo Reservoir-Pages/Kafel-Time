@@ -27,13 +27,13 @@
 @import "./components/universal/counter";
 
 @import "./components/universal/card";
+@import "./components/universal/card-horizontal";
 @import "./components/universal/products-category";
 @import "./components/universal/tooltips";
 @import "./components/universal/profitable-kits";
 @import "./components/universal/specifications";
 @import "./components/universal/features";
 
-@import "./page/products-page";
 @import "./page/about-page";
 @import "./page/account-page";
 @import "./page/cart-page";
@@ -51,5 +51,8 @@
 @import "./page/person-page";
 @import "./page/product-page";
 @import "./page/collection-page";
-@import "./page/brand-page";
+@import "./page/catalog-brand-page";
+@import "./page/catalog-collections-page";
+@import "./page/catalog-plumbing-page";
+@import "./page/catalog-tiles-page";
 @import "./page/order-page";

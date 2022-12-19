@@ -1,0 +1,270 @@
+.catalog-plumbing {
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__categories {
+    margin-bottom: 120px;
+  }
+
+  &__profitable {
+    margin-bottom: 120px;
+  }
+
+  &__category {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__filters-vertical {
+    max-width: 16%;
+    margin-right: 10px;
+  }
+
+  &__info {
+    width: 79%;
+  }
+
+  &__filters-horizontal {
+    margin-bottom: 40px;
+  }
+}
+
+.filters-vertical {
+  & .ac {
+    margin: 0;
+    border: 1px solid transparent;
+
+    &-trigger {
+      padding: 19px 30px 19px 0;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+.filters-horizontal {
+  font-size: 0;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    &-title {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 500;
+      color: #757575;
+    }
+
+    &-all {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 500;
+      color: #757575;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    padding: 7px 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    background-color: #e5e5e5;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.catalog-plumbing-list {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  &__choice {
+    &-btn {
+      font-size: 20px;
+      line-height: 23px;
+      color: #757575;
+      cursor: auto;
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+
+      &--active {
+        font-weight: 600;
+        color: $color-black;
+      }
+    }
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+  }
+
+  .choices {
+    min-width: 165px;
+    &[data-type*="select-one"] {
+      & .choices__inner {
+        padding: 0;
+        padding-left: 30px;
+        padding-right: 15px;
+      }
+    }
+
+    &__inner {
+      min-height: auto;
+      border: 1px solid transparent;
+      background-color: $color-white;
+    }
+
+    &__list {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 500;
+      &--dropdown {
+        z-index: 2;
+        left: 30px;
+
+        .choices__item {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  &__position {
+    button {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.catalog-plumbing-list-swiper {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 5px;
+  }
+
+  &__wrapper {
+    margin-bottom: 20px;
+  }
+
+  &__btn-more {
+    display: block;
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    background-color: #bebebe;
+  }
+
+  &__footer {
+    position: relative;
+    height: 30px;
+    max-height: max-content;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    color: $color-black;
+
+    &::after {
+      font-size: 20px;
+    }
+  }
+
+  &__pagination {
+    top: 0;
+    height: 30px;
+  }
+
+  & .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    font-size: 25px;
+    opacity: 1;
+
+    &-active-main {
+      background-color: $color-yellow;
+    }
+  }
+}
+
+.catalog-plumbing-category {
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    min-height: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__description {
+    text-align: center;
+  }
+}

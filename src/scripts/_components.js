@@ -8,11 +8,12 @@ import './components/counter';
 import './components/accordion';
 import './components/tooltips';
 import './components/color-more';
+import './components/tabs-profitable';
+import './components/placement';
 
 
 // Page
 import './components/index';
-import './components/products-page';
 import './components/account-page';
 import './components/brands-page';
 import './components/compare-page';
@@ -20,5 +21,7 @@ import './components/favorite-page';
 import './components/person-page';
 import './components/product-page';
 import './components/collection-page';
-import './components/brand-page';
+import './components/catalog-brand-page';
+import './components/catalog-collections-page';
+import './components/catalog-tiles-page';
 import './components/order-page';

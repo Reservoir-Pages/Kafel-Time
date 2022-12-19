@@ -52,6 +52,8 @@
   }
 
   &-more {
+    display: block;
+    width: 100%;
     margin-bottom: 30px;
     font-size: 12px;
     line-height: 14px;
@@ -62,6 +64,9 @@
   &-all {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 44px;
+    height: 1px;
   }
 
   &-links {
@@ -69,11 +74,16 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    height: 100%;
 
     a {
       font-size: 12px;
       line-height: 14px;
       text-decoration: underline;
+
+      // &:not(:last-child) {
+      //   margin-bottom: 10px;
+      // }
     }
   }
 
