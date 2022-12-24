@@ -229,6 +229,7 @@ const watchFilesDev = () => {
 
   watch(paths.srcResourcesFolder, resourcesDev);
   watch(paths.srcImages, imagesDev);
+  watch(paths.srcImgFolder, imagesDev);
   watch(paths.srcSvg, svgSpritesDev);
   watch(paths.srcScss, stylesDev);
   watch(paths.srcJs, scriptsDev);

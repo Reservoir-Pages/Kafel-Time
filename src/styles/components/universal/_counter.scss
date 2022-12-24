@@ -26,18 +26,9 @@
 
     &:nth-child(2) {
       width: 40%;
-      font-size: 8px;
       color: $color-black;
       background-color: transparent;
       cursor: default;
-    }
-
-    & + span {
-      position: absolute;
-      top: 50%;
-      left: 53%;
-      font-size: 12px;
-      transform: translateY(-50%);
     }
   }
 }

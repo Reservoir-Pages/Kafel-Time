@@ -46,17 +46,16 @@
     }
 
     &-buy {
-      padding: 30px 40px;
       margin-bottom: 30px;
-      background-color: #e5e5e5;
 
-      &:hover {
-        box-shadow: none;
-      }
-
-      .card__bage {
-        top: 25px;
-        right: 40px;
+      .cost {
+        &__price {
+          &-current {
+            font-size: 30px;
+            line-height: 25px;
+            font-weight: 600;
+          }
+        }
       }
     }
   }
@@ -93,7 +92,7 @@
 
     &-list {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 20px;
     }
 

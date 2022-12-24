@@ -10,7 +10,7 @@
   }
 
   .form {
-    width: 65%;
+    width: 62%;
 
     &__header {
       display: flex;
@@ -36,9 +36,23 @@
       border-radius: 10px;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 
+      &-title {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+      }
+
+      &-description {
+        margin-bottom: 10px;
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 500;
+      }
+
       &-header {
         display: flex;
         justify-content: space-between;
+        max-width: 80%;
         margin-bottom: 40px;
 
         label {
@@ -50,17 +64,46 @@
         input {
           margin-right: 10px;
         }
+
+        div {
+          div:last-child {
+            font-size: 10px;
+            line-height: 12px;
+            color: #828282;
+          }
+        }
+      }
+
+      &-btn {
+        display: flex;
+        align-items: flex-start;
       }
 
       &-body {
         display: flex;
         flex-direction: column;
-        max-width: 60%;
       }
 
       &-label {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        max-width: 60%;
+
         &:not(:last-child) {
           margin-bottom: 10px;
+        }
+
+        a {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          font-size: 8px;
+          line-height: 9px;
+          font-weight: 500;
+          color: #828282;
+          text-decoration: underline;
+          transform: translateY(-50%);
         }
       }
 
@@ -74,6 +117,14 @@
         line-height: 12px;
         font-weight: 500;
         color: #828282;
+
+        &:not(:last-of-type) {
+          margin-right: 10px;
+        }
+
+        &:not(:first-child) {
+          width: 30%;
+        }
       }
     }
 
@@ -103,19 +154,25 @@
         background-color: $color-yellow;
       }
     }
+
+    &__description {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 
-  .order {
+  .card-order {
+    height: max-content;
     width: 30%;
     padding: 40px;
     border-radius: 10px;
     background-color: #e5e5e5;
 
-    &__title {
-      margin: 0;
-      font-size: 24px;
-      line-height: 28px;
-      font-weight: 500;
+    .cost {
+      &__title {
+        margin: 0;
+        margin-bottom: 30px;
+      }
     }
   }
 }

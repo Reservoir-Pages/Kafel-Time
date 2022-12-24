@@ -90,6 +90,7 @@ const productsSwiper = new Swiper('.products__swiper', {
 });
 const productsListSwiper = new Swiper('.products-list-swiper', {
   slidesPerView: 1,
+  allowTouchMove: false,
   pagination: {
     el: '.products-list-swiper__pagination',
     clickable: true,
@@ -108,6 +109,7 @@ const productsListSwiper = new Swiper('.products-list-swiper', {
 // Swiper - catalog-brand-page
 const brandListSwiper = new Swiper('.catalog-brand-list-swiper', {
   slidesPerView: 1,
+  allowTouchMove: false,
   pagination: {
     el: '.catalog-brand-list-swiper__pagination',
     clickable: true,
@@ -133,6 +135,7 @@ const collectionsSwiper = new Swiper('.catalog-collections__swiper', {
 });
 const collectionsListSwiper = new Swiper('.catalog-collections-list-swiper', {
   slidesPerView: 1,
+  allowTouchMove: false,
   pagination: {
     el: '.catalog-collections-list-swiper__pagination',
     clickable: true,
@@ -158,6 +161,7 @@ const tilesSwiper = new Swiper('.catalog-tiles__swiper', {
 });
 const tilesListSwiper = new Swiper('.catalog-tiles-list-swiper', {
   slidesPerView: 1,
+  allowTouchMove: false,
   pagination: {
     el: '.catalog-tiles-list-swiper__pagination',
     clickable: true,
@@ -183,6 +187,7 @@ const plumbingPageSwiper = new Swiper('.catalog-plumbing__swiper', {
 });
 const plumbingListSwiper = new Swiper('.catalog-plumbing-list-swiper', {
   slidesPerView: 1,
+  allowTouchMove: false,
   pagination: {
     el: '.catalog-plumbing-list-swiper__pagination',
     clickable: true,
@@ -217,6 +222,7 @@ const brandsSwiper = new Swiper('.brands-page__swiper', {
 // Swiper Compare
 const compareSwiper = new Swiper('.compare__card-swiper', {
   loop: true,
+  allowTouchMove: false,
   slidesPerView: 4,
   spaceBetween: 20,
   navigation: {
@@ -243,5 +249,15 @@ const swiper2 = new Swiper(".product__swiper-preview", {
   loop:true,
   thumbs: {
     swiper: swiper,
+  },
+});
+
+// CARD
+const cardSwiper = new Swiper('.card__swiper', {
+  loop: true,
+  slidesPerView: 1,
+  pagination: {
+    el: '.card__pagination',
+    clickable: true,
   },
 });

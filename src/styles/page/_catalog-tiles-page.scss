@@ -227,21 +227,21 @@
   &__pagination {
     top: 0;
     height: 30px;
-  }
 
-  & .swiper-pagination-bullet {
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-    line-height: 30px;
-    border-radius: 10px;
-    background-color: #fff;
+    .swiper-pagination-bullet {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 30px;
+      border-radius: 10px;
+      background-color: #fff;
 
-    font-size: 25px;
-    opacity: 1;
+      font-size: 25px;
+      opacity: 1;
 
-    &-active-main {
-      background-color: $color-yellow;
+      &-active-main {
+        background-color: $color-yellow;
+      }
     }
   }
 }

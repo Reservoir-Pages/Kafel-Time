@@ -8,7 +8,6 @@
 
     & + li::before {
       color: #999999;
-      // content: "/\00a0";
       content: "\\\00a0";
     }
 

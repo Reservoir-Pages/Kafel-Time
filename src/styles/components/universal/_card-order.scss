@@ -1,0 +1,94 @@
+.card-order,
+.buy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 40px;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+
+  &__bage {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    font-size: 0;
+  }
+
+  &__available {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-green;
+    text-decoration: underline;
+  }
+
+  &__form {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &-input {
+      width: 50%;
+      border: 1px solid transparent;
+      padding: 0 20px;
+      font-size: 10px;
+      line-height: 28px;
+      color: #828282;
+      transition: opacity 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+
+      &:last-child {
+        color: $color-white;
+        background-color: #828282;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__services {
+    &-title {
+      margin-bottom: 10px;
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 600;
+    }
+
+    &-list {
+      margin-bottom: 5px;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      line-height: 12px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    &-delivery-cost {
+      font-size: 10px;
+      line-height: 12px;
+      text-decoration: underline;
+    }
+  }
+
+  &__policy {
+    font-size: 10px;
+    line-height: 12px;
+    color: #828282;
+  }
+}
