@@ -36,7 +36,7 @@
     z-index: 2;
     font-size: 0;
 
-    button:first-child {
+    button:not(:last-child) {
       display: none;
     }
   }

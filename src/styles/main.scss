@@ -5,9 +5,24 @@
 @import "settings";
 @import "effects";
 
-// подключения компонентов страницы
+// подключения универсальных компонентов страницы
 @import "./components/universal/header";
+@import "./components/universal/footer";
 @import "./components/universal/search";
+@import "./components/universal/breadcrumbs";
+@import "./components/universal/counter";
+@import "./components/universal/card";
+@import "./components/universal/card-horizontal";
+@import "./components/universal/products-category";
+@import "./components/universal/tooltips";
+@import "./components/universal/profitable-kits";
+@import "./components/universal/specifications";
+@import "./components/universal/features";
+@import "./components/universal/card-order";
+@import "./components/universal/cost";
+@import "./components/universal/btns";
+
+// подключения универсальных компонентов страницы
 @import "./components/swiper-header";
 @import "./components/banner";
 @import "./components/stocks";
@@ -19,23 +34,11 @@
 @import "./components/trends";
 @import "./components/clients";
 @import "./components/geography";
-@import "./components/universal/footer";
-@import "./page/brands-page";
-@import "./components/universal/breadcrumbs";
 @import "./components/alphabet";
 @import "./components/brands-swiper";
-@import "./components/universal/counter";
 
-@import "./components/universal/card";
-@import "./components/universal/card-horizontal";
-@import "./components/universal/products-category";
-@import "./components/universal/tooltips";
-@import "./components/universal/profitable-kits";
-@import "./components/universal/specifications";
-@import "./components/universal/features";
-@import "./components/universal/card-order";
-@import "./components/universal/cost";
-
+// подключения стилей страниц
+@import "./page/brands-page";
 @import "./page/about-page";
 @import "./page/account-page";
 @import "./page/cart-page";

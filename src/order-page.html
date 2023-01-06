@@ -20,66 +20,68 @@
         </ul>
         <h2 class="order-page__title title">Оформление заказа</h2>
         <div class="order-page__content">
-          <form class="order-page__form form">
-            <ul class="form__header list-reset">
-              <li class="form__header-item form__header-item--active">1. Получатель</li>
-              <li class="form__header-item">2. Способ получения заказа</li>
-              <li class="form__header-item">3. Подтверждение и оплата</li>
+          <form class="order-page__form form" action="" method="get">
+            <ul class="form__steps list-reset">
+              <li class="form__steps-item form__steps-item--active" data-path="recipient">1. Получатель</li>
+              <li class="form__steps-item" data-path="delivery">2. Способ получения заказа</li>
+              <li class="form__steps-item" data-path="confirmation">3. Подтверждение и оплата</li>
             </ul>
 
-
-
-            <!-- <div class="form__content">
+            <div class="form__content" data-target="recipient">
               <div class="form__content-body">
                 <div class="form__content-header">
-                  <label class="form__content-btn"><input class="form__input form__input--physical" type="radio" name="person">Физическое лицо</label>
-                  <label class="form__content-btn"><input class="form__input form__input--company" type="radio" name="person" checked>Юридическое лицо</label>
+                  <label class="form__content-btn">
+                    <input class="form__content-radio" type="radio" name="client" data-path="client" checked>
+                    Физическое лицо
+                  </label>
+                  <label class="form__content-btn">
+                    <input class="form__content-radio" type="radio" name="client" data-path="client">
+                    Юридическое лицо
+                  </label>
                 </div>
                 <label class="form__content-label">
-                  <input class="form__content-input" type="text" placeholder="ФИО">
+                  <input class="form__content-input" name="fullname" type="text" placeholder="ФИО">
                 </label>
                 <label class="form__content-label">
-                  <input class="form__content-input" type="tel" placeholder="Контактный телефон">
+                  <input class="form__content-input" name="tel" type="tel" placeholder="Контактный телефон">
                 </label>
                 <label class="form__content-label">
-                  <input class="form__content-input" type="email" placeholder="E-mail">
+                  <input class="form__content-input" name="email" type="email" placeholder="E-mail">
                 </label>
               </div>
-
-
-              <div class="form__content-body form__content-body--additionaly is-hidden">
+              <div class="form__content-body form__content-body--additional is-hidden" data-target="client">
                 <h3 class="form__content-title">Реквизиты организации</h3>
                 <div class="form__content-header">
-                  <label class="form__content-btn"><input type="radio" name="client">Я уже клиент</label>
-                  <label class="form__content-btn"><input type="radio" name="client" checked>Я новый клиент</label>
+                  <label class="form__content-btn"><input class="form__content-radio" type="radio" name="client-status">Я уже клиент</label>
+                  <label class="form__content-btn"><input class="form__content-radio" type="radio" name="client-status" checked>Я новый
+                    клиент</label>
                 </div>
                 <label class="form__content-label">
-                  <input class="form__content-input" type="tel" placeholder="Название компании">
+                  <input class="form__content-input" name="company" type="text" placeholder="Название компании">
                 </label>
                 <label class="form__content-label">
-                  <input class="form__content-input" type="email" placeholder="ИНН">
+                  <input class="form__content-input" name="id" type="text" placeholder="ИНН">
                 </label>
               </div>
-            </div> -->
+            </div>
 
-
-            <div class="form__content is-hidden1">
+            <div class="form__content is-hidden" data-target="delivery">
               <div class="form__content-body">
                 <h3 class="form__content-title">Населенный пункт</h3>
                 <label class="form__content-label">
-                  <input class="form__content-input" type="text" value="Санкт-Петербург">
+                  <input class="form__content-input" name="country" type="text" value="Санкт-Петербург">
                   <a href="#">Выбрать другой</a>
                 </label>
                 <div class="form__content-header">
                   <label class="form__content-btn">
-                    <input class="form__input form__input--pickup" type="radio" name="delivery" checked>
+                    <input class="form__content-radio" type="radio" name="delivery" data-path="delivery-status" checked>
                     <div>
                       <div>Самовывоз</div>
                       <div>(Бесплатно)</div>
                     </div>
                   </label>
                   <label class="form__content-btn">
-                    <input class="form__input form__input--delivery" type="radio" name="delivery">
+                    <input class="form__content-radio" type="radio" name="delivery" data-path="delivery-status">
                     <div>
                       <div>Доставка</div>
                       <div>(Бесплатно при заказе от 40 000 руб., без скидок и акций)</div>
@@ -87,62 +89,112 @@
                   </label>
                 </div>
               </div>
-
-
-              <div class="form__content-body form__content-body--additionaly is-hidden1">
+              <div class="form__description">
+                С вами свяжетсяменеджер для уточнения адреса(ов) самовывоза
+              </div>
+              <div class="form__content-body form__content-body--additional is-hidden" data-target="delivery-status">
                 <h3 class="form__content-title">Адрес доставки</h3>
                 <div class="form__content-description">
                   С 00 вот такого числа
                 </div>
                 <label class="form__content-label">
-                  <input class="form__content-input" type="tel" placeholder="Улица">
-                  <input class="form__content-input" type="tel" placeholder="Дом">
-                  <input class="form__content-input" type="tel" placeholder="Квартира">
+                  <input class="form__content-input" name="street" type="tel" placeholder="Улица">
+                  <input class="form__content-input" name="house" type="tel" placeholder="Дом">
+                  <input class="form__content-input" name="flat" type="tel" placeholder="Квартира">
                 </label>
                 <label class="form__content-label">
                   <input class="form__content-input" type="email" placeholder="Добавить комментарий курьеру">
                 </label>
-              </div>
-
-
-              <div class="form__description">
-                С вами свяжетсяменеджер для уточнения адреса(ов) самовывоза
-              </div>
-              <div class="form__description">
-                Требуется подъем на этаж
+                <div class="form__description">
+                  <span class="form__description-text">Требуется подъем на этаж</span>
+                  <div class="form-toggle">
+                    <input id="radio-off" type="radio" name="switch" value="off" checked>
+                    <label for="radio-off"></label>
+                    <input id="radio-on" type="radio" name="switch" value="on">
+                    <label for="radio-on"></label>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <!-- <div class="form__content is-hidden">
-              <div class="form__content-body">
-                <label class="form__content-label">
-                  <input class="form__content-input" type="text" placeholder="ФИО">
-                </label>
-                <label class="form__content-label">
-                  <input class="form__content-input" type="tel" placeholder="Контактный телефон">
-                </label>
-                <label class="form__content-label">
-                  <input class="form__content-input" type="email" placeholder="E-mail">
-                </label>
-              </div>
+            <div class="form__content confirmation is-hidden" data-target="confirmation">
+              <ul class="confirmation__list list-reset">
+                <li class="confirmation__item">
+                  <h3 class="confirmation__title">Получатель</h3>
+                  <div class="confirmation__group">
+                    <div class="confirmation__group-left">
+                      <label class="confirmation__label">
+                        <input class="confirmation__input" name="fullname" type="text" value="Иванов Иван Иванович">
+                      </label>
+                      <label class="confirmation__label">
+                        <input class="confirmation__input" name="email" type="email" value="Здесь будет почта">
+                      </label>
+                      <label class="confirmation__label">
+                        <input class="confirmation__input" name="tel" type="tel" value="+7 (000) 000-00-00">
+                      </label>
+                    </div>
+                    <a class="confirmation__group-right" href="#">Изменить</a>
+                  </div>
+                </li>
+                <li class="confirmation__item">
+                  <h3 class="confirmation__title">Самовывовз по адресу</h3>
+                  <div class="confirmation__group">
+                    <div class="confirmation__group-left">
+                      <label class="confirmation__label">
+                        <input class="confirmation__input" name="point" type="text" value="Выбранный пункт выдачи">
+                      </label>
+                      <label class="confirmation__label">
+                        <input class="confirmation__input" name="date" type="text" value="С 00 вот такого числа">
+                      </label>
+                    </div>
+                    <a class="confirmation__group-right" href="#">Изменить</a>
+                  </div>
+                </li>
+                <li class="confirmation__item">
+                  <h3 class="confirmation__title">Способ оплаты</h3>
+                  <div class="confirmation__radios">
+                    <div class="confirmation__radios">
+                      <label class="confirmation-label">
+                        <input class="confirmation-input" name="111" type="radio" placeholder="ФИО" checked>
+                        Онлайн
+                      </label>
+                      <label class="confirmation-label">
+                        <input class="confirmation-input" name="111" type="radio" placeholder="ФИО">
+                        При получении
+                      </label>
+                      <label class="confirmation-label">
+                        <input class="confirmation-input" name="111" type="radio" placeholder="ФИО">
+                        В кредит от 1 216 /мес.
+                      </label>
+                      <label class="confirmation-label">
+                        <input class="confirmation-input" name="111" type="radio" placeholder="ФИО">
+                        Долями
+                      </label>
+                    </div>
 
+                    <!-- </div> -->
 
-              <div class="form__content-body form__content-body--additionaly is-hidden">
-                <h3 class="form__content-title">Реквизиты организации</h3>
-                <div class="form__content-header">
-                  <label class="form__content-btn"><input type="radio" name="client">Я уже клиент</label>
-                  <label class="form__content-btn"><input type="radio" name="client" checked>Я новый клиент</label>
-                </div>
-                <label class="form__content-label">
-                  <input class="form__content-input" type="tel" placeholder="Название компании">
-                </label>
-                <label class="form__content-label">
-                  <input class="form__content-input" type="email" placeholder="ИНН">
-                </label>
-              </div>
-            </div> -->
+                </li>
+                <li class="confirmation__item">
+                  <h3 class="confirmation__title">Дополнительно</h3>
+                  <span class="confirmation__description">
+                    С вами свяжется менеджер для подтверждения заказа
+                  </span>
+                  <div class="confirmation__group">
+                    <div class="confirmation__group-left">
+                      <label class="confirmation__label">
+                        <input class="confirmation__input" name="point" type="text" value="Когда Вам позвонить">
+                      </label>
+                      <label class="confirmation__label">
+                        <input class="confirmation__input" name="date" type="text" value="В течении 10 минут">
+                      </label>
+                    </div>
+                    <a class="confirmation__group-right" href="#">Выбрать другое время</a>
+                  </div>
+                </li>
+              </ul>
 
-
+            </div>
 
             <div class="form__footer">
               <a class="form__footer-link" href="cart-page.html">
