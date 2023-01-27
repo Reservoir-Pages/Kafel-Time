@@ -17,6 +17,11 @@
     line-height: 14px;
     font-weight: 500;
     white-space: nowrap;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #c1c1c1;
+    }
 
     &--active {
       background-color: $color-yellow;

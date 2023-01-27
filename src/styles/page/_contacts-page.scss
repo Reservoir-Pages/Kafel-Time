@@ -52,25 +52,30 @@
 
     .ac {
       margin: 0;
-      border: 1px solid transparent;
-      border-radius: 10px;
-      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      border: 1px solid #828282;
+      border-radius: 45px;
+      // box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      // transition: all 0.3s ease-in-out;
 
       &-trigger {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        max-width: 460px;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // width: 100%;
+        // max-width: 460px;
         padding: 20px 30px;
-        border-radius: 20px;
-        font-size: 12px;
-        line-height: 12px;
+        // border-radius: 20px;
+        font-size: 14px;
+        line-height: 16px;
         font-weight: 500;
 
         &::after {
-          content: url(../images/right-icon.svg);
-          right: 55px;
+          content: "";
+          right: 30px;
+          height: 15px;
+          width: 32px;
+          background-image: url(../images/right-icon.svg);
+          background-size: cover;
         }
       }
 
@@ -119,11 +124,17 @@
       }
 
       &.is-active {
+        border-radius: 20px;
+
         .ac {
           &-trigger {
             &::after {
-              content: url(../images/close-icon.svg);
-              right: 40px;
+              content: "";
+              right: 30px;
+              height: 20px;
+              width: 20px;
+              background-image: url(../images/close-icon.svg);
+              background-size: cover;
             }
           }
 

@@ -16,7 +16,8 @@
         <ul class="product__breadcrumbs breadcrumbs list-reset">
           <li><a href="/">Главная</a></li>
           <li><a href="catalog-page.html">Каталог</a></li>
-          <li><a href="catalog-collections-page.html">Мозайка</a></li>
+          <!-- <li><a href="catalog-collections-page.html">Мозайка</a></li> -->
+          <li><a href="catalog-tiles-page.html">Мозайка</a></li>
           <li><a href="brands-page.html">Bonaparte</a></li>
           <li>Товар Х</li>
         </ul>
@@ -243,19 +244,21 @@
             </div>
           </div>
         </div>
+
         <div class="product__profitable profitable">
-          <div class="profitable__content profitable__content--active">
+          <div class="profitable__content tab-content tab-content--active">
             <h2 class="profitable__title">Выгодные комплекты</h2>
-            <div class="profitable__content-tabs">
-              <button class="profitable__content-btn profitable__content-btn--active btn-reset" data-tabs-path="installation">Комплекты с инсталляцией</button>
-              <button class="profitable__content-btn btn-reset" data-tabs-path="hygienic">Комплекты с гигиеническим душем</button>
-              <button class="profitable__content-btn btn-reset" data-tabs-path="furniture">Комплекты с мебелью для туалета</button>
-              <button class="profitable__content-btn btn-reset" data-tabs-path="accessories">Комплекты с аксессуарами</button>
+
+            <div class="profitable__content-tabs tabs">
+              <button class="profitable__content-btn tab-btn tab-btn--active btn-reset" data-tabs-path="installation">Комплекты с инсталляцией</button>
+              <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="hygienic">Комплекты с гигиеническим душем</button>
+              <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="furniture">Комплекты с мебелью для туалета</button>
+              <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="accessories">Комплекты с аксессуарами</button>
             </div>
-            <div class="profitable__content-kit profitable__content-kit--active " data-tabs-target="installation">
+            <div class="profitable__content-kit tab-content tab-content--active" data-tabs-target="installation">
               <div class="profitable__content-kit__card card">
+                <button class="card__btn-change btn-reset">Выбрать другой</button>
                 <a class="card__link" href="product-page.html"></a>
-                <button class="card__btn-change btn-reset"></button>
                 <div class="card__image">
                   <img src="images/kit.png" alt="Картинка товара">
                 </div>
@@ -288,10 +291,10 @@
                 <button class="profitable__content-summary__view btn-reset">Добавить в корзину комплектом</button>
               </div>
             </div>
-            <div class="profitable__content-kit" data-tabs-target="hygienic">
+            <div class="profitable__content-kit tab-content" data-tabs-target="hygienic">
               <div class="profitable__content-kit__card card">
+                <button class="card__btn-change btn-reset">Выбрать другой</button>
                 <a class="card__link" href="product-page.html"></a>
-                <button class="card__btn-change btn-reset"></button>
                 <div class="card__image">
                   <img src="images/kit.png" alt="Картинка товара">
                 </div>
@@ -324,16 +327,16 @@
                 <button class="profitable__content-summary__view btn-reset">Добавить в корзину комплектом</button>
               </div>
             </div>
-            <div class="profitable__content-kit" data-tabs-target="furniture">
+            <div class="profitable__content-kit tab-content" data-tabs-target="furniture">
               <div class="profitable__content-kit__card card">
+                <button class="card__btn-change btn-reset">Выбрать другой</button>
                 <a class="card__link" href="product-page.html"></a>
-                <button class="card__btn-change btn-reset"></button>
                 <div class="card__image">
                   <img src="images/kit.png" alt="Картинка товара">
                 </div>
                 <div class="card__model">Am.Pm Spirit 2.0 Унитаз подвесной C701738WH</div>
                 <div class="card__price">
-                  <div class="card__price-current">114 240 ₽/шт</div>
+                  <div class="card__price-current">54 240 ₽/шт</div>
                   <del class="card__price-old">14 990 ₽/шт</del>
                 </div>
               </div>
@@ -346,7 +349,7 @@
                 </div>
                 <div class="card__model">Система инсталляции для унитазов OLI Oli 120 eco 879236 Sanitarblock mechanic</div>
                 <div class="card__price">
-                  <div class="card__price-current">214 976 ₽/шт</div>
+                  <div class="card__price-current">74 976 ₽/шт</div>
                   <del class="card__price-old">15 600 ₽/шт</del>
                 </div>
               </div>
@@ -360,10 +363,10 @@
                 <button class="profitable__content-summary__view btn-reset">Добавить в корзину комплектом</button>
               </div>
             </div>
-            <div class="profitable__content-kit" data-tabs-target="accessories">
+            <div class="profitable__content-kit tab-content" data-tabs-target="accessories">
               <div class="profitable__content-kit__card card">
+                <button class="card__btn-change btn-reset">Выбрать другой</button>
                 <a class="card__link" href="product-page.html"></a>
-                <button class="card__btn-change btn-reset"></button>
                 <div class="card__image">
                   <img src="images/kit.png" alt="Картинка товара">
                 </div>
@@ -396,8 +399,10 @@
                 <button class="profitable__content-summary__view btn-reset">Добавить в корзину комплектом</button>
               </div>
             </div>
+
           </div>
         </div>
+
         <div class="product__others">
           <div class="product__others-header">
             <h3 class="product__others-title">Другие товары из коллекции

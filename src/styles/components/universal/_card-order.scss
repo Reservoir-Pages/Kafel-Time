@@ -7,6 +7,10 @@
   border-radius: 5px;
   background-color: #e5e5e5;
 
+  .cost {
+    margin-bottom: 15px;
+  }
+
   &__bage {
     position: absolute;
     top: 25px;
@@ -24,9 +28,12 @@
 
   &__form {
     display: flex;
-    margin-bottom: 10px;
     border-radius: 5px;
     overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
 
     &-input {
       width: 50%;
@@ -52,7 +59,7 @@
   &__btns {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   &__services {
@@ -86,8 +93,8 @@
   }
 
   &__policy {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 14px;
     color: #828282;
   }
 }

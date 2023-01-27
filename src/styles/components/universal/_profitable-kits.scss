@@ -33,22 +33,13 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
-
-    &--active {
-      background-color: $color-yellow;
-    }
   }
 
   &__content {
-    display: none;
     grid-column: span 3;
     padding: 20px;
     border-radius: 5px;
     background-color: #f1f1f1;
-
-    &--active {
-      display: block;
-    }
 
     &-tabs {
       display: flex;
@@ -66,20 +57,9 @@
       &:not(:last-child) {
         margin-right: 10px;
       }
-
-      &--active {
-        color: $color-white;
-        background-color: #828282;
-      }
     }
 
     &-kit {
-      display: none;
-
-      &--active {
-        display: flex;
-      }
-
       &__card {
         max-width: 210px;
       }
@@ -160,6 +140,42 @@
         font-weight: 500;
         background-color: $color-yellow;
       }
+    }
+  }
+
+  .tab {
+    &-btn {
+      &--active {
+        background-color: $color-yellow;
+
+        &.profitable__content-btn {
+          color: $color-white;
+          background-color: #828282;
+        }
+      }
+    }
+
+    &-content {
+      display: none;
+
+      &--active {
+        display: block;
+
+        &.profitable__wrapper {
+          display: grid;
+        }
+
+        &.profitable__content-kit {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .card {
+    &__image {
+      height: 190px;
+      width: 190px;
     }
   }
 }

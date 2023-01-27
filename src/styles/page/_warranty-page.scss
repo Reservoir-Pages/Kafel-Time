@@ -28,7 +28,7 @@
 
   .ac {
     margin-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 
     &-trigger {
@@ -36,6 +36,10 @@
       font-size: 16px;
       line-height: 19px;
       font-weight: 500;
+
+      &::after {
+        right: 30px;
+      }
     }
 
     &-panel {
@@ -66,6 +70,8 @@
     }
 
     &.is-active {
+      border-radius: 20px;
+
       .ac {
         &-panel {
           padding-bottom: 23px;

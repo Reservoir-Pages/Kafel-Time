@@ -8,7 +8,7 @@
 </head>
 
 <body class="body">
-  @include('partials/header.html')
+  @include('partials/header.html', {"cart": "person-list__item--yellow"})
   <main class="main">
     <h1 class="visually-hidden">Корзина Kafel Time</h1>
     <section class="cart">
@@ -59,7 +59,9 @@
               </li>
             </ul>
             <ul class="cart__list list-reset">
-              <div class="cart__list-card card-horizontal card">
+
+
+              <div class="cart__list-card card card-horizontal">
                 <a class="card__link" href="product-page.html"></a>
                 <div class="card__bage">
                   <button class="favorite-icon btn-reset" aria-label="Добавить в избранное">
@@ -104,37 +106,46 @@
                   </div>
                 </div>
                 <div class="card__content">
-                  <div class="card__description">
-                    <span class="card__brand">Am.Pm</span>
-                    <span class="card__article">Код • 2020701</span>
+                  <div>
+                    <div class="card__description">
+                      <span class="card__brand">Am.Pm</span>
+                      <span class="card__article">Код • 2020701</span>
+                    </div>
+                    <div class="card__model">Am.Pm Унитаз подвесной C501738WH</div>
                   </div>
-                  <div class="card__model">Am.Pm Унитаз подвесной C501738WH</div>
-                  <div class="card__available">• В наличии</div>
+
                   <div class="card__cost">
-                    <div class="card__price">
-                      <div>
-                        <span class="card__price-current">22220</span>
-                        <span>₽/шт</span>
-                        <span class="card__price-old">23390</span>
-                        <span>₽/шт</span>
+                    <div>
+                      <div class="card__price">
+                        <div>
+                          <span class="card__price-current">22220</span>
+                          <span>₽/шт</span>
+                          <span class="card__price-old">23390</span>
+                          <span>₽/шт</span>
+                        </div>
+                      </div>
+                      <select class="card__options select-options">
+                        <option value="install">Добавить установку</option>
+                        <option value="install">Добавить доставку</option>
+                      </select>
+                    </div>
+                    <div>
+                      <div class="card__summary">
+                        <div class="card__summary-counter counter">
+                          <input class="counter__decrement" type="submit" value="-">
+                          <input class="counter__value" type="text" value="1 шт.">
+                          <input class="counter__increment" type="submit" value="+">
+                        </div>
+                        <div>
+                          <span class="card__summary-result">22220</span><span>₽</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="card__btns">
-                  <button class="btn-reset" aria-label="Сравнить">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="30" height="30" rx="5" fill="white" fill-opacity="0.9" />
-                      <rect x="18" y="8" width="2" height="14" fill="#000000" />
-                      <rect x="14" y="11" width="2" height="11" fill="#000000" />
-                      <rect x="10" y="10" width="2" height="12" fill="#000000" />
-                      <rect x="6" y="15" width="2" height="7" fill="#000000" />
-                      <rect x="22" y="15" width="2" height="7" fill="#000000" />
-                    </svg>
-                  </button>
-                  <button class="card__btn btn btn-reset">Добавить в корзину</button>
                 </div>
               </div>
+
+
               <div class="cart__list-card card-horizontal card">
                 <a class="card__link" href="product-page.html"></a>
                 <div class="card__bage">
@@ -180,35 +191,119 @@
                   </div>
                 </div>
                 <div class="card__content">
-                  <div class="card__description">
-                    <span class="card__brand">Am.Pm</span>
-                    <span class="card__article">Код • 2020701</span>
-                  </div>
                   <div class="card__model">Am.Pm Унитаз подвесной C501738WH</div>
-                  <div class="card__available">• В наличии</div>
                   <div class="card__cost">
-                    <div class="card__price">
-                      <div>
-                        <span class="card__price-current">22220</span>
-                        <span>₽/шт</span>
-                        <span class="card__price-old">23390</span>
-                        <span>₽/шт</span>
+                    <div>
+                      <div class="card__description">
+                        <span class="card__article">Код • 2020701</span>
+                        <span class="card__brand">Am.Pm • Германия</span>
+                      </div>
+                      <div class="card__price">
+                        <div>
+                          <span class="card__price-current">22220</span>
+                          <span>₽/шт</span>
+                          <span class="card__price-old">23390</span>
+                          <span>₽/шт</span>
+                        </div>
+                      </div>
+                      <select class="card__options select-options">
+                        <option value="install">Добавить установку</option>
+                        <option value="install">Добавить доставку</option>
+                      </select>
+                    </div>
+                    <div>
+                      <div class="card__summary">
+                        <div class="card__summary-counter counter">
+                          <input class="counter__decrement" type="submit" value="-">
+                          <input class="counter__value" type="text" value="1 шт.">
+                          <input class="counter__increment" type="submit" value="+">
+                        </div>
+                        <div>
+                          <span class="card__summary-result">22220</span><span>₽</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="card__btns">
+              </div>
+
+              <div class="cart__list-card card-horizontal card">
+                <a class="card__link" href="product-page.html"></a>
+                <div class="card__bage">
+                  <button class="favorite-icon btn-reset" aria-label="Добавить в избранное">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="30" height="30" rx="5" fill="white" fill-opacity="0.9" />
+                      <g clip-path="url(#clip0_4995_13238)">
+                        <rect width="14" height="14" transform="translate(8 8)" fill="white" />
+                        <path
+                          d="M14.5581 9.31288L14.5587 9.31346C14.6058 9.35657 14.6511 9.40044 14.6943 9.44509L15.0013 9.76294L15.3069 9.44366C15.3486 9.40012 15.392 9.35822 15.437 9.31807L15.437 9.31811L15.4419 9.31362C17.199 7.69494 20.1854 8.39948 21.2158 10.5484C21.719 11.5978 21.7696 13.0378 20.8659 14.7793C19.9788 16.489 18.1737 18.4795 14.9999 20.6143C11.8261 18.4797 10.021 16.4894 9.13379 14.7799C8.23001 13.0385 8.28051 11.5986 8.78366 10.5492C9.81404 8.40033 12.8006 7.69532 14.5581 9.31288Z"
+                          fill="none" stroke="#000000" stroke-width="0.85" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_4995_13238">
+                          <rect width="14" height="14" fill="white" transform="translate(8 8)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
                   <button class="btn-reset" aria-label="Сравнить">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="30" height="30" rx="5" fill="white" fill-opacity="0.9" />
-                      <rect x="18" y="8" width="2" height="14" fill="#000000" />
-                      <rect x="14" y="11" width="2" height="11" fill="#000000" />
-                      <rect x="10" y="10" width="2" height="12" fill="#000000" />
-                      <rect x="6" y="15" width="2" height="7" fill="#000000" />
-                      <rect x="22" y="15" width="2" height="7" fill="#000000" />
+                      <path
+                        d="M13.5715 10.4288H16.4286C16.4286 10.0499 16.2781 9.68654 16.0102 9.41863C15.7423 9.15072 15.379 9.00021 15.0001 9.00021C14.6212 9.00021 14.2578 9.15072 13.9899 9.41863C13.722 9.68654 13.5715 10.0499 13.5715 10.4288ZM12.7144 10.4288C12.7144 9.82257 12.9552 9.24119 13.3838 8.81254C13.8125 8.38388 14.3939 8.14307 15.0001 8.14307C15.6063 8.14307 16.1877 8.38388 16.6163 8.81254C17.045 9.24119 17.2858 9.82257 17.2858 10.4288H20.8572C20.9709 10.4288 21.0799 10.4739 21.1603 10.5543C21.2406 10.6347 21.2858 10.7437 21.2858 10.8574C21.2858 10.971 21.2406 11.08 21.1603 11.1604C21.0799 11.2408 20.9709 11.2859 20.8572 11.2859H20.1086L19.4132 19.6305C19.3626 20.2375 19.0857 20.8034 18.6375 21.2159C18.1892 21.6283 17.6024 21.8573 16.9932 21.8574H13.0069C12.3978 21.8573 11.8109 21.6283 11.3626 21.2159C10.9144 20.8034 10.6375 20.2375 10.5869 19.6305L9.8915 11.2859H9.14293C9.02926 11.2859 8.92025 11.2408 8.83988 11.1604C8.75951 11.08 8.71436 10.971 8.71436 10.8574C8.71436 10.7437 8.75951 10.6347 8.83988 10.5543C8.92025 10.4739 9.02926 10.4288 9.14293 10.4288H12.7144ZM11.4412 19.5591C11.4739 19.9519 11.653 20.3181 11.943 20.585C12.233 20.8519 12.6128 21.0001 13.0069 21.0002H16.9932C17.3874 21.0001 17.7671 20.8519 18.0571 20.585C18.3471 20.3181 18.5262 19.9519 18.5589 19.5591L19.2492 11.2859H10.7515L11.4412 19.5591ZM13.7144 13.2859C13.828 13.2859 13.937 13.3311 14.0174 13.4114C14.0978 13.4918 14.1429 13.6008 14.1429 13.7145V18.5716C14.1429 18.6853 14.0978 18.7943 14.0174 18.8747C13.937 18.9551 13.828 19.0002 13.7144 19.0002C13.6007 19.0002 13.4917 18.9551 13.4113 18.8747C13.3309 18.7943 13.2858 18.6853 13.2858 18.5716V13.7145C13.2858 13.6008 13.3309 13.4918 13.4113 13.4114C13.4917 13.3311 13.6007 13.2859 13.7144 13.2859ZM16.7144 13.7145C16.7144 13.6008 16.6692 13.4918 16.5888 13.4114C16.5085 13.3311 16.3994 13.2859 16.2858 13.2859C16.1721 13.2859 16.0631 13.3311 15.9827 13.4114C15.9024 13.4918 15.8572 13.6008 15.8572 13.7145V18.5716C15.8572 18.6853 15.9024 18.7943 15.9827 18.8747C16.0631 18.9551 16.1721 19.0002 16.2858 19.0002C16.3994 19.0002 16.5085 18.9551 16.5888 18.8747C16.6692 18.7943 16.7144 18.6853 16.7144 18.5716V13.7145Z"
+                        fill="#3D3C3C" />
                     </svg>
                   </button>
-                  <button class="card__btn btn btn-reset">Добавить в корзину</button>
+                </div>
+                <div class="card__image">
+                  <div class="card__swiper swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/plumbing1.png" alt="Картинка товара">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/plumbing1.png" alt="Картинка товара">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/plumbing1.png" alt="Картинка товара">
+                      </div>
+                    </div>
+                    <div class="card__pagination swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="card__content">
+                  <div class="card__model">Arene White 306х306</div>
+                  <div class="card__cost">
+                    <div>
+                      <div class="card__description">
+                        <span class="card__article">Код • 1620303</span>
+                        <span class="card__brand">Bonаparte • Китай</span>
+                      </div>
+                      <div class="card__price">
+                        <div>
+                          <span class="card__price-current">335</span>
+                          <span>₽/шт</span>
+                          <span class="card__price-old">376</span>
+                          <span>₽/шт</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="card__summary">
+                        <div>
+                          <span>0,094</span><span>м²</span>
+                        </div>
+                        <div class="card__summary-counter counter">
+                          <input class="counter__decrement" type="submit" value="-">
+                          <input class="counter__value" type="text" value="1 шт.">
+                          <input class="counter__increment" type="submit" value="+">
+                        </div>
+                        <div>
+                          <span class="card__summary-result">335</span><span>₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </ul>

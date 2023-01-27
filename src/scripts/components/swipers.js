@@ -45,7 +45,7 @@ const newSwiper = new Swiper('.new-swiper', {
     prevEl: '.new__button-prev',
   },
 });
-const kitsSwiper = new Swiper('.kits-swiper', {
+const kitsSwiper = new Swiper('.kits__swiper', {
   loop: true,
   slidesPerView: 4,
   spaceBetween: 20,
@@ -104,8 +104,6 @@ const productsListSwiper = new Swiper('.products-list-swiper', {
     nextEl: '.products-list-swiper__button--next',
   },
 });
-
-
 // Swiper - catalog-brand-page
 const brandListSwiper = new Swiper('.catalog-brand-list-swiper', {
   slidesPerView: 1,
@@ -201,8 +199,6 @@ const plumbingListSwiper = new Swiper('.catalog-plumbing-list-swiper', {
     nextEl: '.catalog-plumbing-list-swiper__button--next',
   },
 });
-
-
 // Swiper Brands
 const brandsSwiper = new Swiper('.brands-page__swiper', {
   slidesPerView: 1,
@@ -251,7 +247,6 @@ const swiper2 = new Swiper(".product__swiper-preview", {
     swiper: swiper,
   },
 });
-
 // CARD
 const cardSwiper = new Swiper('.card__swiper', {
   loop: true,
@@ -261,3 +256,4 @@ const cardSwiper = new Swiper('.card__swiper', {
     clickable: true,
   },
 });
+

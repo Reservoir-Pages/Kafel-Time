@@ -55,6 +55,12 @@
     margin-right: 0;
   }
 
+  .card {
+    &__btns {
+      display: flex;
+    }
+  }
+
   &__description {
     display: flex;
   }
@@ -77,6 +83,7 @@
 
 .parameters {
   &__item {
+    position: relative;
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -92,6 +99,23 @@
 
     &:not(:last-child) {
       margin-bottom: 15px;
+    }
+
+    &:hover {
+      overflow: visible;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -50%;
+        height: 100%;
+        width: 3540px;
+        margin-left: calc(-3540px / 2);
+        background-color: #cbc7c7;
+        opacity: 0.3;
+      }
     }
   }
 }

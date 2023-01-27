@@ -8,12 +8,12 @@ import './components/counter';
 import './components/accordion';
 import './components/tooltips';
 import './components/color-more';
-import './components/tabs-profitable';
 import './components/placement';
+import './components/tabs';
+import './components/kit';
 
 
 // Page
-import './components/index';
 import './components/account-page';
 import './components/brands-page';
 import './components/compare-page';

@@ -12,12 +12,14 @@
     line-height: 19px;
     font-weight: 500;
 
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-
     &--active {
       text-decoration: underline;
+    }
+  }
+
+  &__delete {
+    &:not(:last-child) {
+      margin-right: 50px;
     }
   }
 }

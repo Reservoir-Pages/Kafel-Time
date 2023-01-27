@@ -20,10 +20,11 @@ alphabetBtns.forEach(alphabetBtn => {
   alphabetBtn.addEventListener('click', (e) => {
     const currentAlphabetBtn = e.currentTarget;
     alphabetBtns.forEach(alphabetBtn => {
-      if (alphabetBtn !== currentAlphabetBtn) {
-        alphabetBtn.classList.remove('alphabet__btn--active');
+      if (alphabetBtn === currentAlphabetBtn) {
+        // alphabetBtn.classList.remove('alphabet__btn--active');
+        alphabetBtn.classList.toggle('alphabet__btn--active');
       }
     });
-    currentAlphabetBtn.classList.add('alphabet__btn--active');
+    // currentAlphabetBtn.classList.add('alphabet__btn--active');
   });
 });

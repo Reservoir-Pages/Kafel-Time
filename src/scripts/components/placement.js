@@ -5,6 +5,8 @@ const cards = document.querySelectorAll('.card')
 
 if(btnList) {
   btnList.addEventListener('click', (e) => {
+    btnList.classList.add('placement__list--active')
+    btnTile.classList.remove('placement__tile--active')
     lists.forEach(list => {
       list.style.gridTemplateColumns = '1fr';
     });
@@ -13,6 +15,8 @@ if(btnList) {
     });
   });
   btnTile.addEventListener('click', (e) => {
+    btnList.classList.remove('placement__list--active')
+    btnTile.classList.add('placement__tile--active')
     lists.forEach(list => {
       list.style.gridTemplateColumns = 'repeat(4, 1fr)';
     });

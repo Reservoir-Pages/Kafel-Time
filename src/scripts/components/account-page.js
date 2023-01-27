@@ -52,8 +52,6 @@ if (document.querySelector('.account-window')) {
       }
     });
 
-    // console.log(bool);
-
     return label;
   };
   // Функция создания кнопок
@@ -120,7 +118,7 @@ if (document.querySelector('.account-window')) {
 
     return button;
   };
-  // Функуия проверки поля ввода
+  // Функция проверки поля ввода
   function inputValidation(input) {
     if (input.type === 'email' && /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/i.test(input.value)) {
       return true;
@@ -146,18 +144,56 @@ if (document.querySelector('.account-window')) {
             bool = [];
           }
         });
+
         if (bool.length === inputsArray.length) {
           btn.classList.add('account-form__btn--active');
           btn.removeAttribute('disabled');
         }
+
         if (bool.length < inputsArray.length) {
           btn.classList.remove('account-form__btn--active');
           btn.setAttribute('disabled', '');
         }
+
       });
+
     });
   };
+
+  // function btnIsActive(inputsArray, btn) {
+  //   inputsArray.forEach(element => {
+
+
+
+  //     element.addEventListener('input', (e) => {
+
+  //       let bool = [];
+
+  //       inputsArray.forEach(element => {
+
+  //         if (bool.length < inputsArray.length && element.classList.contains('account-form__label--access')) {
+  //           bool.push('true')
+  //         } else if (!element.classList.contains('account-form__label--access')) {
+  //           bool = [];
+  //         }
+  //       });
+
+  //       if (bool.length === inputsArray.length) {
+  //         btn.classList.add('account-form__btn--active');
+  //         btn.removeAttribute('disabled');
+  //       }
+
+  //       if (bool.length < inputsArray.length) {
+  //         btn.classList.remove('account-form__btn--active');
+  //         btn.setAttribute('disabled', '');
+  //       }
+
+  //     });
+
+  //   });
+  // };
   // Функция создания верхней части модального окна
+
   function createHeaderModal() {
     // Создаем сам хедер
     const headerModal = document.createElement('div');
@@ -227,7 +263,6 @@ if (document.querySelector('.account-window')) {
       btnArray.push(btn);
       form.append(btn);
     });
-
     // Установить кнопке активное состояние
     btnIsActive(inputsArray, btnArray[0]);
 
@@ -236,4 +271,4 @@ if (document.querySelector('.account-window')) {
   // Получаем и размещаем на сцене форму
   const form = createForm(['Ведите логин (номер телефона)', 'Пароль'], ['Войти', 'Забыли пароль?'])
   accountWindow.append(form);
-}
+};

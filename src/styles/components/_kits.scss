@@ -4,16 +4,14 @@
   &__btn {
     padding: 10px 20px;
     border-radius: 25px;
-    font-size: 12px;
-    line-height: 14px;
     transition: background-color 0.3s ease-in-out;
-
-    &:not(:last-child) {
-      margin-right: 90px;
-    }
 
     &--active {
       background-color: $color-yellow;
+    }
+
+    &:not(:last-child) {
+      margin-right: 90px;
     }
   }
 

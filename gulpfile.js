@@ -395,10 +395,7 @@ const htmlMinifyBuild = () => {
     'append': {
       'key': '_v',
       'cover': 0,
-      'to': [
-        'css',
-        'js',
-      ]
+      'to': 'all',
     },
     'output': {
       'file': 'version.json'

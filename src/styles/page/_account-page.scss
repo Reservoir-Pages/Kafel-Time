@@ -70,7 +70,7 @@
         width: 13px;
         border-bottom: 3px solid $color-green;
         border-left: 3px solid $color-green;
-        transform: rotate(-45deg) translateY(-50%);
+        transform: rotate(-45deg) translateY(-80%);
       }
     }
 
@@ -87,7 +87,7 @@
     padding: 0 15px;
     border: 1px solid #828282;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 30px;
     font-weight: 500;
     color: #828282;
@@ -107,7 +107,7 @@
     margin: 0 auto;
     font-size: 10px;
     line-height: 12px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px 60px;
     border-radius: 5px;
     background-color: #e5e5e5;
@@ -118,6 +118,9 @@
       right: 30px;
       bottom: 30px;
       padding: 0;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
       color: #7a7a7a;
       text-decoration: underline;
       background-color: transparent;

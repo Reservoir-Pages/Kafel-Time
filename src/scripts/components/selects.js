@@ -70,15 +70,19 @@ if (document.querySelector('.brands-page__region')) {
   });
 }
 // Custom select - Cart
-const choicesOptions = document.querySelectorAll('.select-options');
-choicesOptions.forEach(choice => {
+// if (document.querySelector('.select-options')) {
+  const choicesOptions = document.querySelectorAll('.select-options');
+  choicesOptions.forEach(choice => {
   const choices = new Choices(choice, {
+    allowHTML: true,
     searchEnabled: false,
     position: 'bottom',
     itemSelectText: '',
     shouldSort: false,
   });
 });
+// }
+
 // Custom select - Reviews
 const choicesArray = document.querySelectorAll('.reviews__select');
 choicesArray.forEach(element => {

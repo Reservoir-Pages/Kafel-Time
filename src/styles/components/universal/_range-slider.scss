@@ -1,0 +1,25 @@
+.range-slider {
+  display: flex;
+  width: 85%;
+  color: #828282;
+
+  &__label {
+    max-width: calc(50% - 10px);
+  }
+
+  &__input {
+    height: 30px;
+    max-width: 100%;
+    padding-left: 10px;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  &__symbol {
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

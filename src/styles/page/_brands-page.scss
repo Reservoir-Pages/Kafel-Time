@@ -3,6 +3,10 @@
     color: $color-black;
   }
 
+  &__title {
+    margin-bottom: 40px;
+  }
+
   &__filters {
     display: flex;
     align-items: center;
@@ -16,6 +20,10 @@
   &__item {
     &:not(:last-child) {
       margin-right: 50px;
+    }
+
+    button {
+      font-weight: 500;
     }
 
     &--active {

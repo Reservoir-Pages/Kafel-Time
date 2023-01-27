@@ -48,6 +48,26 @@
         margin-bottom: 30px;
       }
     }
+
+    .card-horizontal {
+      .card {
+        &__cost {
+          position: static;
+          flex-grow: 1;
+        }
+
+        &__price {
+          margin-bottom: 10px;
+        }
+
+        &__summary-counter {
+          margin: 0;
+        }
+      }
+      .choices {
+        margin-top: auto;
+      }
+    }
   }
 
   &__subtitle {
@@ -66,7 +86,7 @@
 
   &__buy {
     height: max-content;
-    min-height: 350px;
+    // min-height: 350px;
     width: 42%;
     max-width: 400px;
   }

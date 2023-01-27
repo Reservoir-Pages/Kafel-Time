@@ -108,6 +108,20 @@
   }
 }
 
+.tab {
+  &-content {
+    display: none;
+
+    &.catalog-tiles-list {
+      display: block;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
 .catalog-tiles-list {
   &__header {
     display: flex;

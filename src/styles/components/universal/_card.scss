@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 10px 10px 30px;
+  // padding: 10px 10px 30px;
+  padding: 10px 10px 40px;
   border-radius: 10px;
   transition: box-shadow 0.3s ease-in-out;
 
@@ -36,9 +37,9 @@
     z-index: 2;
     font-size: 0;
 
-    button:not(:last-child) {
-      display: none;
-    }
+    // button:not(:last-child) {
+    //   display: none;
+    // }
   }
 
   &__image {
@@ -85,8 +86,9 @@
   &__content {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     width: 100%;
-    margin-bottom: auto;
+    // margin-bottom: auto;
   }
 
   &__description {
@@ -121,10 +123,15 @@
     color: $color-green;
   }
 
+  &__cost {
+    margin-top: auto;
+  }
+
   &__color {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 7px;
+    // margin-top: auto;
     margin-bottom: 10px;
 
     &-item {
@@ -190,7 +197,7 @@
   &__price {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
 
     &-current {
       margin-right: 5px;
