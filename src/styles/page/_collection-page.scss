@@ -80,20 +80,20 @@
         font-size: 12px;
         line-height: 14px;
 
-        &--active {
-          background-color: $color-yellow;
-        }
-
         &:not(:last-child) {
           margin-right: 40px;
         }
+      }
+
+      .switch-button--active {
+        background-color: $color-yellow;
       }
     }
 
     &-list {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(5, 19%);
+      gap: 1.5%;
     }
 
     &-card {
@@ -137,8 +137,8 @@
 
     &-list {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(5, 19%);
+      gap: 1.5%;
     }
   }
 }

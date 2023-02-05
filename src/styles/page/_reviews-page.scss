@@ -22,8 +22,9 @@
     line-height: 14px;
     font-weight: 500;
 
-    & .choices {
+    .choices {
       height: 25px;
+      min-width: max-content;
       margin: 0;
 
       &__inner {

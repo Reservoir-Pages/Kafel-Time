@@ -1,21 +1,23 @@
-// Filter button
-const compareBtns = document.querySelectorAll('.compare__lists-btn');
-compareBtns.forEach(compareBtn => {
-  compareBtn.addEventListener('click', (e) => {
-    const currentcompareBtn = e.currentTarget;
-
-    compareBtns.forEach(compareBtn => {
-      if (compareBtn !== currentcompareBtn) {
-        compareBtn.classList.remove('compare__lists-btn--active');
-      }
-    });
-    currentcompareBtn.classList.add('compare__lists-btn--active');
-  });
-});
-
 // Line marker
 const parameterLists = document.querySelectorAll('.parameters');
-
-parameterLists.forEach(parameterList => {
-
+parameterLists.forEach(list => {
+  const parameterItems = list.querySelectorAll('.parameters__item');
+  parameterItems.forEach((item, index) => {
+    item.addEventListener('mouseover', (e) => {
+      let currentIndex = index;
+      item.classList.add('is-hover');
+      parameterLists.forEach(list => {
+        const listItems = list.querySelectorAll('.parameters__item');
+        listItems[currentIndex].classList.add('is-hover');
+      });
+    });
+    item.addEventListener('mouseout', (e) => {
+      parameterLists.forEach(list => {
+        const listItems = list.querySelectorAll('.parameters__item');
+        listItems.forEach(item => {
+          item.classList.remove('is-hover');
+        });
+      });
+    });
+  });
 });

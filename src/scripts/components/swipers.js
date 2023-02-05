@@ -1,7 +1,72 @@
 import Swiper from 'swiper/bundle';
-
-// Slider - Main
-const bannerSwiper = new Swiper('.banner-swiper', {
+// Swiper(Слайдер с тремя слайдами)
+const mainPageTrendsSwiper = new Swiper('.trends-swiper', {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.trends__button-next',
+    prevEl: '.trends__button-prev',
+  },
+});
+// Swiper(Слайдер с четырьмя слайдами)
+const mainPageCeramicsSwiper = new Swiper('.ceramics-swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.ceramics__button-next',
+    prevEl: '.ceramics__button-prev',
+  },
+});
+const mainPageNewSwiper = new Swiper('.new-swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.new__button-next',
+    prevEl: '.new__button-prev',
+  },
+});
+const tilesPageSwiper = new Swiper('.catalog-tiles__swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.catalog-tiles__button-next',
+    prevEl: '.catalog-tiles__button-prev',
+  },
+});
+const plumbingPageSwiper = new Swiper('.catalog-plumbing__swiper', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.catalog-plumbing__button-next',
+    prevEl: '.catalog-plumbing__button-prev',
+  },
+});
+// Swiper(Слайдер с шестью слайдами)
+const mainPagePlumbingSwiper = new Swiper('.plumbing-swiper', {
+  loop: true,
+  slidesPerView: 6,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.plumbing__button-next',
+    prevEl: '.plumbing__button-prev',
+  },
+});
+const aboutPageSwiper = new Swiper('.about-swiper', {
+  loop: true,
+  slidesPerView: 6,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.about__swiper-button-next',
+    prevEl: '.about__swiper-button-prev',
+  },
+});
+// Swiper(Слайдер с автопрокруткой)
+const mainPageBannerSwiper = new Swiper('.banner-swiper', {
   loop: true,
   autoplay: {
     delay: 1500,
@@ -13,99 +78,8 @@ const bannerSwiper = new Swiper('.banner-swiper', {
     clickable: true,
   },
 });
-const plumbingSwiper = new Swiper('.plumbing-swiper', {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.plumbing__button-next',
-    prevEl: '.plumbing__button-prev',
-  },
-  breakpoints: {
-    769: {
-      slidesPerView: 6,
-    },
-  },
-});
-const ceramicsSwiper = new Swiper('.ceramics-swiper', {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.ceramics__button-next',
-    prevEl: '.ceramics__button-prev',
-  },
-});
-const newSwiper = new Swiper('.new-swiper', {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.new__button-next',
-    prevEl: '.new__button-prev',
-  },
-});
-const kitsSwiper = new Swiper('.kits__swiper', {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.kits__button-next',
-    prevEl: '.kits__button-prev',
-  },
-});
-const trendsSwiper = new Swiper('.trends-swiper', {
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.trends__button-next',
-    prevEl: '.trends__button-prev',
-  },
-  breakpoints: {
-    769: {
-      slidesPerView: 3,
-    },
-  },
-});
-// Slider - About
-const aboutSwiper = new Swiper('.about-swiper', {
-  loop: true,
-  slidesPerView: 6,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.about__swiper-button-next',
-    prevEl: '.about__swiper-button-prev',
-  },
-});
-// Slider - Products
-const productsSwiper = new Swiper('.products__swiper', {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.products__button-next',
-    prevEl: '.products__button-prev',
-  },
-});
-const productsListSwiper = new Swiper('.products-list-swiper', {
-  slidesPerView: 1,
-  allowTouchMove: false,
-  pagination: {
-    el: '.products-list-swiper__pagination',
-    clickable: true,
-    dynamicBullets: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  },
-  navigation: {
-    prevEl: '.products-list-swiper__button--prev',
-    nextEl: '.products-list-swiper__button--next',
-  },
-});
-// Swiper - catalog-brand-page
-const brandListSwiper = new Swiper('.catalog-brand-list-swiper', {
+// Swiper(Слайдер с цифрами в пагинации)
+const brandPageCatalogSwiper = new Swiper('.catalog-brand-list-swiper', {
   slidesPerView: 1,
   allowTouchMove: false,
   pagination: {
@@ -121,43 +95,7 @@ const brandListSwiper = new Swiper('.catalog-brand-list-swiper', {
     nextEl: '.catalog-brand-list-swiper__button--next',
   },
 });
-// Slider - catalog-collections-page
-const collectionsSwiper = new Swiper('.catalog-collections__swiper', {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.catalog-collections__button-next',
-    prevEl: '.catalog-collections__button-prev',
-  },
-});
-const collectionsListSwiper = new Swiper('.catalog-collections-list-swiper', {
-  slidesPerView: 1,
-  allowTouchMove: false,
-  pagination: {
-    el: '.catalog-collections-list-swiper__pagination',
-    clickable: true,
-    dynamicBullets: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  },
-  navigation: {
-    prevEl: '.catalog-collections-list-swiper__button--prev',
-    nextEl: '.catalog-collections-list-swiper__button--next',
-  },
-});
-// Slider - catalog-tiles-page
-const tilesSwiper = new Swiper('.catalog-tiles__swiper', {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.catalog-tiles__button-next',
-    prevEl: '.catalog-tiles__button-prev',
-  },
-});
-const tilesListSwiper = new Swiper('.catalog-tiles-list-swiper', {
+const tilesPageCatalogSwiper = new Swiper('.catalog-tiles-list-swiper', {
   slidesPerView: 1,
   allowTouchMove: false,
   pagination: {
@@ -173,17 +111,7 @@ const tilesListSwiper = new Swiper('.catalog-tiles-list-swiper', {
     nextEl: '.catalog-tiles-list-swiper__button--next',
   },
 });
-// Slider - catalog-plumbing-page
-const plumbingPageSwiper = new Swiper('.catalog-plumbing__swiper', {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.catalog-plumbing__button-next',
-    prevEl: '.catalog-plumbing__button-prev',
-  },
-});
-const plumbingListSwiper = new Swiper('.catalog-plumbing-list-swiper', {
+const plumbingPageCatalogSwiper = new Swiper('.catalog-plumbing-list-swiper', {
   slidesPerView: 1,
   allowTouchMove: false,
   pagination: {
@@ -199,8 +127,7 @@ const plumbingListSwiper = new Swiper('.catalog-plumbing-list-swiper', {
     nextEl: '.catalog-plumbing-list-swiper__button--next',
   },
 });
-// Swiper Brands
-const brandsSwiper = new Swiper('.brands-page__swiper', {
+const brandsPageCatalogSwiper = new Swiper('.brands-page__swiper', {
   slidesPerView: 1,
   pagination: {
     el: '.brands-swiper__swiper-pagination',
@@ -215,8 +142,8 @@ const brandsSwiper = new Swiper('.brands-page__swiper', {
     nextEl: '.brands-swiper__button--next',
   },
 });
-// Swiper Compare
-const compareSwiper = new Swiper('.compare__card-swiper', {
+// Swiper(Слайдеры с взаимным управлением)
+const comparePageCardsSwiper = new Swiper('.compare__card-swiper', {
   loop: true,
   allowTouchMove: false,
   slidesPerView: 4,
@@ -226,34 +153,93 @@ const compareSwiper = new Swiper('.compare__card-swiper', {
     prevEl: '.compare__button-prev',
   },
 });
-const compareSwiperDescr = new Swiper('.compare__descr-swiper', {
+const comparePageParametersSwiper = new Swiper('.compare__descr-swiper', {
   loop: true,
   slidesPerView: 4,
   spaceBetween: 20,
 });
-compareSwiper.controller.control = compareSwiperDescr;
-compareSwiperDescr.controller.control = compareSwiper;
-// Swiper product
-const swiper = new Swiper(".product__swiper-add", {
+comparePageCardsSwiper.controller.control = comparePageParametersSwiper;
+comparePageParametersSwiper.controller.control = comparePageCardsSwiper;
+// Swiper(Слайдер с превью)
+const productPageBigSwiper = new Swiper(".product__swiper-add", {
   loop:true,
   spaceBetween: 10,
   slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true,
 });
-const swiper2 = new Swiper(".product__swiper-preview", {
+const productPageMiniSwiper = new Swiper(".product__swiper-preview", {
   loop:true,
   thumbs: {
-    swiper: swiper,
+    swiper: productPageBigSwiper,
   },
 });
-// CARD
-const cardSwiper = new Swiper('.card__swiper', {
-  loop: true,
-  slidesPerView: 1,
-  pagination: {
-    el: '.card__pagination',
-    clickable: true,
-  },
+// Swiper(Слайдер с перемоткой при наведении)
+const cardSwipers = document.querySelectorAll('.card__swiper');
+cardSwipers.forEach(cardSwiper => {
+  initCardSwiper(cardSwiper);
 });
+const cardTabBtns = document.querySelectorAll('.tab-btn');
+cardTabBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    cardSwipers.forEach(swiper => {
+      swiper.swiper.destroy();
+      setTimeout(() => {
+        initCardSwiper(swiper);
+      },1);
+    });
+  });
+});
+function initCardSwiper (element) {
+  const cardsSwiper = new Swiper(element, {
+    loop: true,
+    slidesPerView: 1,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+    pagination: {
+      el: '.card__pagination',
+      clickable: true,
+    },
+    on: {
+      init: function () {
+        document.querySelectorAll('.swiper-pagination-bullet').forEach(bullet => {
+          bullet.addEventListener('mouseenter', (e) => {
+            bullet.click();
+          });
+        });
+      },
+    },
+  });
 
+  return cardsSwiper;
+};
+// Swiper(Слайдер в табе)
+function initialMainPageKitaSwiper(element) {
+  new Swiper(element, {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.kits__button-next',
+      prevEl: '.kits__button-prev',
+    },
+  });
+};
+const mainPageKitsSwipers = document.querySelectorAll('.kits__swiper');
+mainPageKitsSwipers.forEach(kitsSwiper => {
+  initialMainPageKitaSwiper(kitsSwiper);
+});
+const kitsTabBtns = document.querySelectorAll('.tab-btn');
+kitsTabBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    mainPageKitsSwipers.forEach(swiper => {
+      swiper.swiper.destroy();
+      setTimeout(() => {
+        initialMainPageKitaSwiper(swiper);
+      },1);
+    });
+  });
+});

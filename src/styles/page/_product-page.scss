@@ -94,8 +94,8 @@
 
     &-list {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(5, 19%);
+      gap: 1.5%;
     }
   }
 
@@ -161,8 +161,8 @@
 
     &-list {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(5, 19%);
+      gap: 1.5%;
     }
   }
 

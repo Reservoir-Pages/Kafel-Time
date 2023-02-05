@@ -96,24 +96,30 @@
               </button>
             </h2>
             <form class="contacts__form ac-panel">
-              <label>
+              <label class="contacts__form-label">
                 <input type="text" placeholder="ФИО">
               </label>
-              <label>
+              <label class="contacts__form-label">
                 <input type="tel" placeholder="Номер телефона">
               </label>
-              <label>
-                <input type="text" placeholder="Удобное время для звонка">
+              <label class="contacts__form-label">
+                <select class="contacts__form-label__select select" name="call-time">
+                  <option value="">Удобное время для звонка</option>
+                  <option>С 09:00 до 12:00</option>
+                  <option>С 12:00 до 14:00</option>
+                  <option>С 14:00 до 18:00</option>
+                  <option>После 18:00</option>
+                </select>
               </label>
-              <label>
+              <label class="contacts__form-label">
                 <input type="text" placeholder="Комментарий">
               </label>
-              <p>
+              <p class="contacts__form-description">
                 Отправляя данные, я ознакомлен и согласен с условиями политики конфиденциальности и обработки
                 персональных
                 данных.
               </p>
-              <label class="contacts__form-btn">
+              <label class="contacts__form-btn contacts__form-label">
                 <input type="submit" value="Заказать звонок">
               </label>
             </form>

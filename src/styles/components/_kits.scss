@@ -6,13 +6,13 @@
     border-radius: 25px;
     transition: background-color 0.3s ease-in-out;
 
-    &--active {
-      background-color: $color-yellow;
-    }
-
     &:not(:last-child) {
       margin-right: 90px;
     }
+  }
+
+  .tab-btn--active {
+    background-color: $color-yellow;
   }
 
   &-swiper {

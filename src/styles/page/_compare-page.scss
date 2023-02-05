@@ -20,10 +20,10 @@
       font-size: 16px;
       line-height: 19px;
       font-weight: 500;
+    }
 
-      &--active {
-        text-decoration: underline;
-      }
+    .switch-button--active {
+      text-decoration: underline;
     }
   }
 
@@ -101,20 +101,17 @@
       margin-bottom: 15px;
     }
 
-    &:hover {
+    &.is-hover {
       overflow: visible;
-
-      &::before {
+      &::after {
         content: "";
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -50%;
+        left: 0;
+        z-index: -1;
+        width: 248px;
         height: 100%;
-        width: 3540px;
-        margin-left: calc(-3540px / 2);
-        background-color: #cbc7c7;
-        opacity: 0.3;
+        background-color: #dfdddd;
+        opacity: 0.5;
       }
     }
   }

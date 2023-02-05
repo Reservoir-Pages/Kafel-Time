@@ -60,6 +60,22 @@
       line-height: 20px;
       font-weight: 600;
     }
+
+    .accordion-container {
+      padding: 0;
+    }
+
+    .ac-sub {
+      &-trigger {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      &-text {
+        padding: 0;
+      }
+    }
   }
 }
 
@@ -139,12 +155,12 @@
       &:not(:last-child) {
         margin-right: 50px;
       }
+    }
 
-      &--active {
-        font-weight: 600;
-        color: $color-black;
-        text-decoration: underline;
-      }
+    .tab-btn--active {
+      font-weight: 600;
+      color: $color-black;
+      text-decoration: underline;
     }
   }
 
@@ -199,8 +215,8 @@
 .catalog-tiles-list-swiper {
   &__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 24%);
+    gap: 1.5%;
     padding: 5px;
   }
 

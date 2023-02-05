@@ -11,7 +11,7 @@ if (document.querySelector('.account-window')) {
     input.placeholder = placeholder;
     if (placeholder === 'Пароль' || placeholder === 'Введите пароль') {
       input.type = 'password';
-      input.name = 'password'
+      input.name = 'password';
     } else if (placeholder === 'E-mail'){
       input.type = 'email';
       input.name = 'email';
@@ -20,22 +20,21 @@ if (document.querySelector('.account-window')) {
       input.name = 'tel';
     } else {
       input.type = 'text';
-    }
+    };
     if (placeholder === 'Ведите логин (номер телефона)') {
       input.name = 'login';
-    }
+    };
     if (placeholder === 'Фамилия') {
       input.name = 'surname';
-    }
+    };
     if (placeholder === 'Имя') {
       input.name = 'name';
-    }
+    };
     if (placeholder === 'Отчество') {
       input.name = 'middlename';
-    }
-    input.setAttribute('required', '')
+    };
+    input.setAttribute('required', '');
     label.append(input);
-
     input.addEventListener('input', (e) => {
       if (inputValidation(input)) {
         label.classList.add('account-form__label--access');
@@ -45,11 +44,10 @@ if (document.querySelector('.account-window')) {
         label.classList.add('account-form__label--warning');
       };
     });
-
     input.addEventListener('blur', (e) => {
       if (input.value === "") {
         label.classList.remove('account-form__label--warning');
-      }
+      };
     });
 
     return label;
@@ -57,40 +55,33 @@ if (document.querySelector('.account-window')) {
   // Функция создания кнопок
   function createBtn(value) {
     const button = document.createElement('button');
-    button.classList.add('account-form__btn', 'btn-reset')
+    button.classList.add('account-form__btn', 'btn-reset');
     button.textContent = value;
     if (value === 'Войти' || value === 'Зарегистрироваться' || value === 'Сохранить') {
       button.type = 'submit';
       button.setAttribute('disabled', '');
     };
-
     button.addEventListener('click', (e) => {
       e.preventDefault();
-
       const inputs = document.querySelectorAll('.account-form__input');
-
       if (button.textContent === 'Войти') {
         if (inputs.length === 2 && inputs[0].value !== '' && inputs[1].value !== '') {
-          // headerModal.remove();
-          // alert('Здесь должна быть страница личного кабинета');
           window.location.href = 'person-page.html';
         } else if (inputs[0].value !== '') {
-          // headerModal.remove();
           alert('Здесь должна быть страница личного кабинета');
         } else {
           alert('Заполните все поля');
-        }
-      }
+        };
+      };
       if (button.textContent === 'Забыли пароль?') {
         const form = document.querySelector('.account-form');
         form.remove();
         headerModal.remove();
         const title = 'На указанный номер телефона был выслан шестизначный пароль для входа в личный кабинет';
         accountWindow.append(createForm(['Введите пароль'], ['Войти'], title, null));
-      }
+      };
       if (button.textContent === 'Зарегистрироваться') {
         const input = document.querySelector('.account-form__input');
-
         if (input.value !== '') {
           const form = document.querySelector('.account-form');
           form.remove();
@@ -100,10 +91,7 @@ if (document.querySelector('.account-window')) {
           alert('Заполните все поля');
         };
       };
-
       if (button.textContent === 'Сохранить') {
-        console.log(inputs.length === 4);
-        console.log(button.classList.contains('account-form__btn--active'));
         if (inputs.length === 4 && button.classList.contains('account-form__btn--active')) {
           window.location.href = 'person-page.html';
         } else if (inputs[0].value !== '') {
@@ -139,61 +127,23 @@ if (document.querySelector('.account-window')) {
         let bool = [];
         inputsArray.forEach(element => {
           if (bool.length < inputsArray.length && element.classList.contains('account-form__label--access')) {
-            bool.push('true')
+            bool.push('true');
           } else if (!element.classList.contains('account-form__label--access')) {
             bool = [];
-          }
+          };
         });
-
         if (bool.length === inputsArray.length) {
           btn.classList.add('account-form__btn--active');
           btn.removeAttribute('disabled');
-        }
-
+        };
         if (bool.length < inputsArray.length) {
           btn.classList.remove('account-form__btn--active');
           btn.setAttribute('disabled', '');
-        }
-
+        };
       });
-
     });
   };
-
-  // function btnIsActive(inputsArray, btn) {
-  //   inputsArray.forEach(element => {
-
-
-
-  //     element.addEventListener('input', (e) => {
-
-  //       let bool = [];
-
-  //       inputsArray.forEach(element => {
-
-  //         if (bool.length < inputsArray.length && element.classList.contains('account-form__label--access')) {
-  //           bool.push('true')
-  //         } else if (!element.classList.contains('account-form__label--access')) {
-  //           bool = [];
-  //         }
-  //       });
-
-  //       if (bool.length === inputsArray.length) {
-  //         btn.classList.add('account-form__btn--active');
-  //         btn.removeAttribute('disabled');
-  //       }
-
-  //       if (bool.length < inputsArray.length) {
-  //         btn.classList.remove('account-form__btn--active');
-  //         btn.setAttribute('disabled', '');
-  //       }
-
-  //     });
-
-  //   });
-  // };
   // Функция создания верхней части модального окна
-
   function createHeaderModal() {
     // Создаем сам хедер
     const headerModal = document.createElement('div');
@@ -269,6 +219,6 @@ if (document.querySelector('.account-window')) {
     return form;
   };
   // Получаем и размещаем на сцене форму
-  const form = createForm(['Ведите логин (номер телефона)', 'Пароль'], ['Войти', 'Забыли пароль?'])
+  const form = createForm(['Ведите логин (номер телефона)', 'Пароль'], ['Войти', 'Забыли пароль?']);
   accountWindow.append(form);
 };

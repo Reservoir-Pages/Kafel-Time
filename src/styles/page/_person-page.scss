@@ -4,9 +4,12 @@
   }
 
   &__content {
-    display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+
+    &.tab-content--active {
+      display: flex;
+    }
   }
 
   &__tabs {
@@ -24,22 +27,10 @@
       &:not(:last-child) {
         margin-bottom: 10px;
       }
-
-      &--active {
-        background-color: $color-yellow;
-      }
     }
-  }
 
-  &__info {
-    width: 80%;
-  }
-
-  &__data {
-    display: none;
-
-    &--active {
-      display: block;
+    .tab-btn--active {
+      background-color: $color-yellow;
     }
   }
 
@@ -50,10 +41,17 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
 
 .data-card {
+  width: 80%;
+
   &__info {
     padding: 35px 50px 30px;
     border-radius: 10px;
@@ -70,8 +68,12 @@
   &__content {
     &--favorite {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 24%);
       gap: 20px;
+
+      .card {
+        max-width: 230px;
+      }
     }
   }
 

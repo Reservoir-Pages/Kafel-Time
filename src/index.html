@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru" class="html">
 
-@include('partials/head2.html', {
+<!-- @include('partials/head2.html', {
 "title": "Kafel Time - онлайн-гипермаркет, товары на люой вкус и цвет",
 "description": "Онлайн-гипермаркет Kafel Time - богатый выбор сантехники, кафельной плитки, керамогранита и других сопутствующих товаров"
-})
+}) -->
+
+<head>
+  @include('partials/head.html')
+  <title>Kafel Time - онлайн-гипермаркет, товары на люой вкус и цвет</title>
+  <meta name="description" content="Онлайн-гипермаркет Kafel Time - богатый выбор сантехники, кафельной плитки, керамогранита и других сопутствующих товаров">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+</head>
 
 <body class="body">
-  @include('partials/header.html', {})
+  @include('partials/header.html', {"": ""})
   <main class="main">
     <h1 class="visually-hidden">Главная страница - онлайн-гипермаркет Kafel Time</h1>
     <section class="banner">
@@ -190,35 +197,30 @@
         </div>
         <div class="new__swiper new-swiper swiper">
           <div class="new-swiper__wrapper swiper-wrapper">
-            <!-- <a href="catalog-collections-page.html" class="new-swiper__slide swiper-slide"> -->
             <a href="catalog-tiles-page.html" class="new-swiper__slide swiper-slide">
               <div class="new-swiper__slide-image">
                 <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
               </div>
               <span class="new-swiper__slide-description">Название коллекции</span>
             </a>
-            <!-- <a href="catalog-collections-page.html" class="new-swiper__slide swiper-slide"> -->
             <a href="catalog-tiles-page.html" class="new-swiper__slide swiper-slide">
               <div class="new-swiper__slide-image">
                 <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
               </div>
               <span class="new-swiper__slide-description">Название коллекции</span>
             </a>
-            <!-- <a href="catalog-collections-page.html" class="new-swiper__slide swiper-slide"> -->
             <a href="catalog-tiles-page.html" class="new-swiper__slide swiper-slide">
               <div class="new-swiper__slide-image">
                 <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
               </div>
               <span class="new-swiper__slide-description">Название коллекции</span>
             </a>
-            <!-- <a href="catalog-collections-page.html" class="new-swiper__slide swiper-slide"> -->
             <a href="catalog-tiles-page.html" class="new-swiper__slide swiper-slide">
               <div class="new-swiper__slide-image">
                 <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
               </div>
               <span class="new-swiper__slide-description">Название коллекции</span>
             </a>
-            <!-- <a href="catalog-collections-page.html" class="new-swiper__slide swiper-slide"> -->
             <a href="catalog-tiles-page.html" class="new-swiper__slide swiper-slide">
               <div class="new-swiper__slide-image">
                 <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
@@ -230,12 +232,12 @@
       </div>
     </section>
     <section class="kits">
-      <div class="kits__container container">
+      <div class="kits__container container tab-content tab-content--active">
         <div class="kits__header swiper-header">
           <h2 class="kits__title title">Готовые наборы</h2>
-          <div class="kits__buttons">
-            <button class="kits__btn btn-reset" data-tabs-path="tile">Плитка</button>
-            <button class="kits__btn kits__btn--active btn-reset" data-tabs-path="plumbing">Сантехника</button>
+          <div class="kits__buttons tabs">
+            <button class="kits__btn tab-btn btn-reset" data-tabs-path="tile">Плитка</button>
+            <button class="kits__btn kits__btn--active tab-btn tab-btn--active btn-reset" data-tabs-path="plumbing">Сантехника</button>
           </div>
           <div class="kits__arrows swiper-buttons">
             <button class="kits__button-prev swiper-buttons-button-prev btn-reset" aria-label="Листать назад">
@@ -250,6 +252,74 @@
             </button>
           </div>
         </div>
+        <div class="kits__swiper kits-swiper tab-content swiper" data-tabs-target="tile">
+          <div class="kits-swiper__wrapper swiper-wrapper">
+            <a href="catalog-tiles-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Плитка 1</span>
+            </a>
+            <a href="catalog-tiles-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Плитка 2</span>
+            </a>
+            <a href="catalog-tiles-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Плитка 3</span>
+            </a>
+            <a href="catalog-tiles-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Плитка 4</span>
+            </a>
+            <a href="catalog-tiles-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Test</span>
+            </a>
+          </div>
+        </div>
+        <div class="kits__swiper kits-swiper tab-content tab-content--active swiper" data-tabs-target="plumbing">
+          <div class="kits-swiper__wrapper swiper-wrapper">
+            <a href="catalog-plumbing-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Сантехника 1</span>
+            </a>
+            <a href="catalog-plumbing-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Сантехника 2</span>
+            </a>
+            <a href="catalog-plumbing-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Сантехника 3</span>
+            </a>
+            <a href="catalog-plumbing-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Сантехника 4</span>
+            </a>
+            <a href="catalog-plumbing-page.html" class="kits-swiper__slide swiper-slide">
+              <div class="kits-swiper__slide-image">
+                <img src="images/test-quad-img.png" alt="картинка" width="295" height="295">
+              </div>
+              <span class="kits-swiper__slide-description">Test</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="popular">
@@ -260,22 +330,22 @@
         </div>
         <div class="popular__content">
           <div class="popular__card">
-            <a href="brands-page.html"><img src="images/am-pm.png" alt="Логотип am-pm" width="170" height="100"></a>
+            <a href="catalog-brand-page.html"><img src="images/am-pm.png" alt="Логотип am-pm" width="170" height="100"></a>
           </div>
           <div class="popular__card">
-            <a href="brands-page.html"><img src="images/azori.png" alt="Логотип azori" width="170" height="100"></a>
+            <a href="catalog-brand-page.html"><img src="images/azori.png" alt="Логотип azori" width="170" height="100"></a>
           </div>
           <div class="popular__card">
-            <a href="brands-page.html"><img src="images/gemy.png" alt="Логотип gemy" width="170" height="100"></a>
+            <a href="catalog-brand-page.html"><img src="images/gemy.png" alt="Логотип gemy" width="170" height="100"></a>
           </div>
           <div class="popular__card">
-            <a href="brands-page.html"><img src="images/vitra.png" alt="Логотип vitra" width="170" height="100"></a>
+            <a href="catalog-brand-page.html"><img src="images/vitra.png" alt="Логотип vitra" width="170" height="100"></a>
           </div>
           <div class="popular__card">
-            <a href="brands-page.html"><img src="images/laparet.png" alt="Логотип laparet" width="170" height="100"></a>
+            <a href="catalog-brand-page.html"><img src="images/laparet.png" alt="Логотип laparet" width="170" height="100"></a>
           </div>
           <div class="popular__card">
-            <a href="brands-page.html"><img src="images/abber.png" alt="Логотип abber" width="170" height="100"></a>
+            <a href="catalog-brand-page.html"><img src="images/abber.png" alt="Логотип abber" width="170" height="100"></a>
           </div>
         </div>
       </div>

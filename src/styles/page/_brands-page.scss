@@ -22,12 +22,10 @@
       margin-right: 50px;
     }
 
-    button {
+    .switch-button {
       font-weight: 500;
-    }
 
-    &--active {
-      button {
+      &--active {
         text-decoration: underline;
       }
     }

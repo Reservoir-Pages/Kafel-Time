@@ -49,6 +49,6 @@ if (document.getElementById('map')) {
         }).then(function() {
             myMap.setZoom(17);
         });
-        });
-    }
-  }
+      });
+    };
+  };

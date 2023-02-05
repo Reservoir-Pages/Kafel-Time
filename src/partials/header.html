@@ -10,7 +10,7 @@
             d="M8 8C8.39782 8 8.77936 7.84196 9.06066 7.56066C9.34196 7.27936 9.5 6.89782 9.5 6.5C9.5 6.10218 9.34196 5.72064 9.06066 5.43934C8.77936 5.15804 8.39782 5 8 5C7.60218 5 7.22064 5.15804 6.93934 5.43934C6.65804 5.72064 6.5 6.10218 6.5 6.5C6.5 6.89782 6.65804 7.27936 6.93934 7.56066C7.22064 7.84196 7.60218 8 8 8ZM8 9C7.33696 9 6.70107 8.73661 6.23223 8.26777C5.76339 7.79893 5.5 7.16304 5.5 6.5C5.5 5.83696 5.76339 5.20107 6.23223 4.73223C6.70107 4.26339 7.33696 4 8 4C8.66304 4 9.29893 4.26339 9.76777 4.73223C10.2366 5.20107 10.5 5.83696 10.5 6.5C10.5 7.16304 10.2366 7.79893 9.76777 8.26777C9.29893 8.73661 8.66304 9 8 9Z"
             fill="black" />
         </svg>
-        <select class="select-region" name="select-region">
+        <select class="select-region select" name="select-region">
           <option class="select-region__option" value="spb">Санкт-Петербург</option>
           <option class="select-region__option" value="moscow">Москва</option>
           <option class="select-region__option" value="kazan">Казань</option>
@@ -67,38 +67,41 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Плитка</li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">Керамическая плитка</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">Керамогранит</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">Мозайка</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">Клинкер</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-tiles-page.html">Сопутствующие товары</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-tiles-page.html">Сопутствующие товары</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item"></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">Плитка под мрамор</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">Плитка под дерево</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">Плитка под камень</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">Плитка под бетон</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-tiles-page.html">Product X</a></li>
-                      <li class="product-info__item d-none"><a href="catalog-tiles-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-tiles-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-tiles-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item"></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">10х10</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">20х20</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">30х30</a></li>
                       <li class="product-info__item"><a href="catalog-tiles-page.html">20х30</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-tiles-page.html">Product X</a></li>
-                      <li class="product-info__item d-none"><a href="catalog-tiles-page.html">Product X</a></li>
-                      <li class="product-info__item d-none"><a href="catalog-tiles-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-tiles-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-tiles-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-tiles-page.html">Product X</a></li>
                     </ul>
                   </div>
                   <div class="product-info__popular-brands popular-brands">
@@ -121,29 +124,31 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Ванны</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Акриловые ванны</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Ванны квариловые</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Чугунные ванны</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Ванны из искусственного камня</a>
                       </li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Оборудование для ванн</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Ножки для ванн</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Ручки для ванн</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Каркасы для ванн</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Сливы-переливы для ванн</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Шторки на ванну</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Шторки стеклянные</a></li>
                     </ul>
@@ -168,39 +173,40 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые кабины</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые уголки</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые поддоны</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Акриловые</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Из искусственного камня</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Керамические</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Металлические</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые лотки</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые трапы</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые боксы</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые двери</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые ограждения</li>
                     </ul>
                   </div>
@@ -224,43 +230,45 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Смесители для раковин</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Смесители для кухонных моек</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Для ванны с душем</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Смесители для ванн</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Смесителидля ванны с длинным
                           изливом</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Смесители на борт ванны</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">С верхним душем</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Для душа</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Верхние души</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Боковые души</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Душевые гарнитуры</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Душевые стойки</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Встраиваемые системы</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Для раковины</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Для ванны</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Для душа</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Изливы</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Комплектующие</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Душевые лейки</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Шланги для душа</a></li>
@@ -286,15 +294,16 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Раковины в ванну</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Подвесные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Накладные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Двойные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Напольные</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
                   </div>
                   <div class="product-info__popular-brands popular-brands">
@@ -317,26 +326,27 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Кухонные мойки</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Из искусственного камня</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Из нержавеющей стали</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Комбинированные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Встраиваемые</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Кухонные смесители</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Измельчители</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Дозаторы</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Аксессуары для кухни</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Коландеры</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Разделочные доски</a></li>
@@ -364,27 +374,29 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Унитазы</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Подвесные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Приставные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Напольные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Комплекты с инсталляцией</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Биде</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Подвесные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Напольные</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Крышки для биде</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Инсталляции для биде</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Писсуары</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Писсуары</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Инсталляции для писсуаров</a></li>
@@ -411,30 +423,30 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Инсталляции
                         для унитазов</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Инсталляции для биде</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Инсталляции
                         для писсуаров</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Инсталляции
                         для раковин</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Инсталляции скрытого
                         монтажа</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Смывные бочки
                         скрытого монтажа</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Кнопки смыва</li>
                     </ul>
                   </div>
@@ -458,16 +470,16 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Электрические</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Водяные</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Змеевик</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Комплектующие</li>
                     </ul>
                   </div>
@@ -491,10 +503,10 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Проточные</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Накопительные</li>
                     </ul>
                   </div>
@@ -518,25 +530,25 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые лотки</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Душевые трапы</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Сифоны</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Сливы-переливы</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Донные клапаны</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Измельчители отходов</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Системы защиты
                         от протечек</li>
                     </ul>
@@ -561,38 +573,39 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Для ванной комнаты</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Мыльницы</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Дозаторы</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Стаканы</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Держатель для зубных щеток</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Для туалета</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Держатели туалетной бумаги</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Держатели запасных рулонов</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Ершики для унитаза</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Набор держателей на стойке</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Для полотенец</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Крючки для ванной комнаты</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Вешалки для ванной комнаты</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Полотенцедержатели</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Полки для полотенец</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Для душа</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Полки для душа</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Сиденья для душа</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Скребки для стекол</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Поручни</a></li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Для общественных
                         санузлов</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Диспенсеры для бумажных
@@ -602,9 +615,10 @@
                       </li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Диспенсеры для жидкого мыла</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Урны для мусора</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
                   </div>
                   <div class="product-info__popular-brands popular-brands">
@@ -627,15 +641,16 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Мебель для ванной комнаты</li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Мебельные гарнитуры</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Тумбы с раковиной</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Тумбы без раковины</a></li>
                       <li class="product-info__item"><a href="catalog-plumbing-page.html">Тумбы под раковину</a></li>
-                      <li class="product-info__item-btn"><button class="product-info__more-btn btn-reset">Ещё</button>
+                      <li class="product-info__item-btn">
+                        <button class="product-info__more-btn more-btn btn-reset">Ещё</button>
                       </li>
-                      <li class="product-info__item d-none"><a href="catalog-plumbing-page.html">Product X</a></li>
+                      <li class="product-info__item is-hidden"><a href="catalog-plumbing-page.html">Product X</a></li>
                     </ul>
                   </div>
                   <div class="product-info__popular-brands popular-brands">
@@ -658,13 +673,13 @@
               <div class="catalog__info product-info">
                 <div class="product-info__wrapper">
                   <div class="product-info__description">
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Акции</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Распродажа</li>
                     </ul>
-                    <ul class="product-info__list list-reset">
+                    <ul class="product-info__list hiding list-reset">
                       <li class="product-info__item">Уцененные товары</li>
                     </ul>
                   </div>

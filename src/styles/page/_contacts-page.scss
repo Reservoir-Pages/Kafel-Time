@@ -54,17 +54,9 @@
       margin: 0;
       border: 1px solid #828282;
       border-radius: 45px;
-      // box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-      // transition: all 0.3s ease-in-out;
 
       &-trigger {
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        // width: 100%;
-        // max-width: 460px;
         padding: 20px 30px;
-        // border-radius: 20px;
         font-size: 14px;
         line-height: 16px;
         font-weight: 500;
@@ -83,44 +75,6 @@
         display: flex;
         flex-direction: column;
         padding: 0 30px;
-
-        label {
-          font-size: 10px;
-          line-height: 12px;
-          font-weight: 500;
-
-          &:not(:last-child) {
-            margin-bottom: 15px;
-
-            input {
-              height: 28px;
-              width: 100%;
-              padding: 0 15px;
-              border: 1px solid #828282;
-              border-radius: 45px;
-              color: #828282;
-            }
-          }
-
-          &:last-child {
-            text-align: center;
-            input {
-              padding: 10px 35px;
-              border: 1px solid transparent;
-              border-radius: 5px;
-              background-color: $color-yellow;
-            }
-          }
-        }
-
-        p {
-          margin: 0;
-          margin-bottom: 10px;
-          font-size: 10px;
-          line-height: 12px;
-          font-weight: 500;
-          color: #828282;
-        }
       }
 
       &.is-active {
@@ -137,12 +91,125 @@
               background-size: cover;
             }
           }
+        }
 
-          &-panel {
-            padding-bottom: 20px;
+        & > .ac-panel {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &__form {
+    padding-bottom: 20px;
+
+    &-label {
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 500;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+
+        input {
+          height: 30px;
+          width: 100%;
+          padding: 0 15px;
+          border: 1px solid #828282;
+          border-radius: 45px;
+          color: #828282;
+        }
+      }
+
+      &:last-child {
+        text-align: center;
+
+        input {
+          padding: 10px 35px;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          background-color: $color-yellow;
+        }
+      }
+
+      .choices {
+        &[data-type*="select-one"] {
+          .choices {
+            &__inner {
+              min-height: 0;
+              padding: 0 15px;
+              border: 1px solid #828282;
+              border-radius: 45px;
+              font-weight: 400;
+              color: #828282;
+              background-color: transparent;
+            }
+
+            &__placeholder {
+              opacity: 1;
+            }
+
+            &__list {
+              padding: 0;
+              border-color: #828282;
+              font-size: 10px;
+              line-height: 12px;
+              color: #828282;
+
+              &--dropdown .choices__placeholder {
+                display: none;
+              }
+            }
+
+            &__item {
+              padding: 0;
+              line-height: 30px;
+            }
+          }
+        }
+
+        &.is-open {
+          &[data-type*="select-one"] {
+            &::after {
+              top: 15px;
+            }
+
+            .choices {
+              &__inner {
+                border-bottom: none;
+                border-radius: 15px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+              }
+
+              &__list {
+                position: static;
+                border-top: none;
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+              }
+
+              &__item {
+                &--choice {
+                  height: 30px;
+                  padding: 0 15px;
+                  font-size: 10px;
+                  font-weight: 500;
+                }
+              }
+            }
           }
         }
       }
+    }
+
+    &-description {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 500;
+      color: #828282;
     }
   }
 

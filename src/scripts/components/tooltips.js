@@ -17,4 +17,4 @@ if (document.querySelector('.tooltip')) {
     duration: 500,
     maxWidth: 200,
   });
-}
+};
