@@ -21,7 +21,7 @@
     &__pagination {
       z-index: 1;
 
-      &.swiper-pagination-bullets.swiper-pagination-horizontal {
+      &.swiper-pagination-bullets {
         bottom: -20px;
       }
 
@@ -34,6 +34,22 @@
 
         &-active {
           background-color: $color-yellow;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    &-swiper {
+      &__slide {
+        height: 300px;
+      }
+      &__pagination {
+        .swiper-pagination-bullet {
+          height: 3px;
+          width: 30px;
         }
       }
     }

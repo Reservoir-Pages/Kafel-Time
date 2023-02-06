@@ -29,3 +29,17 @@
     overflow: hidden;
   }
 }
+
+@media (max-width: 768px) {
+  .popular {
+    padding-top: 50px;
+
+    &__header {
+      margin-bottom: 15px;
+    }
+
+    &__content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

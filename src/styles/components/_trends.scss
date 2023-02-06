@@ -26,3 +26,26 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .trends {
+    padding-top: 50px;
+
+    &-swiper {
+      &__slide {
+        width: 160px;
+
+        &-image {
+          img {
+            min-height: 80px;
+          }
+        }
+
+        &-description {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}

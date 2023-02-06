@@ -10,3 +10,13 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .swiper-header {
+    margin-bottom: 15px;
+
+    .swiper-buttons {
+      display: none;
+    }
+  }
+}

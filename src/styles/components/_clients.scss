@@ -30,3 +30,26 @@
     overflow: hidden;
   }
 }
+
+@media (max-width: 768px) {
+  .clients {
+    padding-top: 50px;
+
+    &__header {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      margin: 0;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

@@ -1,32 +1,50 @@
 import Swiper from 'swiper/bundle';
 // Swiper(Слайдер с тремя слайдами)
-const mainPageTrendsSwiper = new Swiper('.trends-swiper', {
+const mainPageTrandsSwiper = new Swiper('.trends-swiper', {
   loop: true,
-  slidesPerView: 3,
-  spaceBetween: 20,
+  slidesPerView: 'auto',
+  spaceBetween: 10,
   navigation: {
     nextEl: '.trends__button-next',
     prevEl: '.trends__button-prev',
   },
+  breakpoints: {
+    769: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+  }
 });
 // Swiper(Слайдер с четырьмя слайдами)
 const mainPageCeramicsSwiper = new Swiper('.ceramics-swiper', {
   loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
+  slidesPerView: 'auto',
+  spaceBetween: 10,
   navigation: {
     nextEl: '.ceramics__button-next',
     prevEl: '.ceramics__button-prev',
   },
+  breakpoints: {
+    769: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    }
+  }
 });
 const mainPageNewSwiper = new Swiper('.new-swiper', {
   loop: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
+  slidesPerView: 'auto',
+  spaceBetween: 10,
   navigation: {
     nextEl: '.new__button-next',
     prevEl: '.new__button-prev',
   },
+  breakpoints: {
+    769: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    }
+  }
 });
 const tilesPageSwiper = new Swiper('.catalog-tiles__swiper', {
   loop: true,
@@ -49,12 +67,18 @@ const plumbingPageSwiper = new Swiper('.catalog-plumbing__swiper', {
 // Swiper(Слайдер с шестью слайдами)
 const mainPagePlumbingSwiper = new Swiper('.plumbing-swiper', {
   loop: true,
-  slidesPerView: 6,
-  spaceBetween: 20,
+  slidesPerView: 'auto',
+  spaceBetween: 10,
   navigation: {
     nextEl: '.plumbing__button-next',
     prevEl: '.plumbing__button-prev',
   },
+  breakpoints: {
+    769: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    }
+  }
 });
 const aboutPageSwiper = new Swiper('.about-swiper', {
   loop: true,
@@ -216,20 +240,9 @@ function initCardSwiper (element) {
   return cardsSwiper;
 };
 // Swiper(Слайдер в табе)
-function initialMainPageKitaSwiper(element) {
-  new Swiper(element, {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: '.kits__button-next',
-      prevEl: '.kits__button-prev',
-    },
-  });
-};
 const mainPageKitsSwipers = document.querySelectorAll('.kits__swiper');
 mainPageKitsSwipers.forEach(kitsSwiper => {
-  initialMainPageKitaSwiper(kitsSwiper);
+  initialMainPageKitsSwiper(kitsSwiper);
 });
 const kitsTabBtns = document.querySelectorAll('.tab-btn');
 kitsTabBtns.forEach(btn => {
@@ -238,8 +251,25 @@ kitsTabBtns.forEach(btn => {
     mainPageKitsSwipers.forEach(swiper => {
       swiper.swiper.destroy();
       setTimeout(() => {
-        initialMainPageKitaSwiper(swiper);
+        initialMainPageKitsSwiper(swiper);
       },1);
     });
   });
 });
+function initialMainPageKitsSwiper(element) {
+  new Swiper(element, {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.kits__button-next',
+      prevEl: '.kits__button-prev',
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    }
+  });
+};
