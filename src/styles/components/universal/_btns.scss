@@ -25,3 +25,10 @@
     background-color: #828282;
   }
 }
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 8px;
+    line-height: 30px;
+  }
+}

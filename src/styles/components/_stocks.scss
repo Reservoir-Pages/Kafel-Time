@@ -1,5 +1,7 @@
 .stocks {
   padding-top: 26px;
+  font-size: 16px;
+  line-height: 19px;
 
   &__btn {
     display: block;
@@ -10,38 +12,32 @@
     text-decoration: underline;
   }
 
-  &__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  &__card {
+  &__img {
     position: relative;
-    overflow: hidden;
+    border-radius: 10px;
   }
 
   &__bage {
     position: absolute;
     left: 20px;
-    top: 160px;
+    bottom: 20px;
     padding: 5px 15px;
     border-radius: 30px;
     background-color: $color-yellow;
-  }
-
-  &__description {
-    font-size: 16px;
-    line-height: 19px;
   }
 }
 
 @media (max-width: 768px) {
   .stocks {
-    display: none;
+    // display: none;
+    font-size: 10px;
+    line-height: 12px;
 
     &__bage {
-      top: 80px;
+      bottom: 10px;
+      left: 10px;
+      padding: 5px 10px;
+      font-weight: 500;
     }
   }
 }

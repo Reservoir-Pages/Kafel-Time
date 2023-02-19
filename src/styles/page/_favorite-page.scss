@@ -47,3 +47,40 @@
     gap: 1.5%;
   }
 }
+
+@media (max-width: 768px) {
+  .favorite-filters {
+    &__btn {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 600;
+    }
+
+    &__delete {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      svg {
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
+
+  .favorite-added {
+    margin-bottom: 40px;
+
+    &__list {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+
+  .favorite-viewed {
+    margin-bottom: 40px;
+
+    &__list {
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+}

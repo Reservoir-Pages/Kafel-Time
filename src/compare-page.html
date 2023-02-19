@@ -70,6 +70,15 @@
               <input type="radio" name="condition">
               Только различия
             </label>
+            <div class="compare__switch">
+              <div class="compare__switch-btn">
+                <input id="radio-off" type="radio" name="differences" value="off" checked>
+                <label for="radio-off"></label>
+                <input id="radio-on" type="radio" name="differences" value="on">
+                <label for="radio-on"></label>
+              </div>
+              <span class="compare__switch-text">Показывать только различия</span>
+            </div>
           </div>
           <div class="compare__card-swiper card-swiper swiper">
             <div class="card-swiper__wrapper swiper-wrapper">
@@ -469,6 +478,16 @@
                   <button class="card__btn btn btn-reset">Добавить в корзину</button>
                 </div>
               </div>
+            </div>
+            <div class="card-swiper__btn card-swiper__btn--prev swiper-button-prev">
+              <svg width="7" height="33" viewBox="0 0 7 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.84961 4.06875L3.02461 16.5L6.84961 28.9312L5.66628 32.75L0.666276 16.5L5.66628 0.25L6.84961 4.06875Z" fill="#828282" />
+              </svg>
+            </div>
+            <div class="card-swiper__btn card-swiper__btn--next swiper-button-next">
+              <svg width="7" height="33" viewBox="0 0 7 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.150391 28.9313L3.97539 16.5L0.150391 4.06875L1.33372 0.25L6.33372 16.5L1.33372 32.75L0.150391 28.9313Z" fill="#828282" />
+              </svg>
             </div>
           </div>
         </div>

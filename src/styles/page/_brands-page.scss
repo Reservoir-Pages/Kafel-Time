@@ -68,4 +68,64 @@
   &__search {
     width: 20%;
   }
+
+  // .brands-swiper {
+  //   &__wrapper {
+  //     margin-bottom: 40px;
+  //   }
+  // }
+}
+
+@media (max-width: 768px) {
+  .brands-page {
+    &__filters {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &__menu {
+      justify-content: space-between;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      .switch-button {
+        padding: 7px 10px;
+        border-radius: 30px;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        text-decoration: none;
+
+        &--active {
+          background-color: $color-yellow;
+        }
+      }
+    }
+
+    .choices {
+      display: inline;
+      margin: 0;
+      margin-right: calc(100% - 50% - 110px - 2%);
+
+      &__inner {
+        max-width: 110px;
+      }
+    }
+
+    &__search {
+      margin-right: 0.1px;
+      min-width: 50%;
+
+      input {
+        padding: 0 20px;
+        width: 100%;
+      }
+    }
+  }
 }

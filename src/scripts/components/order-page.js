@@ -89,10 +89,8 @@ if(continueBtn) {
   toggleBtn.forEach(btn => {
     btn.addEventListener('click', (e) => {
       if(btn.id === 'radio-on') {
-        formToggle.classList.add('bg-yellow');
         document.querySelector('.form__content-lift').classList.remove('is-hidden');
       } else {
-        formToggle.classList.remove('bg-yellow');
         document.querySelector('.form__content-lift').classList.add('is-hidden');
       };
     });

@@ -76,3 +76,35 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .designers {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+
+    &__info {
+      max-width: none;
+      margin-bottom: 30px;
+    }
+
+    &__form {
+      max-width: none;
+      padding: 20px;
+
+      h3 {
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

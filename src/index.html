@@ -42,28 +42,30 @@
       <h2 class="visually-hidden">Лучшие акции на наши товары</h2>
       <div class="stocks__container container">
         <a class="stocks__btn" href="stocks-page.html">Все акции</a>
-        <div class="stocks__content">
-          <a href="stocks-page.html">
-            <div class="stocks__card">
-              <img src="images/test-img.png" alt="превью акции" width="490" height="170">
-              <div class="stocks__bage">до -32%</div>
+        <div class="stocks__content stocks-swiper swiper">
+          <div class="swiper-wrapper">
+            <a class="stocks__card swiper-slide" href="stocks-page.html">
+              <div class="stocks__img">
+                <img src="images/test-img.png" alt="превью акции" width="490" height="170">
+                <div class="stocks__bage">до -32%</div>
+              </div>
               <span class="stocks__description">Большой выбор душевых ограждений со скидками до 32%</span>
-            </div>
-          </a>
-          <a href="stocks-page.html">
-            <div class="stocks__card">
-              <img src="images/test-img.png" alt="превью акции" width="490" height="170">
-              <div class="stocks__bage">до -30%</div>
+            </a>
+            <a class="stocks__card swiper-slide" href="stocks-page.html">
+              <div class="stocks__img">
+                <img src="images/test-img.png" alt="превью акции" width="490" height="170">
+                <div class="stocks__bage">до -30%</div>
+              </div>
               <span class="stocks__description">Товары бренда EWPIKA со скидками до 30%</span>
-            </div>
-          </a>
-          <a href="stocks-page.html">
-            <div class="stocks__card">
-              <img src="images/test-img.png" alt="превью акции" width="490" height="170">
-              <div class="stocks__bage">до -30%</div>
+            </a>
+            <a class="stocks__card swiper-slide" href="stocks-page.html">
+              <div class="stocks__img">
+                <img src="images/test-img.png" alt="превью акции" width="490" height="170">
+                <div class="stocks__bage">до -30%</div>
+              </div>
               <span class="stocks__description">Ванны со скидками до 30%</span>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -328,70 +330,74 @@
           <h2 class="popular__title title">Популярные бренды</h2>
           <a href="brands-page.html" class="popular__btn">Все бренды</a>
         </div>
-        <div class="popular__content">
-          <div class="popular__card">
-            <a href="catalog-brand-page.html"><img src="images/am-pm.png" alt="Логотип am-pm" width="170" height="100"></a>
-          </div>
-          <div class="popular__card">
-            <a href="catalog-brand-page.html"><img src="images/azori.png" alt="Логотип azori" width="170" height="100"></a>
-          </div>
-          <div class="popular__card">
-            <a href="catalog-brand-page.html"><img src="images/gemy.png" alt="Логотип gemy" width="170" height="100"></a>
-          </div>
-          <div class="popular__card">
-            <a href="catalog-brand-page.html"><img src="images/vitra.png" alt="Логотип vitra" width="170" height="100"></a>
-          </div>
-          <div class="popular__card">
-            <a href="catalog-brand-page.html"><img src="images/laparet.png" alt="Логотип laparet" width="170" height="100"></a>
-          </div>
-          <div class="popular__card">
-            <a href="catalog-brand-page.html"><img src="images/abber.png" alt="Логотип abber" width="170" height="100"></a>
+
+        <div class="popular__content popular__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="popular__card swiper-slide">
+              <a href="catalog-brand-page.html"><img src="images/am-pm.png" alt="Логотип am-pm" width="170" height="100"></a>
+            </div>
+            <div class="popular__card swiper-slide">
+              <a href="catalog-brand-page.html"><img src="images/azori.png" alt="Логотип azori" width="170" height="100"></a>
+            </div>
+            <div class="popular__card swiper-slide">
+              <a href="catalog-brand-page.html"><img src="images/gemy.png" alt="Логотип gemy" width="170" height="100"></a>
+            </div>
+            <div class="popular__card swiper-slide">
+              <a href="catalog-brand-page.html"><img src="images/vitra.png" alt="Логотип vitra" width="170" height="100"></a>
+            </div>
+            <div class="popular__card swiper-slide">
+              <a href="catalog-brand-page.html"><img src="images/laparet.png" alt="Логотип laparet" width="170" height="100"></a>
+            </div>
+            <div class="popular__card swiper-slide">
+              <a href="catalog-brand-page.html"><img src="images/abber.png" alt="Логотип abber" width="170" height="100"></a>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
-    <section class="trends">
-      <div class="trends__container container">
-        <div class="trends__header swiper-header">
-          <h2 class="trends__title title">В тренде</h2>
-          <div class="trends__arrows swiper-buttons">
-            <button class="trends__button-prev swiper-buttons-button-prev btn-reset" aria-label="Листать назад">
+    <section class="trands">
+      <div class="trands__container container">
+        <div class="trands__header swiper-header">
+          <h2 class="trands__title title">В тренде</h2>
+          <div class="trands__arrows swiper-buttons">
+            <button class="trands__button-prev swiper-buttons-button-prev btn-reset" aria-label="Листать назад">
               <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M43 11H3H2M2 11L12 1M2 11L12 20" stroke="black" stroke-width="2" />
               </svg>
             </button>
-            <button class="trends__button-next swiper-buttons-button-next btn-reset" aria-label="Листать вперед">
+            <button class="trands__button-next swiper-buttons-button-next btn-reset" aria-label="Листать вперед">
               <svg width="43" height="21" viewbox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 10L40 10H41M41 10L31 20M41 10L31 1" stroke="black" stroke-width="2" />
               </svg>
             </button>
           </div>
         </div>
-        <div class="trends__swiper trends-swiper swiper">
-          <div class="trends-swiper__wrapper swiper-wrapper">
-            <a href="trends-page.html" class="trends-swiper__slide swiper-slide">
-              <div class="trends-swiper__slide-image">
+        <div class="trands__swiper trands-swiper swiper">
+          <div class="trands-swiper__wrapper swiper-wrapper">
+            <a href="trands-page.html" class="trands-swiper__slide swiper-slide">
+              <div class="trands-swiper__slide-image">
                 <img src="images/test-img.png" alt="картинка" width="400" height="210">
               </div>
-              <span class="trends-swiper__slide-description">Нейтральные оттенки керамической плитки</span>
+              <span class="trands-swiper__slide-description">Нейтральные оттенки керамической плитки</span>
             </a>
-            <a href="trends-page.html" class="trends-swiper__slide swiper-slide">
-              <div class="trends-swiper__slide-image">
+            <a href="trands-page.html" class="trands-swiper__slide swiper-slide">
+              <div class="trands-swiper__slide-image">
                 <img src="images/test-img.png" alt="картинка" width="400" height="210">
               </div>
-              <span class="trends-swiper__slide-description">Шестиугольная плитка - это модно</span>
+              <span class="trands-swiper__slide-description">Шестиугольная плитка - это модно</span>
             </a>
-            <a href="trends-page.html" class="trends-swiper__slide swiper-slide">
-              <div class="trends-swiper__slide-image">
+            <a href="trands-page.html" class="trands-swiper__slide swiper-slide">
+              <div class="trands-swiper__slide-image">
                 <img src="images/test-img.png" alt="картинка" width="400" height="210">
               </div>
-              <span class="trends-swiper__slide-description">Объём и геометрический рисунок</span>
+              <span class="trands-swiper__slide-description">Объём и геометрический рисунок</span>
             </a>
-            <a href="trends-page.html" class="trends-swiper__slide swiper-slide">
-              <div class="trends-swiper__slide-image">
+            <a href="trands-page.html" class="trands-swiper__slide swiper-slide">
+              <div class="trands-swiper__slide-image">
                 <img src="images/test-img.png" alt="картинка" width="400" height="210">
               </div>
-              <span class="trends-swiper__slide-description">Test</span>
+              <span class="trands-swiper__slide-description">Test</span>
             </a>
           </div>
         </div>
@@ -406,25 +412,28 @@
             и находим для них эффективные решения
           </p>
         </div>
-        <div class="clients__content">
-          <div class="clients__card">
-            <a href="https://ampm-store.ru" target="_blank"><img src="images/am-pm.png" alt="Логотип am-pm" width="170" height="100"></a>
+        <div class="clients__content clients__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="clients__card swiper-slide">
+              <a href="https://ampm-store.ru" target="_blank"><img src="images/am-pm.png" alt="Логотип am-pm" width="170" height="100"></a>
+            </div>
+            <div class="clients__card swiper-slide">
+              <a href="https://azoriceramica.ru/" target="_blank"><img src="images/azori.png" alt="Логотип azori" width="170" height="100"></a>
+            </div>
+            <div class="clients__card swiper-slide">
+              <a href="https://gemy.org/" target="_blank"><img src="images/gemy.png" alt="Логотип gemy" width="170" height="100"></a>
+            </div>
+            <div class="clients__card swiper-slide">
+              <a href="https://vitra-russia.ru/" target="_blank"><img src="images/vitra.png" alt="Логотип vitra" width="170" height="100"></a>
+            </div>
+            <div class="clients__card swiper-slide">
+              <a href="https://laparet.ru/" target="_blank"><img src="images/laparet.png" alt="Логотип laparet" width="170" height="100"></a>
+            </div>
+            <div class="clients__card swiper-slide">
+              <a href="https://abber-shop.ru/" target="_blank"><img src="images/abber.png" alt="Логотип abber" width="170" height="100"></a>
+            </div>
           </div>
-          <div class="clients__card">
-            <a href="https://azoriceramica.ru/" target="_blank"><img src="images/azori.png" alt="Логотип azori" width="170" height="100"></a>
-          </div>
-          <div class="clients__card">
-            <a href="https://gemy.org/" target="_blank"><img src="images/gemy.png" alt="Логотип gemy" width="170" height="100"></a>
-          </div>
-          <div class="clients__card">
-            <a href="https://vitra-russia.ru/" target="_blank"><img src="images/vitra.png" alt="Логотип vitra" width="170" height="100"></a>
-          </div>
-          <div class="clients__card">
-            <a href="https://laparet.ru/" target="_blank"><img src="images/laparet.png" alt="Логотип laparet" width="170" height="100"></a>
-          </div>
-          <div class="clients__card">
-            <a href="https://abber-shop.ru/" target="_blank"><img src="images/abber.png" alt="Логотип abber" width="170" height="100"></a>
-          </div>
+
         </div>
       </div>
     </section>

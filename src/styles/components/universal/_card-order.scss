@@ -98,3 +98,55 @@
     color: #828282;
   }
 }
+
+@media (max-width: 768px) {
+  .card-order {
+    padding: 20px 15px;
+
+    &__bage {
+      top: 20px;
+      right: 15px;
+    }
+
+    .cost {
+      &__price {
+        font-size: 16px;
+
+        &-title {
+          font-size: 12px;
+          line-height: 14px;
+        }
+
+        &-square {
+          font-size: 20px;
+          line-height: 23px;
+        }
+      }
+
+      &__credit {
+        font-size: 10px;
+        line-height: 12px;
+      }
+
+      &__parameter {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+
+    &__btns {
+      margin: 0;
+    }
+
+    &__form {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &__policy {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}

@@ -38,8 +38,10 @@
       margin-bottom: 15px;
     }
 
-    &__content {
-      grid-template-columns: repeat(3, 1fr);
+    &__card {
+      min-height: 40px;
+      border-radius: 5px;
+      font-size: 0;
     }
   }
 }

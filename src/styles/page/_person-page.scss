@@ -7,9 +7,9 @@
     justify-content: space-between;
     margin-bottom: 100px;
 
-    &.tab-content--active {
-      display: flex;
-    }
+    // &.tab-content--active {
+    //   display: flex;
+    // }
   }
 
   &__tabs {
@@ -27,11 +27,15 @@
       &:not(:last-child) {
         margin-bottom: 10px;
       }
+
+      svg {
+        display: none;
+      }
     }
 
-    .tab-btn--active {
-      background-color: $color-yellow;
-    }
+    // .tab-btn--active {
+    //   background-color: $color-yellow;
+    // }
   }
 
   &__card {
@@ -45,6 +49,26 @@
     &__content {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .tab {
+    &-content {
+      display: none;
+
+      &--active {
+        display: block;
+
+        &.person__content {
+          display: flex;
+        }
+      }
+    }
+
+    &-btn {
+      &--active {
+        background-color: $color-yellow;
+      }
     }
   }
 }
@@ -180,6 +204,144 @@
         font-size: 20px;
         line-height: 23px;
         font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .person {
+    &__return-btn {
+      position: relative;
+      padding: 25px 20px;
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 400;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 8px;
+        width: 8px;
+        border-left: 2px solid #828282;
+        border-bottom: 2px solid #828282;
+        transform: rotate(45deg);
+      }
+    }
+
+    &__tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: auto;
+      max-width: none;
+
+      &-btn {
+        position: relative;
+        width: calc(50% - 5px);
+        padding: 10px 15px;
+        border-radius: 10px;
+        text-align: left;
+        background-color: #f1f1f1;
+
+        svg {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          display: block;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .tab {
+      &-btn {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
+  .data-card {
+    width: 100%;
+
+    &__title {
+      display: none;
+    }
+
+    &__content {
+      &--favorite {
+        grid-template-columns: repeat(2, calc(50% - 10px));
+      }
+    }
+
+    &__info {
+      padding: 0;
+      box-shadow: none;
+    }
+
+    &__data {
+      &:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+
+      span {
+        display: inline-block;
+
+        &:first-child {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        &:nth-child(2) {
+          width: 50%;
+        }
+
+        &:last-of-type {
+          margin-right: calc(100% - 50% - 20% - 1%);
+        }
+      }
+
+      button {
+        width: 20%;
+      }
+    }
+  }
+
+  .person-card {
+    padding: 10px;
+
+    &__description {
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__delivery {
+      display: inline-block;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      font-size: 8px;
+      line-height: 9px;
+
+      &:last-child {
+        display: block;
+        margin: 0;
+      }
+    }
+
+    .card-setup {
+      &__order {
+        font-size: 8px;
+        line-height: 9px;
+        white-space: nowrap;
+      }
+
+      &__total {
+        display: none;
       }
     }
   }

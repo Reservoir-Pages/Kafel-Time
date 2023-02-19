@@ -47,9 +47,11 @@
       display: none;
     }
 
-    &__content {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    &__card {
+      // height: auto;
+      min-height: 40px;
+      border-radius: 5px;
+      font-size: 0;
     }
   }
 }

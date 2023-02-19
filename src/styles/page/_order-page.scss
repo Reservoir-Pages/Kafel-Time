@@ -168,7 +168,7 @@
           font-weight: 500;
         }
 
-        div {
+        &__details {
           display: flex;
 
           & label {
@@ -324,11 +324,10 @@
     }
   }
 
-  .card-order {
+  &__order {
     height: max-content;
     width: 42%;
     max-width: 400px;
-    padding-top: 40px;
 
     .cost {
       &__title {
@@ -360,7 +359,7 @@
   border: 1px solid $color-black;
   border-radius: 10px;
 
-  &.bg-yellow {
+  &:has(#radio-on:checked) {
     background-color: $color-yellow;
   }
 
@@ -378,6 +377,164 @@
     &:checked + label {
       background-color: $color-black;
       cursor: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .order-page {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      flex-direction: column;
+
+      .form {
+        width: auto;
+        margin-bottom: 20px;
+
+        &__steps {
+          &-item {
+            padding: 5px;
+            font-size: 8px;
+            line-height: 9px;
+            white-space: nowrap;
+          }
+        }
+
+        &__content {
+          padding: 0;
+          margin-bottom: 20px;
+          box-shadow: none;
+
+          &-header {
+            // justify-content: start;
+            max-width: none;
+            margin-bottom: 20px;
+
+            &__label {
+              font-size: 10px;
+              line-height: 12px;
+
+              &:not(:last-child) {
+                margin-right: 40px;
+              }
+            }
+          }
+
+          &-label {
+            max-width: none;
+
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          }
+
+          &-input {
+            font-size: 10px;
+            line-height: 30px;
+            overflow: hidden;
+
+            &.is-active {
+              overflow: auto;
+            }
+          }
+
+          &-lift {
+            label {
+              margin: 0;
+            }
+
+            &__details {
+              display: none;
+            }
+          }
+        }
+
+        &__description {
+          font-size: 10px;
+          line-height: 12px;
+        }
+
+        &__footer {
+          flex-direction: column-reverse;
+
+          &-link {
+            font-size: 10px;
+            line-height: 12px;
+
+            svg {
+              display: none;
+            }
+          }
+
+          &-btn {
+            margin-bottom: 15px;
+          }
+        }
+
+        .confirmation {
+          &__list {
+            width: auto;
+          }
+
+          &__item {
+            &:not(:last-child) {
+              margin-bottom: 30px;
+            }
+          }
+
+          &__title {
+            font-size: 12px;
+            line-height: 14px;
+          }
+
+          &__group {
+            &-left {
+              font-size: 10px;
+              line-height: 12px;
+            }
+
+            &-description {
+              font-size: 8px;
+              line-height: 9px;
+            }
+
+            &-right {
+              font-size: 8px;
+              line-height: 9px;
+            }
+
+            &:last-child {
+              align-items: center;
+            }
+          }
+
+          &__radios {
+            font-size: 10px;
+            line-height: 12px;
+
+            &-description {
+              font-size: 8px;
+              line-height: 9px;
+            }
+          }
+
+          &__description {
+            font-size: 8px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+
+    &__order {
+      width: auto;
+
+      .card-order__btns {
+        margin-bottom: 10px;
+      }
     }
   }
 }

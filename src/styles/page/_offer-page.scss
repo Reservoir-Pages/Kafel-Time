@@ -4,6 +4,7 @@
   }
 
   &__description {
+    margin: 0;
     margin-bottom: 70px;
     font-size: 12px;
     line-height: 14px;
@@ -42,6 +43,32 @@
             display: inline-block;
             width: 20%;
             font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      margin-bottom: 30px;
+    }
+
+    &__conditions {
+      padding-left: 15px;
+      margin: 0;
+      margin-bottom: 50px;
+
+      .ac {
+        &-panel {
+          .ac-text {
+            padding: 5px 0;
           }
         }
       }

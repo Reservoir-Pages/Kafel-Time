@@ -1,4 +1,4 @@
-.trends {
+.trands {
   padding-top: 150px;
 
   &-swiper {
@@ -28,15 +28,14 @@
 }
 
 @media (max-width: 768px) {
-  .trends {
+  .trands {
     padding-top: 50px;
 
     &-swiper {
       &__slide {
-        width: 160px;
-
         &-image {
           img {
+            height: auto;
             min-height: 80px;
           }
         }

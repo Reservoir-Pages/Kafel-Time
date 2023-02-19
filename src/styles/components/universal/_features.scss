@@ -31,3 +31,31 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    padding: 20px 15px;
+
+    &__item {
+      svg {
+        height: 35px;
+        width: 35px;
+      }
+    }
+
+    &__content {
+      span {
+        max-width: none;
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

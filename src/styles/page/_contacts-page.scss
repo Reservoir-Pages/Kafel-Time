@@ -14,11 +14,14 @@
 
     &-item {
       display: flex;
-      margin-bottom: 30px;
       font-size: 12px;
       line-height: 22px;
       font-weight: 400;
       font-style: normal;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
 
       svg {
         margin-right: 30px;
@@ -245,6 +248,67 @@
       span {
         display: block;
         width: max-content;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    &__info {
+      max-width: none;
+      margin-right: 0;
+      margin-bottom: 40px;
+
+      &-item {
+        line-height: 14px;
+
+        svg {
+          margin-right: 15px;
+        }
+
+        span {
+          // width: calc(100%);
+        }
+      }
+    }
+
+    &__requisites {
+      max-width: none;
+    }
+
+    &__feedback {
+      width: auto;
+      margin-bottom: 40px;
+    }
+
+    &__map {
+      height: 300px;
+    }
+
+    &__offices {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+
+    &__office {
+      width: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      b {
+        margin-bottom: 15px;
       }
     }
   }

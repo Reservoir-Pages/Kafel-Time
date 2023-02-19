@@ -5,7 +5,6 @@ holdBtns.forEach(holdBtn => {
     holdBtn.classList.toggle('hold-btn--active');
   });
 });
-
 // More button
 const moreBtns = document.querySelectorAll('.more-btn');
 moreBtns.forEach(btn => {
@@ -26,18 +25,17 @@ moreBtns.forEach(btn => {
     });
   });
 });
-
 // Switch button
 const switchBtns = document.querySelectorAll('.switch-button');
 switchBtns.forEach(brandsBtn => {
   brandsBtn.addEventListener('click', (e) => {
+    console.log('111');
     switchBtns.forEach(brandsBtn => {
       brandsBtn.classList.remove('switch-button--active');
     });
     brandsBtn.classList.add('switch-button--active');
   });
 });
-
 // Переключение цветов
 const colorValue = document.querySelector('.specifications-desrcription__wrapper .specifications-desrcription__value');
 const colorBtns = document.querySelectorAll('.specifications-desrcription__color');
@@ -55,11 +53,38 @@ colorBtns.forEach((btn, index) => {
     btn.classList.add('specifications-desrcription__color--active');
   });
 });
-
-// Кнопка избранное
+// Кнопка "Избранное"
 const favoriteIcons = document.querySelectorAll('.favorite-icon');
 favoriteIcons.forEach(favoriteIcon => {
     favoriteIcon.addEventListener('click', (e) => {
       favoriteIcon.classList.toggle('favorite-icon--active');
     });
+});
+// Кнопка "Показать все"
+const horizontalFilters = document.querySelectorAll('.filters-horizontal__item');
+horizontalFilters.forEach(horizontalFilter => {
+  const viewAllBtn = horizontalFilter.querySelector('.filters-horizontal__item-all');
+  if(viewAllBtn) {
+    viewAllBtn.addEventListener('click', (e) => {
+      horizontalFilter.querySelector('.swiper-wrapper').classList.toggle('view-all');
+    });
+  };
+});
+// Кнопка "Развернуть"/"Свернуть"
+const openBtns = document.querySelectorAll('.catalog-brand__btn-open');
+openBtns.forEach(openBtn => {
+  const openingBlock = document.querySelector('.catalog-brand__description');
+  openBtn.addEventListener('click', (e) => {
+    openBtn.textContent = (openBtn.textContent === 'Свернуть') ? 'Развернуть' : 'Свернуть';
+    openingBlock.classList.toggle('catalog-brand__description--open');
+  });
+});
+// Кнопка "Dropdown"
+const dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach(dropdown => {
+  const dropdownBtn = dropdown.querySelector('.dropdown-btn');
+  const dropdownItems = dropdown.querySelectorAll('.dropdown-item');
+  dropdownBtn.addEventListener('click', (e) => {
+    dropdown.classList.toggle('dropdown--open');
+  });
 });

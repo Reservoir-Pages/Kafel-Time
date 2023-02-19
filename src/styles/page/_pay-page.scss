@@ -54,3 +54,35 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .pay {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      &-title {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      &-way {
+        margin-bottom: 50px;
+
+        li {
+          font-size: 14px;
+          line-height: 16px;
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+
+          div {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -90,3 +90,164 @@
     max-width: 400px;
   }
 }
+
+@media (max-width: 768px) {
+  .cart {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__preview {
+      width: auto;
+    }
+
+    &__menu {
+      justify-content: start;
+      width: auto;
+      margin-bottom: 20px;
+
+      li {
+        &:first-child {
+          display: none;
+        }
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+
+        button {
+          font-size: 10px;
+          line-height: 12px;
+
+          svg {
+            height: 10px;
+            width: 10px;
+          }
+        }
+      }
+    }
+
+    &__list {
+      margin-bottom: 30px;
+
+      &-card {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+
+      .card-horizontal {
+        flex-direction: row;
+        padding: 10px 10px 5px;
+
+        .card {
+          &__bage {
+            top: auto;
+            right: 10px;
+            bottom: 10px;
+          }
+
+          &__image {
+            max-width: 100px;
+            margin-right: 10px;
+          }
+
+          &__swiper {
+            .swiper-slide {
+              min-height: 100px;
+            }
+          }
+
+          &__content {
+            height: 100%;
+
+            & > div {
+              &:first-child {
+                margin-bottom: 15px;
+              }
+            }
+          }
+
+          &__description {
+            margin: 0;
+            font-size: 8px;
+            line-height: 9px;
+          }
+
+          &__brand {
+            display: none;
+          }
+
+          &__article {
+            margin: 0;
+          }
+
+          &__model {
+            margin-bottom: 10px;
+          }
+
+          &__cost {
+            & > div {
+              &:first-child {
+                display: none;
+              }
+            }
+
+            .choices {
+              display: none;
+            }
+          }
+
+          &__summary {
+            & > div:first-child:not(.counter) {
+              display: none;
+            }
+
+            &-result {
+              font-size: 12px;
+              line-height: 14px;
+
+              & + span {
+                font-size: 10px;
+                line-height: 12px;
+                font-weight: 400;
+              }
+            }
+
+            &-counter {
+              height: 20px;
+              max-width: 90px;
+
+              & + div {
+                margin-bottom: 5px;
+              }
+
+              input {
+                font-size: 8px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 15px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__additionaly {
+      margin-bottom: 30px;
+    }
+
+    &__buy {
+      width: auto;
+    }
+  }
+}

@@ -1,13 +1,5 @@
 .placement {
-  &__tile {
-    &--active {
-      svg rect {
-        fill: $color-yellow;
-      }
-    }
-  }
-
-  &__list {
+  &__btn {
     &--active {
       svg rect {
         fill: $color-yellow;

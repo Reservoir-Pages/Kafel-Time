@@ -42,8 +42,7 @@
     &-swiper {
       &__slide {
         padding-bottom: 6px;
-        min-width: 75px;
-        max-width: 75px;
+        height: auto;
 
         &-image {
           min-height: 45px;

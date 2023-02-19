@@ -86,7 +86,8 @@ if (document.querySelector('.account-window')) {
           const form = document.querySelector('.account-form');
           form.remove();
           headerModal.remove();
-          accountWindow.append(createForm(['Введите пароль'], ['Сохранить']));
+          const title = 'На указанный номер телефона был выслан шестизначный пароль для входа в личный кабинет';
+          accountWindow.append(createForm(['Введите пароль'], ['Сохранить'], title));
         } else {
           alert('Заполните все поля');
         };

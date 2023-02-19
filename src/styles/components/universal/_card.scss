@@ -55,6 +55,7 @@
 
       img {
         margin-bottom: 5px;
+        width: 100%;
         border-radius: 10px;
       }
     }
@@ -134,20 +135,29 @@
   }
 
   &__color {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 215px;
+    // display: grid;
+    // grid-template-columns: repeat(6, 1fr);
+    // gap: 7px;
     margin-bottom: 10px;
 
     &-item {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-bottom: 5px;
       height: 30px;
+      width: 30px;
       border-radius: 5px;
       font-size: 12px;
       line-height: 14px;
       font-weight: 500;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
 
       &--1 {
         background-color: #404040;
@@ -259,5 +269,82 @@
     bottom: 10px;
     left: 10px;
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 10px 9px 40px;
+
+    &__bage {
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    &__swiper {
+      .swiper-slide {
+        min-height: 120px;
+      }
+    }
+
+    &__description {
+      font-size: 8px;
+      line-height: 9px;
+    }
+
+    &__model {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &__available {
+      font-size: 8px;
+      line-height: 9px;
+    }
+
+    &__price {
+      &-current {
+        margin: 0;
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 500;
+
+        & + span {
+          margin-right: 0px;
+          font-size: 10px;
+          line-height: 12px;
+          font-weight: 500;
+        }
+      }
+
+      &-old {
+        font-size: 10px;
+        line-height: 12px;
+
+        & + span {
+          font-size: 6px;
+          line-height: 7px;
+        }
+      }
+    }
+
+    &__color {
+      &-item {
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+      }
+    }
+
+    &__btns {
+      button {
+        svg {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
   }
 }

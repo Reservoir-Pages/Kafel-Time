@@ -179,3 +179,91 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .profitable {
+    &__title {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &__content {
+      padding: 0;
+      background-color: $color-white;
+
+      &-btn {
+        font-size: 12px;
+        line-height: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      &-kit {
+        flex-direction: column;
+        padding: 0 0 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+
+        .card {
+          flex-direction: row;
+          flex-wrap: wrap;
+          max-width: none;
+          padding: 0 5px;
+
+          &__btn {
+            &-change {
+              display: none;
+            }
+          }
+
+          &__image {
+            height: 70px;
+            width: 70px;
+          }
+
+          &__model {
+            width: calc(100vw - 10px - 70px - 20px);
+            padding: 10px 0;
+          }
+
+          &__price {
+            position: absolute;
+            bottom: 10px;
+            left: 75px;
+
+            &-current {
+              margin-right: 10px;
+              font-size: 14px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+
+      &-logic {
+        display: none;
+      }
+
+      &-summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        padding: 0 10px;
+
+        &__result {
+          font-size: 20px;
+          line-height: 23px;
+        }
+
+        &__gain {
+          font-size: 12px;
+          line-height: 14px;
+        }
+
+        &__view {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

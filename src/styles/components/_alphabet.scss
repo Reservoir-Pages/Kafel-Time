@@ -22,9 +22,47 @@
     &:hover {
       background-color: #c1c1c1;
     }
+
+    &--all {
+      display: none;
+    }
   }
 
   .hold-btn--active {
     background-color: $color-yellow;
+  }
+}
+
+@media (max-width: 768px) {
+  .alphabet {
+    margin-bottom: 30px;
+
+    &__language {
+      flex-wrap: wrap;
+
+      &--rus {
+        display: none;
+      }
+    }
+
+    &__btn {
+      padding: 9px 13px;
+      margin-right: 1%;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      font-size: 10px;
+      line-height: 12px;
+
+      &--all {
+        display: block;
+        margin-right: 25px;
+        background-color: $color-yellow;
+      }
+
+      &--digits {
+        display: block;
+        margin-left: auto;
+      }
+    }
   }
 }
