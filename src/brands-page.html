@@ -41,12 +41,17 @@
           </label>
 
         </div>
-        <div class="brands-page__alphabet alphabet">
-          <div class="alphabet__language alphabet__language--en">
-            <button class="alphabet__btn alphabet__btn--all hold-btn hold-btn--active btn-reset">Все</button>
+        <div class="brands-page__alphabet alphabet tab-content tab-content--active">
+          <div class="alphabet__tabs tabs">
+            <button class="alphabet__tab tab-btn tab-btn--active btn-reset" data-tabs-path="null">Все</button>
+            <button class="alphabet__tab tab-btn btn-reset" data-tabs-path="russian">А - Я</button>
+            <button class="alphabet__tab tab-btn btn-reset" data-tabs-path="english">A - Z</button>
+            <button class="alphabet__tab tab-btn btn-reset" data-tabs-path="null">0-9</button>
+          </div>
+          <div class="alphabet__language alphabet__language--en tab-content" data-tabs-target="english">
             <button class="alphabet__btn hold-btn btn-reset">A</button>
             <button class="alphabet__btn hold-btn btn-reset">B</button>
-            <button class="alphabet__btn hold-btn btn-reset">C</button>
+            <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">C</button>
             <button class="alphabet__btn hold-btn btn-reset">D</button>
             <button class="alphabet__btn hold-btn btn-reset">E</button>
             <button class="alphabet__btn hold-btn btn-reset">F</button>
@@ -57,28 +62,26 @@
             <button class="alphabet__btn hold-btn btn-reset">K</button>
             <button class="alphabet__btn hold-btn btn-reset">L</button>
             <button class="alphabet__btn hold-btn btn-reset">M</button>
-            <button class="alphabet__btn hold-btn btn-reset">N</button>
+            <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">N</button>
             <button class="alphabet__btn hold-btn btn-reset">O</button>
             <button class="alphabet__btn hold-btn btn-reset">P</button>
             <button class="alphabet__btn hold-btn btn-reset">Q</button>
             <button class="alphabet__btn hold-btn btn-reset">R</button>
             <button class="alphabet__btn hold-btn btn-reset">S</button>
-            <button class="alphabet__btn hold-btn btn-reset">T</button>
+            <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">T</button>
             <button class="alphabet__btn hold-btn btn-reset">U</button>
             <button class="alphabet__btn hold-btn btn-reset">V</button>
             <button class="alphabet__btn hold-btn btn-reset">W</button>
             <button class="alphabet__btn hold-btn btn-reset">X</button>
-            <button class="alphabet__btn hold-btn btn-reset">Y</button>
+            <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">Y</button>
             <button class="alphabet__btn hold-btn btn-reset">Z</button>
-            <!-- <button class="alphabet__btn hold-btn btn-reset">0-9</button> -->
             <button class="alphabet__btn alphabet__btn--digits hold-btn btn-reset">0-9</button>
           </div>
-          <div class="alphabet__language alphabet__language--rus">
-            <!-- <button class="alphabet__btn alphabet__btn--all hold-btn hold-btn--active btn-reset">Все</button> -->
+          <div class="alphabet__language alphabet__language--rus tab-content" data-tabs-target="russian">
             <button class="alphabet__btn hold-btn btn-reset">А</button>
             <button class="alphabet__btn hold-btn btn-reset">Б</button>
             <button class="alphabet__btn hold-btn btn-reset">В</button>
-            <button class="alphabet__btn hold-btn btn-reset">Г</button>
+            <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">Г</button>
             <button class="alphabet__btn hold-btn btn-reset">Д</button>
             <button class="alphabet__btn hold-btn btn-reset">Е</button>
             <button class="alphabet__btn hold-btn btn-reset">Ж</button>
@@ -89,21 +92,20 @@
             <button class="alphabet__btn hold-btn btn-reset">М</button>
             <button class="alphabet__btn hold-btn btn-reset">Н</button>
             <button class="alphabet__btn hold-btn btn-reset">О</button>
-            <button class="alphabet__btn hold-btn btn-reset">П</button>
+            <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">П</button>
             <button class="alphabet__btn hold-btn btn-reset">Р</button>
             <button class="alphabet__btn hold-btn btn-reset">С</button>
             <button class="alphabet__btn hold-btn btn-reset">Т</button>
             <button class="alphabet__btn hold-btn btn-reset">У</button>
-            <button class="alphabet__btn hold-btn btn-reset">Ф</button>
+            <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">Ф</button>
             <button class="alphabet__btn hold-btn btn-reset">Х</button>
             <button class="alphabet__btn hold-btn btn-reset">Ц</button>
             <button class="alphabet__btn hold-btn btn-reset">Ч</button>
             <button class="alphabet__btn hold-btn btn-reset">Ш</button>
-            <button class="alphabet__btn hold-btn btn-reset">Щ</button>
+            <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">Щ</button>
             <button class="alphabet__btn hold-btn btn-reset">Э</button>
             <button class="alphabet__btn hold-btn btn-reset">Ю</button>
             <button class="alphabet__btn hold-btn btn-reset">Я</button>
-            <!-- <button class="alphabet__btn alphabet__btn--digits hold-btn btn-reset">0-9</button> -->
           </div>
         </div>
         <div class="brands-page__swiper brands-swiper swiper">

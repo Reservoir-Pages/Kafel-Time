@@ -242,6 +242,7 @@
     }
 
     &__btn-open {
+      display: inline-block;
       margin-bottom: 20px;
       font-size: 12px;
       line-height: 14px;
@@ -370,6 +371,14 @@
     }
 
     .catalog-brand-list-swiper {
+      padding: 5px;
+
+      // .card-horizontal {
+      //   &:not(:last-child) {
+      //     margin-bottom: 10px;
+      //   }
+      // }
+
       &__btn-more {
         margin-bottom: 15px;
       }

@@ -11,8 +11,19 @@
     }
   }
 
-  .tab-btn--active {
-    background-color: $color-yellow;
+  .tab {
+    &-btn {
+      &--active {
+        background-color: $color-yellow;
+      }
+    }
+    &-content {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
   }
 
   &-swiper {

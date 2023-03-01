@@ -16,7 +16,10 @@ tabContents.forEach(tabContent => {
           if(tabContentChildren.classList.contains('tab-content--active')) {
             tabContentChildren.classList.remove('tab-content--active');
           };
-          document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tab-content--active');
+          if (path !== 'null') {
+            document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tab-content--active');
+          }
+          // document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tab-content--active');
         });
       });
     });

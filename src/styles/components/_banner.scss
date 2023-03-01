@@ -42,6 +42,8 @@
 
 @media (max-width: 768px) {
   .banner {
+    padding-top: 10px;
+
     &-swiper {
       &__slide {
         height: 300px;

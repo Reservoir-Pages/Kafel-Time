@@ -3,10 +3,16 @@ const menuBtns = document.querySelectorAll('.catalog__btn');
 menuBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
     btn.classList.toggle('catalog__btn--active');
+    if (btn.classList.contains('catalog__btn--active') && window.innerWidth < 769) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = 'visible';
+    };
     // Элементам сантехники и плитки при клике добавляем/убираем класс 'is-active' - показываем/скрываем окно информации
     const catalogMenuItems = document.querySelectorAll('.catalog__item');
     catalogMenuItems.forEach(menuItem => {
-      // menuItem.classList.remove('is-active');
+      menuItem.classList.remove('is-active');
+
       if (!menuItem.classList.contains('catalog__item--grey') && menuItem !== catalogMenuItems[0]) {
         menuItem.addEventListener('click', (e) => {
           const link = menuItem.querySelector('.catalog__link');
@@ -66,8 +72,8 @@ plumbingItems.forEach(plumbingItem => {
 
 
 
-window.addEventListener('resize', (e) => {
-});
+// window.addEventListener('resize', (e) => {
+// });
 // document.addEventListener('click', (e) => {
 //   console.log('Нажал на:', e.target);
 // });

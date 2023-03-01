@@ -227,11 +227,15 @@
         }
 
         &--prev {
-          left: 0;
+          position: fixed;
+          top: 50%;
+          left: 5px;
         }
 
         &--next {
-          right: 0;
+          position: fixed;
+          top: 50%;
+          right: 5px;
         }
       }
     }

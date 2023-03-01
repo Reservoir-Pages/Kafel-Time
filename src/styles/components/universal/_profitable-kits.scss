@@ -208,10 +208,15 @@
           flex-wrap: wrap;
           max-width: none;
           padding: 0 5px;
+          margin-bottom: 20px;
 
           &__btn {
             &-change {
-              display: none;
+              // display: none;
+              position: absolute;
+              bottom: 10px;
+              left: 75px;
+              margin: 0;
             }
           }
 
@@ -221,13 +226,14 @@
           }
 
           &__model {
+            height: max-content;
             width: calc(100vw - 10px - 70px - 20px);
             padding: 10px 0;
           }
 
           &__price {
             position: absolute;
-            bottom: 10px;
+            bottom: 25px;
             left: 75px;
 
             &-current {
@@ -248,14 +254,16 @@
         justify-content: space-between;
         align-items: flex-end;
         flex-wrap: wrap;
-        padding: 0 10px;
+        padding: 20px 10px 0;
 
         &__result {
+          margin-bottom: 20px;
           font-size: 20px;
           line-height: 23px;
         }
 
         &__gain {
+          margin-bottom: 20px;
           font-size: 12px;
           line-height: 14px;
         }

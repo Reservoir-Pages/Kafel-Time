@@ -201,17 +201,17 @@ swiperElements.forEach(swiper => {
     parentClassElement = '.catalog-tiles-list-swiper';
     swiperElement = `${parentClassElement}.tab-content--active`;
     tabDataPath = 'collections';
-    digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 1, 1, 1, 0);
+    digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 1, 1, 1, 15);
   };
   if (swiper.classList.contains('catalog-plumbing-list-swiper')) {
     parentClassElement = '.catalog-plumbing-list-swiper';
     swiperElement = parentClassElement;
-    digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 2, 2, 2, 0);
+    digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 2, 2, 2, 15);
   };
-  if (swiper.classList.contains('catalog-brand-list__swiper')) {
-    parentClassElement = '.catalog-brand-list__swiper';
+  if (swiper.classList.contains('catalog-brand-list-swiper')) {
+    parentClassElement = '.catalog-brand-list-swiper';
     swiperElement = parentClassElement;
-    digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 2, 2, 2, 0);
+    digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 2, 2, 2, 20);
   };
 });
 let placement = 'tile';
@@ -232,7 +232,7 @@ placementBtns.forEach(placementBtn => {
           card.classList.add('card-horizontal');
         });
       });
-      digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 6, 1, 1, 1, 0, 4, 1, 1, 1, 0);
+      digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 6, 1, 1, 1, 0, 4, 1, 1, 1, 15);
     } else {
       placementLists.forEach(placementList => {
         placementList.querySelectorAll('.card').forEach(card => {
@@ -240,9 +240,9 @@ placementBtns.forEach(placementBtn => {
         });
       });
       if (tabDataPath === 'products') {
-        digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 2, 2, 2, 20);
+        digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 2, 2, 2, 15);
       } else {
-        digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 1, 1, 1, 0);
+        digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 1, 1, 1, 15);
       };
     };
   });
@@ -257,15 +257,15 @@ tabs.forEach(tab => {
       const placementLists = document.querySelector(swiperElement);
       if (placement === 'tile') {
         if (tabDataPath === 'products') {
-          digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 2, 2, 2, 10);
+          digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 2, 2, 2, 15);
         } else {
-          digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 1, 1, 1, 0);
+          digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 3, 4, 4, 4, 20, 4, 1, 1, 1, 15);
         };
         placementLists.querySelectorAll('.card').forEach(card => {
           card.classList.remove('card-horizontal');
         });
       } else {
-        digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 4, 1, 1, 1, 0, 4, 1, 1, 1, 0);
+        digitPaginationSwiper = digitPaginationSwiperInit(swiperElement, parentClassElement, 4, 1, 1, 1, 0, 4, 1, 1, 1, 15);
         placementLists.querySelectorAll('.card').forEach(card => {
           card.classList.add('card-horizontal');
         });
@@ -273,13 +273,13 @@ tabs.forEach(tab => {
     }, 1);
   });
 });
-const brandsPage = digitPaginationSwiperInit('.brands-swiper', '.brands-swiper', 6, 5, 5, 5, 20, 6, 2, 2, 2, 10,);
+const brandsPage = digitPaginationSwiperInit('.brands-swiper', '.brands-swiper', 6, 5, 5, 5, 20, 6, 2, 2, 2, 15);
 // Swiper(Слайдеры с взаимным управлением)
 const comparePageCardsSwiper = new Swiper('.compare__card-swiper', {
   loop: true,
   allowTouchMove: false,
   slidesPerView: 2,
-  spaceBetween: 10,
+  spaceBetween: 13,
   navigation: {
     nextEl: '.card-swiper__btn--next',
     prevEl: '.card-swiper__btn--prev',

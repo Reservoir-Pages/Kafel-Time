@@ -2,7 +2,9 @@
 const holdBtns = document.querySelectorAll('.hold-btn');
 holdBtns.forEach(holdBtn => {
   holdBtn.addEventListener('click', (e) => {
-    holdBtn.classList.toggle('hold-btn--active');
+    if (!holdBtn.classList.contains('alphabet__btn--disabled')) {
+      holdBtn.classList.toggle('hold-btn--active');
+    };
   });
 });
 // More button
@@ -29,7 +31,6 @@ moreBtns.forEach(btn => {
 const switchBtns = document.querySelectorAll('.switch-button');
 switchBtns.forEach(brandsBtn => {
   brandsBtn.addEventListener('click', (e) => {
-    console.log('111');
     switchBtns.forEach(brandsBtn => {
       brandsBtn.classList.remove('switch-button--active');
     });

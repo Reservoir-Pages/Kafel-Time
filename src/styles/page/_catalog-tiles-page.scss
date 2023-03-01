@@ -120,6 +120,20 @@
       }
     }
 
+    &__btn {
+      padding: 7px 12px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      background-color: #e5e5e5;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
     .swiper {
       &-slide {
         width: auto;
@@ -157,6 +171,10 @@
       color: $color-black;
       text-decoration: underline;
     }
+  }
+
+  &__filters-btn {
+    display: none;
   }
 
   .tab {
@@ -295,98 +313,111 @@
     &__filters-vertical {
       display: none;
     }
-  }
 
-  .filters-horizontal {
-    &__item {
-      &:not(:first-child) {
-        display: none;
+    .filters-horizontal {
+      &__item {
+        &:not(:first-child) {
+          display: none;
+        }
+
+        &-all {
+          display: none;
+        }
+
+        &-body {
+          flex-wrap: nowrap;
+        }
+
+        .swiper {
+          &-slide {
+            width: auto;
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .catalog-tiles-list {
+      &__header {
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 15px;
       }
 
-      &-all {
-        display: none;
-      }
-
-      &-body {
-        flex-wrap: nowrap;
-      }
-
-      .swiper {
-        &-slide {
-          width: auto;
-          margin-bottom: 0;
+      &__choice {
+        &-btn {
+          padding: 10px 15px;
+          border: 1px solid transparent;
+          border-radius: 30px;
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: 500;
+          color: $color-black;
 
           &:not(:last-child) {
-            margin-right: 0;
+            margin-right: 20px;
           }
         }
-      }
-    }
-  }
 
-  .catalog-tiles-list {
-    &__header {
-      position: relative;
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      margin-bottom: 15px;
-    }
-
-    &__choice {
-      &-btn {
-        padding: 10px 15px;
-        border: 1px solid transparent;
-        border-radius: 30px;
-        font-size: 12px;
-        line-height: 14px;
-        font-weight: 500;
-        color: $color-black;
-
-        &:not(:last-child) {
-          margin-right: 20px;
+        .tab-btn--active {
+          border: 1px solid $color-yellow;
+          text-decoration: none;
+          background-color: $color-yellow;
         }
       }
 
-      .tab-btn--active {
-        border: 1px solid $color-yellow;
-        text-decoration: none;
-        background-color: $color-yellow;
-      }
-    }
-
-    .choices {
-      min-width: max-content;
-      margin-bottom: 20px;
-
-      &[data-type*="select-one"] {
-        & .choices__inner {
-          padding-left: 0;
-        }
-      }
-
-      &__placeholder {
-        opacity: 1;
-      }
-
-      &__list {
-        padding-left: 0;
+      &__filters-btn {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: flex;
         font-size: 10px;
-        line-height: 12px;
+        line-height: 24px;
+        font-weight: 500;
+      }
 
-        &--dropdown {
-          left: 0;
+      &__sort {
+        margin-bottom: 20px;
+      }
 
-          .choices__item {
-            font-size: 10px;
+      .choices {
+        min-width: max-content;
+
+        &[data-type*="select-one"] {
+          & .choices__inner {
+            padding-left: 0;
+          }
+        }
+
+        &__placeholder {
+          opacity: 1;
+        }
+
+        &__list {
+          padding-left: 0;
+          font-size: 10px;
+          line-height: 12px;
+
+          &--dropdown {
+            left: 0;
+
+            .choices__item {
+              font-size: 10px;
+            }
           }
         }
       }
-    }
 
-    &__position {
-      position: absolute;
-      top: 0;
-      right: 0;
+      &__position {
+        position: absolute;
+        top: 5px;
+        right: 0;
+      }
     }
   }
 }
