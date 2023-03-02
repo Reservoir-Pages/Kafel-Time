@@ -15,7 +15,7 @@ const mainPageTrandsSwiper = new Swiper('.trands-swiper', {
     }
   }
 });
-const mainPageStocksSwiper = new Swiper('.stocks-swiper', {
+const mainPageStocksSwiper = new Swiper('.sales-swiper', {
   loop: true,
   slidesPerView: 1.7,
   spaceBetween: 10,

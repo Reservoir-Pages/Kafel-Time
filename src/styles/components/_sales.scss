@@ -1,4 +1,4 @@
-.stocks {
+.sales {
   padding-top: 26px;
   font-size: 16px;
   line-height: 19px;
@@ -28,8 +28,7 @@
 }
 
 @media (max-width: 768px) {
-  .stocks {
-    // display: none;
+  .sales {
     font-size: 10px;
     line-height: 12px;
 

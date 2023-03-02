@@ -28,7 +28,7 @@
 // подключения универсальных компонентов страницы
 @import "./components/swiper-header";
 @import "./components/banner";
-@import "./components/stocks";
+@import "./components/sales";
 @import "./components/plumbing";
 @import "./components/ceramics";
 @import "./components/new";
@@ -64,3 +64,4 @@
 @import "./page/catalog-plumbing-page";
 @import "./page/catalog-tiles-page";
 @import "./page/order-page";
+@import "./page/stocks-page";
