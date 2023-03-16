@@ -30,6 +30,10 @@
   .new {
     padding-top: 50px;
 
+    &__container {
+      padding-right: 0;
+    }
+
     &-swiper {
       &__slide {
         &-image {

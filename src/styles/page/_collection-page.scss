@@ -16,7 +16,7 @@
 
         .swiper-slide {
           display: flex;
-          background-color: #828282;
+          // background-color: #828282;
 
           img {
             margin: auto 0;
@@ -60,6 +60,22 @@
     }
   }
 
+  .tab {
+    &-btn {
+      &--active {
+        background-color: $color-yellow;
+      }
+    }
+
+    &-content {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+  }
+
   &__products {
     margin-bottom: 100px;
 
@@ -83,10 +99,6 @@
         &:not(:last-child) {
           margin-right: 40px;
         }
-      }
-
-      .switch-button--active {
-        background-color: $color-yellow;
       }
     }
 
@@ -167,6 +179,12 @@
         margin-right: 20px;
       }
     }
+
+    &-swiper {
+      &__btn {
+        display: none;
+      }
+    }
   }
 }
 
@@ -183,6 +201,52 @@
       &-preview {
         width: auto;
         margin-bottom: 30px;
+      }
+
+      ///
+      .product__swiper-preview {
+        padding: 5px 3px;
+
+        .swiper {
+          &-wrapper {
+            margin-bottom: 10px;
+          }
+
+          &-slide {
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+
+            img {
+              width: calc(100% - 20px);
+              padding: 10px;
+            }
+          }
+
+          &-pagination {
+            &-bullet {
+              height: 2px;
+              width: 20%;
+              border-radius: 0;
+              background-color: #d9d9d9;
+              opacity: 1;
+
+              &-active {
+                background-color: $color-yellow;
+              }
+
+              &s {
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+      }
+
+      ///
+      .product__swiper-add {
+        display: none;
       }
 
       &-description {
@@ -242,14 +306,15 @@
       }
 
       &-card {
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2 - 5px);
+        margin-bottom: 15px;
 
         &:not(:nth-child(5n + 5)) {
           margin-right: 0;
         }
 
         &:not(:nth-child(2n + 2)) {
-          margin-right: 20px;
+          margin-right: 10px;
         }
       }
     }

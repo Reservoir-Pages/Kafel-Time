@@ -1,7 +1,6 @@
 const continueBtn = document.querySelector('.form__footer-btn');
 const formStepsContents = document.querySelectorAll('.form__content');
 const returnBtn = document.querySelector('.form__footer-link');
-
 if(continueBtn) {
   continueBtn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -53,15 +52,21 @@ if(continueBtn) {
     radioBtn.addEventListener('click', (e) => {
       const path = radioBtn.dataset.path;
       if (path !== undefined) {
+
         if(radioBtn.dataset.path === 'delivery-status') {
           formDescription.classList.add('is-hidden');
           document.querySelector('.cost__parameter--pickup').classList.add('is-hidden');
           document.querySelector('.cost__parameter--delivery').classList.remove('is-hidden');
+          document.querySelector('.confirmation__title--address').textContent = 'Доставка по адресу';
+          document.querySelector('.confirmation__group-title--address').textContent = 'Выбранный адрес доставки';
         } else {
           formDescription.classList.remove('is-hidden');
           document.querySelector('.cost__parameter--pickup').classList.remove('is-hidden');
           document.querySelector('.cost__parameter--delivery').classList.add('is-hidden');
+          document.querySelector('.confirmation__title--address').textContent = 'Самовывоз по адресу';
+          document.querySelector('.confirmation__group-title--address').textContent = 'Выбранный пункт выдачи';
         };
+
         if(radioBtn.dataset.path === 'company') {
           document.querySelectorAll('.form__content-body')[0].classList.add('mb-40');
         } else {
@@ -77,23 +82,17 @@ if(continueBtn) {
     });
   });
   // TextArea
-  const textArea = document.querySelector('.form__content-textarea');
-  const textAreaBtn = document.querySelector('.form__content-textarea + svg');
-  textAreaBtn.addEventListener('click', (e) => {
-    textArea.classList.toggle('is-active');
-    textAreaBtn.classList.toggle('is-active');
-  });
-  // Change background switch
-  const formToggle = document.querySelector('.form-switch');
-  const toggleBtn = document.querySelectorAll('.form-switch input');
-  toggleBtn.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      if(btn.id === 'radio-on') {
-        document.querySelector('.form__content-lift').classList.remove('is-hidden');
-      } else {
-        document.querySelector('.form__content-lift').classList.add('is-hidden');
-      };
+  const textAreas = document.querySelectorAll('.form__content-textarea');
+  textAreas.forEach(textArea => {
+    textArea.nextElementSibling.addEventListener('click', (e) => {
+      textArea.classList.toggle('is-active');
+      textArea.nextElementSibling.classList.toggle('is-active');
     });
+  });
+  // Rise to floor
+  const formToggle = document.querySelector('.form__content-switch');
+  formToggle.addEventListener('click', (e) => {
+    document.querySelector('.form__content-lift').classList.toggle('is-hidden');
   });
   // Lift
   const liftBtn = document.querySelector('.lift-btn');

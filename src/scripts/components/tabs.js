@@ -11,15 +11,17 @@ tabContents.forEach(tabContent => {
           tabBtn.classList.remove('tab-btn--active');
         });
         tabBtn.classList.add('tab-btn--active');
-        const tabContentChildrens = tabContent.children;
+        const tabContentChildrens = tabContent.childNodes;
         [...tabContentChildrens].forEach(tabContentChildren => {
-          if(tabContentChildren.classList.contains('tab-content--active')) {
+          if(tabContentChildren.nodeType === 3) {
+            return;
+          };
+          if(tabContentChildren.classList.contains('tab-content--active') && !tabContentChildren.classList.contains('alphabet')) {
             tabContentChildren.classList.remove('tab-content--active');
           };
           if (path !== 'null') {
             document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tab-content--active');
-          }
-          // document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tab-content--active');
+          };
         });
       });
     });

@@ -33,8 +33,15 @@
 @media (max-width: 768px) {
   .popular {
     padding-top: 50px;
+    font-size: 10px;
+    line-height: 12px;
+
+    &__container {
+      padding-right: 0;
+    }
 
     &__header {
+      padding-right: 10px;
       margin-bottom: 15px;
     }
 

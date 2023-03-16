@@ -112,19 +112,17 @@
                     <path d="M7 15L23 15" stroke="#828282" stroke-linecap="round" />
                   </svg>
                 </label>
-
-
                 <div class="form__content-description">
                   <span class="form__content-description__text">Требуется подъем на этаж</span>
-                  <div class="form-switch">
-                    <input id="radio-off" type="radio" name="switch" value="off" checked>
-                    <label for="radio-off"></label>
-                    <input id="radio-on" type="radio" name="switch" value="on">
-                    <label for="radio-on"></label>
+                  <div class="form__content-switch switch">
+                    <label class="label label--active">
+                      <input id="switch-off" type="radio" name="switch" value="off" checked>
+                    </label>
+                    <label class="label">
+                      <input id="switch-on" type="radio" name="switch" value="on">
+                    </label>
                   </div>
                 </div>
-
-
                 <div class="form__content-lift is-hidden">
                   <label class="form__content-header__label form__content-header__label--flat">
                     <input class="form__content-header__btn lift-btn" type="radio" name="lift">
@@ -155,10 +153,10 @@
                   </div>
                 </li>
                 <li class="confirmation__item">
-                  <h3 class="confirmation__title">Самовывоз по адресу</h3>
+                  <h3 class="confirmation__title confirmation__title--address">Самовывоз по адресу</h3>
                   <div class="confirmation__group">
                     <div class="confirmation__group-left">
-                      <div class="confirmation__group-title">Выбранный пункт выдачи</div>
+                      <div class="confirmation__group-title confirmation__group-title--address">Выбранный пункт выдачи</div>
                       <div class="confirmation__group-description">С 00 вот такого числа</div>
                     </div>
                     <button class="confirmation__group-right btn-reset">Изменить</button>
@@ -198,6 +196,15 @@
                 </li>
                 <li class="confirmation__item">
                   <h3 class="confirmation__title">Дополнительно</h3>
+
+                  <label class="form__content-label">
+                    <textarea class="form__content-input form__content-textarea" name="comment" placeholder="Добавить комментарий к заказу"></textarea>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 23L15 7" stroke="#828282" stroke-linecap="round" />
+                      <path d="M7 15L23 15" stroke="#828282" stroke-linecap="round" />
+                    </svg>
+                  </label>
+
                   <span class="confirmation__description">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -206,13 +213,19 @@
                     </svg>
                     С вами свяжется менеджер для подтверждения заказа
                   </span>
+
+
+                  <!--
                   <div class="confirmation__group">
                     <div class="confirmation__group-left">
                       <div class="confirmation__group-description">В течении 10 минут</div>
                       <div class="confirmation__group-title">Когда Вам позвонить</div>
                     </div>
                     <button class="confirmation__group-right btn-reset">Выбрать другое время</button>
-                  </div>
+                  </div> -->
+
+
+
                 </li>
               </ul>
             </div>

@@ -1,6 +1,7 @@
 // Открытие на мобильной версии
+
 if(window.innerWidth < 769) {
-  if(document.querySelector('person')) {
+  if(document.querySelector('.person')) {
     const personData = document.querySelectorAll('.person__data');
     const personBtns = document.querySelectorAll('.person__tabs-btn');
     const personTabs = document.querySelector('.person__tabs');

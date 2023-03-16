@@ -43,6 +43,7 @@
                   <img src="images/big2.png" />
                 </div>
               </div>
+              <div class="product__swiper-preview__pagination"></div>
             </div>
             <div thumbsSlider="" class="product__swiper-add swiper">
               <div class="swiper-wrapper">
@@ -146,9 +147,6 @@
               <img class="specifications-image" src="images/bonoparte-logo.png" alt="Изображение бренда">
             </div>
           </div>
-
-
-
           <div class="product__info-buy card-order">
             <div class="card-order__bage">
               <button class="btn-reset" aria-label="Поделиться">
@@ -222,8 +220,6 @@
                 <span class="cost__parameter-value cost__result">3556</span>
               </div>
             </div>
-
-
             <div class="card-order__btns">
               <a class="btn btn--active" href="#">Добавить в корзину</a>
               <a class="btn btn--grey" href="#">Купить в 1 клик</a>
@@ -249,19 +245,29 @@
               <a class="card-order__services-delivery-cost" href="delivery-page.html">Рассчитать стоимость доставки</a>
             </div>
           </div>
-
-
-
         </div>
         <div class="product__profitable profitable">
           <div class="profitable__content tab-content tab-content--active">
             <h2 class="profitable__title">Выгодные комплекты</h2>
-            <div class="profitable__content-tabs tabs">
-              <button class="profitable__content-btn tab-btn tab-btn--active btn-reset" data-tabs-path="installation">Комплекты с инсталляцией</button>
-              <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="hygienic">Комплекты с гигиеническим душем</button>
-              <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="furniture">Комплекты с мебелью для туалета</button>
-              <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="accessories">Комплекты с аксессуарами</button>
+            <div class="profitable__swiper swiper">
+              <ul class="profitable__content-tabs tabs swiper-wrapper list-reset">
+                <li class="swiper-slide">
+                  <button class="profitable__content-btn tab-btn tab-btn--active btn-reset" data-tabs-path="installation">Комплекты с инсталляцией</button>
+                </li>
+                <li class="swiper-slide">
+                  <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="hygienic">Комплекты с гигиеническим душем</button>
+                </li>
+                <li class="swiper-slide">
+                  <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="furniture">Комплекты с мебелью для туалета</button>
+                </li>
+                <li class="swiper-slide">
+                  <button class="profitable__content-btn tab-btn btn-reset" data-tabs-path="accessories">Комплекты с аксессуарами</button>
+                </li>
+              </ul>
             </div>
+
+
+
             <div class="profitable__content-kit tab-content tab-content--active" data-tabs-target="installation">
               <div class="profitable__content-kit__card card">
                 <button class="card__btn-change btn-reset">Выбрать другой</button>
@@ -408,9 +414,6 @@
             </div>
           </div>
         </div>
-
-
-
         <div class="product__others">
           <div class="product__others-header">
             <h3 class="product__others-title">Другие товары из коллекции
@@ -420,7 +423,6 @@
             </h3>
             <a class="product__others-link" href="collection-page.html">Все товары коллекции</a>
           </div>
-
           <div class="product__others-swiper swiper">
             <div class="product__others-list swiper-wrapper">
               <div class="product__others-list__card card swiper-slide">
@@ -775,7 +777,6 @@
               </svg>
             </button>
           </div>
-
         </div>
         <div class="product__specifications hiding">
           <h3 class="product__specifications-title">Характеристики</h3>
@@ -856,7 +857,6 @@
         </div>
         <div class="product__similar">
           <h3 class="product__similar-title">Похожие товары</h3>
-
           <div class="product__similar-swiper swiper">
             <div class="product__similar-list swiper-wrapper">
               <div class="product__similar-list__card card swiper-slide">
@@ -1211,7 +1211,6 @@
               </svg>
             </button>
           </div>
-
         </div>
         <ul class="product__features features list-reset">
           <li class="features__item">

@@ -1,4 +1,22 @@
 {
+  "switch": {
+    "scope": "html",
+    "prefix": "v-switch",
+    "body": [
+      "<div class=\"switch\">",
+      " <label class=\"label label--active\">",
+      "   <input id=\"switch-off\" type=\"radio\" name=\"switch\" value=\"off\" checked>",
+      " </label>",
+      " <label class=\"label\">",
+      "   <input id=\"switch-on\" type=\"radio\" name=\"switch\" value=\"on\">",
+      " </label>",
+      "</div>"
+    ],
+    "description":"Snippet for switch"
+  },
+
+
+
   "svguse": {
     "scope": "html",
     "prefix": "g-use",

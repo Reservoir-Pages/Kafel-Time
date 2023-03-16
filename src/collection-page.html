@@ -41,6 +41,7 @@
                   <img src="images/big2.png" />
                 </div>
               </div>
+              <div class="product__swiper-preview__pagination"></div>
             </div>
             <div thumbsSlider="" class="product__swiper-add swiper">
               <div class="swiper-wrapper">
@@ -193,13 +194,14 @@
             </div>
           </div>
         </div>
-        <div class="collection__products" id="element">
+        <div class="collection__products tab-content tab-content--active" id="element">
           <h3 class="collection__products-title">Элементы коллекции</h3>
-          <div class="collection__products-header">
-            <button class="collection__products-header__btn switch-button switch-button--active btn-reset">Все (<span>8</span>)</button>
-            <button class="collection__products-header__btn switch-button btn-reset">Мозайка (<span>8</span>)</button>
+          <div class="collection__products-header tabs">
+            <button class="collection__products-header__btn tab-btn tab-btn--active btn-reset" data-tabs-path="all">Все
+              (<span>8</span>)</button>
+            <button class="collection__products-header__btn tab-btn btn-reset" data-tabs-path="all">Мозайка (<span>8</span>)</button>
           </div>
-          <div class="collection__products-swiper swiper">
+          <div class="collection__products-swiper tab-content tab-content--active swiper" data-tabs-target="all">
             <div class="collection__products-list swiper-wrapper">
               <div class="collection__products-card card swiper-slide">
                 <a class="card__link" href="product-page.html"></a>

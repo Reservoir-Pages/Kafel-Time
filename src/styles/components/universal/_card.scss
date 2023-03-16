@@ -40,7 +40,7 @@
   &__image {
     min-height: 40%;
     height: 100%;
-    max-height: 220px;
+    // max-height: 220px;
     max-width: 100%;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -52,11 +52,11 @@
       display: flex;
       align-items: center;
       min-height: 210px;
+      border-radius: 10px;
 
       img {
         margin-bottom: 5px;
         width: 100%;
-        border-radius: 10px;
       }
     }
   }
@@ -292,6 +292,26 @@
 
     &__pagination {
       display: flex;
+
+      .swiper-pagination-bullet {
+        // position: relative;
+        // background-color: #828282;
+        // height: 2px;
+        // width: 30%;
+
+        &::before {
+          // content: "";
+          // position: absolute;
+          // left: 0;
+          // bottom: 0;
+          height: 50px;
+          // width: 100%;
+        }
+
+        // &-active {
+        //   background-color: $color-yellow;
+        // }
+      }
     }
 
     &__description {

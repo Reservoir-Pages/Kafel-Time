@@ -43,7 +43,18 @@
 
     &-tabs {
       display: flex;
+    }
+
+    .swiper {
       margin-bottom: 35px;
+
+      &-slide {
+        max-width: max-content;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
     }
 
     &-btn {
@@ -53,10 +64,6 @@
       line-height: 14px;
       font-weight: 400;
       background-color: #e5e5e5;
-
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
     }
 
     &-kit {
@@ -185,11 +192,22 @@
     &__title {
       font-size: 16px;
       line-height: 19px;
+      margin-bottom: 20px;
     }
 
     &__content {
       padding: 0;
       background-color: $color-white;
+
+      .swiper {
+        margin-bottom: 15px;
+
+        &-slide {
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
+      }
 
       &-btn {
         font-size: 12px;
@@ -209,6 +227,7 @@
           max-width: none;
           padding: 0 5px;
           margin-bottom: 20px;
+          box-shadow: none;
 
           &__btn {
             &-change {

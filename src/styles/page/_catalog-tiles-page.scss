@@ -302,6 +302,10 @@
 
 @media (max-width: 768px) {
   .catalog-tiles {
+    &__container {
+      padding-right: 0;
+    }
+
     &-swiper {
       display: none;
     }
@@ -346,7 +350,12 @@
         position: relative;
         flex-direction: column-reverse;
         align-items: flex-start;
+        padding-right: 10px;
         margin-bottom: 15px;
+      }
+
+      &__swiper {
+        padding-right: 15px;
       }
 
       &__choice {
@@ -416,7 +425,7 @@
       &__position {
         position: absolute;
         top: 5px;
-        right: 0;
+        right: 10px;
       }
     }
   }

@@ -78,7 +78,7 @@ const plumbingPageSwiper = new Swiper('.catalog-plumbing__swiper', {
 // Swiper(Слайдер с шестью слайдами)
 const mainPagePlumbingSwiper = new Swiper('.plumbing-swiper', {
   loop: true,
-  slidesPerView: 3.5,
+  slidesPerView: 3.7,
   spaceBetween: 10,
   navigation: {
     nextEl: '.plumbing__button-next',
@@ -135,6 +135,18 @@ if(window.innerWidth < 769) {
   });
   const catalogPageFilterSwiper = new Swiper('.filters-horizontal__item-swiper', {
     loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+  });
+  // Кнопки выбора "Выгодных комплектов"
+  const kitBtns = document.querySelectorAll('.profitable__content-btn');
+  const kitBtnValues = ['+ инсталляция', '+ гигиенический душ', '+ мебель для туалета', '+ аксессуары'];
+  kitBtns.forEach((btn, index) => {
+    if (window.innerWidth < 769) {
+      btn.textContent = kitBtnValues[index];
+    };
+  });
+  const productPageProfitableSwiper = new Swiper('.profitable__swiper', {
     slidesPerView: 'auto',
     spaceBetween: 10,
   });
@@ -288,10 +300,6 @@ const comparePageCardsSwiper = new Swiper('.compare__card-swiper', {
     769: {
       slidesPerView: 4,
       spaceBetween: 20,
-      navigation: {
-        nextEl: '.compare__button-next',
-        prevEl: '.compare__button-prev',
-      },
     }
   }
 });
@@ -303,6 +311,10 @@ const comparePageParametersSwiper = new Swiper('.compare__descr-swiper', {
     769: {
       slidesPerView: 4,
       spaceBetween: 20,
+      navigation: {
+        nextEl: '.compare__button-next',
+        prevEl: '.compare__button-prev',
+      },
     }
   }
 });
@@ -318,8 +330,13 @@ const productPageBigSwiper = new Swiper(".product__swiper-add", {
 });
 const productPageMiniSwiper = new Swiper(".product__swiper-preview", {
   loop:true,
+  spaceBetween: 10,
   thumbs: {
     swiper: productPageBigSwiper,
+  },
+  pagination: {
+    el: '.product__swiper-preview__pagination',
+    clickable: true,
   },
 });
 // Swiper(Слайдер с перемоткой при наведении)
@@ -401,28 +418,22 @@ function initialMainPageKitsSwiper(element) {
 // Swiper(Слайдер только на моибильном)
 const productPageOthersSwiper = document.querySelector('.product__others-swiper');
 const productPageSimilarSwiper = document.querySelector('.product__similar-swiper');
-// const collectionPageProductsSwiper = document.querySelector('.collection__products-swiper');
-const collectionPageProductsSwiper = document.querySelector('.collection__others-swiper');
+const collectionPageOthersSwiper = document.querySelector('.collection__others-swiper');
 let otherSwiper;
-
 if (productPageOthersSwiper) {
   initialProductPageOtherSwiper(productPageOthersSwiper);
 }
 if (productPageSimilarSwiper) {
   initialProductPageOtherSwiper(productPageSimilarSwiper);
 }
-// if (collectionPageProductsSwiper) {
-//   initialProductPageOtherSwiper(collectionPageProductsSwiper);
-// }
-if (collectionPageProductsSwiper) {
-  initialProductPageOtherSwiper(collectionPageProductsSwiper, 1);
+if (collectionPageOthersSwiper) {
+  initialProductPageOtherSwiper(collectionPageOthersSwiper, 1);
 }
-
 function initialProductPageOtherSwiper(element, slidesPerView = 2) {
   if (window.innerWidth < 769) {
     otherSwiper = new Swiper(element, {
       slidesPerView: slidesPerView,
-      spaceBetween: 10,
+      spaceBetween: 15,
       navigation: {
         prevEl:  `.${element.classList[0]}__btn--prev`,
         nextEl:  `.${element.classList[0]}__btn--next`,

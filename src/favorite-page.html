@@ -12,14 +12,16 @@
   <main class="main">
     <h1 class="visually-hidden">Избранное Kafel Time</h1>
     <section class="favorite">
-      <div class="favorite__container container">
+      <div class="favorite__container container tab-content tab-content--active">
         <ul class="favorite__breadcrumbs breadcrumbs list-reset">
           <li><a href="/">Главная</a></li>
           <li>Избранное</li>
         </ul>
         <h2 class="favorite__title title">Избранное</h2>
-        <div class="favorite__filters favorite-filters">
-          <button class="favorite-filters__btn switch-button switch-button--active btn-reset">
+
+
+        <div class="favorite__filters favorite-filters tabs">
+          <button class="favorite-filters__btn tab-btn tab-btn--active btn-reset" data-tabs-path="products">
             Товары
             (<span>1</span>)
           </button>
@@ -30,7 +32,7 @@
                 fill="#3D3C3C" />
             </svg>
           </button>
-          <button class="favorite-filters__btn switch-button btn-reset">
+          <button class="favorite-filters__btn tab-btn btn-reset" data-tabs-path="products">
             Коллекции
             (<span>1</span>)
           </button>
@@ -42,7 +44,9 @@
             </svg>
           </button>
         </div>
-        <div class="favorite__added favorite-added">
+
+
+        <div class="favorite__added favorite-added tab-content tab-content--active" data-tabs-target="products">
           <ul class="favorite-added__list list-reset">
             <li class="favorite-added__card card">
               <a class="card__link" href="product-page.html"></a>

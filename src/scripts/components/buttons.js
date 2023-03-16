@@ -27,16 +27,6 @@ moreBtns.forEach(btn => {
     });
   });
 });
-// Switch button
-const switchBtns = document.querySelectorAll('.switch-button');
-switchBtns.forEach(brandsBtn => {
-  brandsBtn.addEventListener('click', (e) => {
-    switchBtns.forEach(brandsBtn => {
-      brandsBtn.classList.remove('switch-button--active');
-    });
-    brandsBtn.classList.add('switch-button--active');
-  });
-});
 // Переключение цветов
 const colorValue = document.querySelector('.specifications-desrcription__wrapper .specifications-desrcription__value');
 const colorBtns = document.querySelectorAll('.specifications-desrcription__color');

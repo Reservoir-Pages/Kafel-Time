@@ -8,6 +8,8 @@ import './components/tooltips';
 import './components/tabs';
 import './components/buttons';
 import './components/search';
+import './components/switch';
+import './components/alphabet';
 
 import './components/account-page';
 import './components/compare-page';

@@ -8,6 +8,7 @@
 // подключения универсальных компонентов страницы
 @import "./components/universal/header";
 @import "./components/universal/footer";
+@import "./components/universal/switch";
 @import "./components/universal/search";
 @import "./components/universal/breadcrumbs";
 @import "./components/universal/counter";
@@ -25,7 +26,7 @@
 @import "./components/universal/range-slider";
 @import "./components/universal/checkbox-check";
 
-// подключения универсальных компонентов страницы
+// подключения компонентов страницы
 @import "./components/swiper-header";
 @import "./components/banner";
 @import "./components/sales";
@@ -65,3 +66,7 @@
 @import "./page/catalog-tiles-page";
 @import "./page/order-page";
 @import "./page/stocks-page";
+
+// .owerflow-hidden {
+//   overflow: hidden;
+// }

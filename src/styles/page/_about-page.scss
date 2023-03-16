@@ -4,12 +4,13 @@
   }
 
   &__general {
+    display: flex;
     min-height: 320px;
     margin-bottom: 70px;
-    background-image: url(../images/about-general.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 50%;
+    // background-image: url(../images/about-general.png);
+    // background-repeat: no-repeat;
+    // background-position: right top;
+    // background-size: 50%;
 
     &-text {
       max-width: 48%;
@@ -29,12 +30,13 @@
   }
 
   &__description {
+    display: flex;
     min-height: 387px;
     margin-bottom: 100px;
-    background-image: url(../images/about-description.png);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 31%;
+    // background-image: url(../images/about-description.png);
+    // background-repeat: no-repeat;
+    // background-position: left top;
+    // background-size: 31%;
 
     &-text {
       max-width: 65%;
@@ -101,11 +103,17 @@
 
 @media (max-width: 768px) {
   .about {
+    &__container {
+      padding-right: 0;
+    }
+
     &__title {
       margin-bottom: 15px;
     }
 
     &__general {
+      flex-direction: column;
+      padding-right: 10px;
       margin-bottom: 20px;
       background-position: center bottom;
       background-size: 100%;
@@ -125,7 +133,8 @@
     }
 
     &__description {
-      padding-bottom: 250px;
+      flex-direction: column-reverse;
+      padding-right: 10px;
       margin-bottom: 40px;
       background-position: center bottom;
       background-size: 100%;
@@ -155,6 +164,7 @@
 
     &__services {
       padding: 20px 15px;
+      margin-right: 10px;
       margin-bottom: 50px;
 
       &-list {

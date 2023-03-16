@@ -35,6 +35,10 @@
   .clients {
     padding-top: 50px;
 
+    &__container {
+      padding-right: 0;
+    }
+
     &__header {
       margin-bottom: 15px;
     }

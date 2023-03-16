@@ -1,4 +1,3 @@
-
 const parameterLists = document.querySelectorAll('.parameters');
 parameterLists.forEach(list => {
   // Line marker
@@ -23,7 +22,6 @@ parameterLists.forEach(list => {
       });
     });
   }
-
   // Label for items
   const parameters = list.querySelectorAll('.parameters__item');
   const parameterValues = [

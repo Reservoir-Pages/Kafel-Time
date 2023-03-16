@@ -12,7 +12,7 @@
   <main class="main">
     <h1 class="visually-hidden">Бренды Kafel Time</h1>
     <section class="brands-page">
-      <div class="brands-page__container container">
+      <div class="brands-page__container container tab-content">
         <ul class="brands-page__breadcrumbs breadcrumbs list-reset">
           <li><a href="/">Главная</a></li>
           <!-- <li><a href="catalog-page.html">Каталог</a></li> -->
@@ -20,22 +20,25 @@
         </ul>
         <h2 class="brands-page__title title">Бренды</h2>
         <div class="brands-page__filters filters">
-          <ul class="brands-page__menu list-reset">
+
+          <ul class="brands-page__menu list-reset tabs">
             <li class="brands-page__item">
-              <button class="switch-button switch-button--active btn-reset">Все бренды</button>
+              <button class="brands-page__btn tab-btn tab-btn--active btn-reset" data-tabs-path="all">Все бренды</button>
             </li>
             <li class="brands-page__item">
-              <button class="switch-button btn-reset">Плитка</button>
+              <button class="brands-page__btn tab-btn btn-reset" data-tabs-path="all">Плитка</button>
             </li>
             <li class="brands-page__item">
-              <button class="switch-button btn-reset">Сантехника</button>
+              <button class="brands-page__btn tab-btn btn-reset" data-tabs-path="all">Сантехника</button>
             </li>
           </ul>
+
           <select class="brands-page__region select" name="brands-page-region">
             <option value="all">Все страны</option>
             <option value="russia">Россия</option>
             <option value="italy">Италия</option>
           </select>
+
           <label class="brands-page__search search">
             <input type="search" placeholder="Поиск по брендам">
           </label>
@@ -48,7 +51,7 @@
             <button class="alphabet__tab tab-btn btn-reset" data-tabs-path="english">A - Z</button>
             <button class="alphabet__tab tab-btn btn-reset" data-tabs-path="null">0-9</button>
           </div>
-          <div class="alphabet__language alphabet__language--en tab-content" data-tabs-target="english">
+          <div class="alphabet__language alphabet__language--en tab-content tab-content--active" data-tabs-target="english">
             <button class="alphabet__btn hold-btn btn-reset">A</button>
             <button class="alphabet__btn hold-btn btn-reset">B</button>
             <button class="alphabet__btn alphabet__btn--disabled hold-btn btn-reset">C</button>
@@ -77,7 +80,7 @@
             <button class="alphabet__btn hold-btn btn-reset">Z</button>
             <button class="alphabet__btn alphabet__btn--digits hold-btn btn-reset">0-9</button>
           </div>
-          <div class="alphabet__language alphabet__language--rus tab-content" data-tabs-target="russian">
+          <div class="alphabet__language alphabet__language--rus tab-content tab-content--active" data-tabs-target="russian">
             <button class="alphabet__btn hold-btn btn-reset">А</button>
             <button class="alphabet__btn hold-btn btn-reset">Б</button>
             <button class="alphabet__btn hold-btn btn-reset">В</button>
@@ -108,7 +111,7 @@
             <button class="alphabet__btn hold-btn btn-reset">Я</button>
           </div>
         </div>
-        <div class="brands-page__swiper brands-swiper swiper">
+        <div class="brands-page__swiper brands-swiper tab-content tab-content--active swiper" data-tabs-target="all">
           <div class="brands-swiper__wrapper swiper-wrapper">
             <div class="brands-swiper__card swiper-slide">
               <a href="catalog-brand-page.html"><img src="images/am-pm.png" alt="Логотип am-pm"></a>

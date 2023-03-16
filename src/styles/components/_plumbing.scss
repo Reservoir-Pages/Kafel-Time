@@ -39,6 +39,10 @@
   .plumbing {
     padding-top: 40px;
 
+    &__container {
+      padding-right: 0;
+    }
+
     &-swiper {
       &__slide {
         padding-bottom: 6px;
