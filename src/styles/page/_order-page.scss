@@ -400,6 +400,10 @@
             max-width: none;
 
             &:not(:last-child) {
+              margin-bottom: 20px;
+            }
+
+            &:not(:last-of-type) {
               margin-bottom: 10px;
             }
           }

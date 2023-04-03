@@ -14,6 +14,22 @@
     ],
     "description":"Snippet for switch"
   },
+  "range": {
+    "scope": "html",
+    "prefix": "v-range",
+    "body": [
+      "<div class=\"range\">",
+        "<label class=\"range__label\">",
+            "<input class=\"range__input\" type=\"text\" placeholder=\"от\">",
+          "</label>",
+          "<span class=\"range__symbol\">&mdash;</span>",
+          "<label class=\"range__label\">",
+            "<input class=\"range__input\" type=\"text\" placeholder=\"до\">",
+          "</label>",
+        "</div>"
+    ],
+    "description":"Snippet for range"
+  },
 
 
 

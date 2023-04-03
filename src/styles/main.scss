@@ -23,7 +23,7 @@
 @import "./components/universal/cost";
 @import "./components/universal/btns";
 @import "./components/universal/placement";
-@import "./components/universal/range-slider";
+@import "./components/universal/range";
 @import "./components/universal/checkbox-check";
 
 // подключения компонентов страницы
@@ -66,6 +66,7 @@
 @import "./page/catalog-tiles-page";
 @import "./page/order-page";
 @import "./page/stocks-page";
+@import "./page/filters-page";
 
 // .owerflow-hidden {
 //   overflow: hidden;

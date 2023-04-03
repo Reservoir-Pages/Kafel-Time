@@ -10,6 +10,7 @@ import './components/buttons';
 import './components/search';
 import './components/switch';
 import './components/alphabet';
+import './components/filters';
 
 import './components/account-page';
 import './components/compare-page';

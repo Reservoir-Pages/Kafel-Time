@@ -131,13 +131,6 @@
     line-height: 19px;
     font-weight: 500;
 
-    &--active {
-      & + .catalog__list {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
     &::before {
       content: "";
       height: 30px;
@@ -146,6 +139,26 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    &--active {
+      & + .catalog__list {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &::before {
+        background-image: url(../images/close-burger.svg);
+      }
+    }
+
+    // &::before {
+    //   content: "";
+    //   height: 30px;
+    //   width: 30px;
+    //   background-image: url(../images/menu-icon.svg);
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    // }
 
     &-descr {
       padding-left: 5px;
