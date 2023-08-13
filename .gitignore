@@ -5,3 +5,6 @@ ftp-data.json
 package-lock.json
 version.json
 *.zip
+.idea
+.vscode
+Additionaly

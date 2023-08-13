@@ -59,8 +59,9 @@ const paths = {
   srcImages:          `${srcFolder}/images/**/**.{jpg,jpeg,png,svg}`,
   srcStylesFolder:    `${srcFolder}/styles`,
   srcImgFolder:       `${srcFolder}/images`,
-  // srcPartialsFolder:  `${srcFolder}/partials`,
+  srcPartialsFolder:  `${srcFolder}/partials`,
   srcResourcesFolder: `${srcFolder}/resources/**`,
+  srcSvgFolder:       `${srcFolder}/svg/**`,
 
   distFonts:          `${distFolder}/fonts`,
   distImgFolder:      `${distFolder}/images`,
