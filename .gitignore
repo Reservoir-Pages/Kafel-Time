@@ -1,12 +1,8 @@
-/node_modules
-/build
-/dist
-ftp-data.json
-package-lock.json
-*.zip
+.git
 .idea
 .vscode
-Additionaly
-IMPORTANT.md
+node_modules
+build
+dist
+ftp-data.json
 version.json
-git 
