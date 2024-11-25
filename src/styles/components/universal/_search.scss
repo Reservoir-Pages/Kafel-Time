@@ -20,7 +20,7 @@
   }
 
   &::before {
-    content: url(/images/search-icon.svg);
+    content: url(../images/search-icon.svg);
     position: absolute;
     top: calc(50% + 2px);
     right: 15px;
