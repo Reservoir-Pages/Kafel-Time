@@ -3,9 +3,10 @@
 /dist
 ftp-data.json
 package-lock.json
-version.json
 *.zip
 .idea
 .vscode
 Additionaly
 IMPORTANT.md
+version.json
+git 
